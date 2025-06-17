@@ -1,0 +1,15 @@
+{
+  "scene": 2,
+  "start": 10.436,
+  "end": 20.93,
+  "subtitle_text": "fresh from Florida more than 80 varieties are found right off Florida's Coast harvested by local families who take pride in their work don't take chances on where your Seafood came from",
+  "trivia_question": "Where are most seafood varieties found?",
+  "trivia_choices": [
+    "Florida",
+    "California",
+    "Alaska",
+    "Texas"
+  ],
+  "fun_fact": "More than 80 varieties of seafood are found off Florida's Coast.",
+  "poll_question": "Where do you think most seafood comes from?"
+}
