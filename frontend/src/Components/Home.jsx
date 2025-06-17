@@ -24,19 +24,20 @@ function Home() {
     };
 
     return (
-        <div style={{ padding: '20px' }}>
-            <h1>Welcome to the Watch Party</h1>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-6">
+            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Welcome to the Watch Party</h1>
 
-            <button onClick={createRoom}>Create Room</button>
+            <button onClick={createRoom} className="mb-8 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold shadow transition-colors">Create Room</button>
 
-            <div style={{ marginTop: '20px' }}>
+            <div className="flex flex-col sm:flex-row items-center gap-4">
                 <input
                     type="text"
                     placeholder="Enter Room ID"
                     value={roomId}
                     onChange={(e) => setRoomId(e.target.value)}
+                    className="px-4 py-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-100 text-gray-900"
                 />
-                <button onClick={joinRoom} style={{ marginLeft: '10px' }}>
+                <button onClick={joinRoom} className="px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold shadow transition-colors">
                     Join Room
                 </button>
             </div>

@@ -19,6 +19,7 @@ function Room() {
     const [movieUrl, setMovieUrl] = useState("");
     const [userList, setUserList] = useState([]);
     const [isHost] = useState(sessionStorage.getItem("isHost") === "true");
+    const [copied, setCopied] = useState(false);
 
     useEffect(() => {
 
@@ -161,34 +162,47 @@ function Room() {
 
 
     return (
-        <div style={{ padding: '20px' }}>
-            <h2>Room ID: {roomId}</h2>
+        <div className="p-5 md:p-8 bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen flex flex-col items-center">
+            <div className="flex items-center gap-2 mb-4">
+                <h2 className="text-xl md:text-2xl font-bold text-white">Room ID: {roomId}</h2>
+                <button
+                    className="ml-2 p-2 rounded bg-gray-700 hover:bg-gray-600 text-white transition-colors cursor-pointer relative"
+                    onClick={() => {
+                        navigator.clipboard.writeText(roomId);
+                        setCopied(true);
+                        setTimeout(() => setCopied(false), 1200);
+                    }}
+                    title="Copy Room ID"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 8.25V6.75A2.25 2.25 0 0014.25 4.5h-6A2.25 2.25 0 006 6.75v6A2.25 2.25 0 008.25 15h1.5" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M18 9.75V17.25A2.25 2.25 0 0115.75 19.5h-6A2.25 2.25 0 017.5 17.25v-6A2.25 2.25 0 019.75 9.75h6A2.25 2.25 0 0118 12v-2.25z" />
+                    </svg>
+                    {copied && (
+                        <span className="absolute -top-7 left-1/2 -translate-x-1/2 bg-black text-white text-xs rounded px-2 py-1 shadow-lg">Copied!</span>
+                    )}
+                </button>
+            </div>
 
             {isHost && (
-                <button onClick={handleSelectMovie}>Select Movie</button>
+                <button onClick={handleSelectMovie} className="mb-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold shadow transition-colors">Select Movie</button>
             )}
 
             {!isHost && !movieUrl && (
-                <p>Waiting for host to select a movie...</p>
+                <p className="mb-4 text-yellow-300">Waiting for host to select a movie...</p>
             )}
 
-            <div style={{ position: 'relative', width: '640px', height: '0' }}>
+            <div className="relative w-[320px] md:w-[640px] h-0">
                 {reactions.map(reaction => (
                     <div
                         key={reaction.id}
-                        style={{
-                            position: 'absolute',
-                            left: `${Math.random() * 80 + 10}%`,
-                            top: '-40px',
-                            fontSize: '32px',
-                            animation: 'floatUp 4s ease-out forwards',
-                        }}
+                        className="absolute -top-10 text-3xl float-up-emoji"
+                        style={{ left: `${Math.random() * 80 + 10}%` }}
                     >
                         {reaction.emoji}
                     </div>
                 ))}
             </div>
-
 
             {movieUrl && (
                 <video
@@ -200,51 +214,41 @@ function Room() {
                     onPlay={handlePlay}
                     onPause={handlePause}
                     onSeeked={handleSeek}
+                    className="rounded-lg shadow-lg mb-4"
                 />
             )}
 
-            <div style={{ marginTop: "20px", border: "1px solid #ccc", padding: "10px", maxWidth: "640px" }}>
-                <h4>Live Chat</h4>
-                <div style={{ maxHeight: "200px", overflowY: "auto", marginBottom: "10px", background: "#f9f9f9", padding: "5px" }}>
+            <div className="mt-5 border border-gray-300 rounded-lg p-4 w-full max-w-xl bg-white/80">
+                <h4 className="font-semibold mb-2 text-gray-800">Live Chat</h4>
+                <div className="max-h-[200px] overflow-y-auto mb-3 bg-gray-100 p-2 rounded">
                     {messages.map((msg, index) => (
                         <div
                             key={index}
-                            style={{
-                                backgroundColor: msg.username === "System" ? "#fff3cd" : "#e6e6e6",
-                                borderRadius: '8px',
-                                padding: '8px 12px',
-                                marginBottom: '6px',
-                                color: '#333',
-                                maxWidth: '90%',
-                                wordBreak: 'break-word',
-                                fontSize: '14px',
-                                fontStyle: msg.username === "System" ? "italic" : "normal",
-                            }}
+                            className={`rounded-lg px-3 py-2 mb-2 text-sm break-words max-w-[90%] ${msg.username === "System" ? "bg-yellow-100 italic text-gray-700" : "bg-gray-200 text-blue-700"}`}
                         >
-                            <strong style={{ color: msg.username === "System" ? "#856404" : "#007bff" }}>
+                            <strong className={msg.username === "System" ? "text-yellow-800" : "text-blue-700"}>
                                 {msg.username}:
                             </strong> {msg.message}
                         </div>
                     ))}
-
                 </div>
-                <form onSubmit={sendMessage}>
+                <form onSubmit={sendMessage} className="flex">
                     <input
                         type="text"
                         placeholder="Type a message..."
                         value={chatInput}
                         onChange={(e) => setChatInput(e.target.value)}
-                        style={{ width: "80%", padding: "5px" }}
+                        className="flex-1 px-3 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-gray-900"
                     />
-                    <button type="submit" style={{ padding: "5px 10px", marginLeft: "5px" }}>Send</button>
+                    <button type="submit" className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-r-lg font-semibold transition-colors">Send</button>
                 </form>
             </div>
-            <div style={{ marginTop: '10px' }}>
+            <div className="mt-3 flex gap-2">
                 {['❤️', '😂', '😮', '👏'].map(emoji => (
                     <button
                         key={emoji}
                         onClick={() => socket.emit('emoji-reaction', { roomId, emoji, username })}
-                        style={{ fontSize: '24px', margin: '5px', cursor: 'pointer' }}
+                        className="text-2xl m-1 cursor-pointer hover:scale-125 transition-transform"
                     >
                         {emoji}
                     </button>
@@ -253,45 +257,22 @@ function Room() {
 
             <button
                 onClick={handleLeaveRoom}
-                style={{
-                    backgroundColor: '#e74c3c',
-                    color: 'white',
-                    border: 'none',
-                    padding: '8px 16px',
-                    borderRadius: '6px',
-                    cursor: 'pointer',
-                    marginTop: '15px'
-                }}
+                className="bg-red-600 hover:bg-red-700 text-white border-none px-6 py-2 rounded-lg cursor-pointer mt-4 font-semibold shadow"
             >
                 Leave Room
             </button>
 
-            <div style={{ marginTop: '20px' }}>
-                <h4 style={{ marginBottom: '10px' }}>Users in Room:</h4>
-                <ul style={{
-                    background: '#f9f9f9',
-                    padding: '10px',
-                    borderRadius: '8px',
-                    listStyleType: 'none',
-                    maxWidth: '300px',
-                    color: '#333',
-                    fontWeight: '500',
-                    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)'
-                }}>
+            <div className="mt-6 w-full max-w-xs">
+                <h4 className="mb-2 font-semibold text-gray-200">Users in Room:</h4>
+                <ul className="bg-gray-100 p-3 rounded-lg list-none max-w-xs text-gray-800 font-medium shadow">
                     {userList.map(user => (
-                        <li key={user.socketId} style={{
-                            padding: '6px 10px',
-                            borderBottom: '1px solid #ddd'
-                        }}>
-                            👤 {user.username}
+                        <li key={user.socketId} className="py-2 border-b border-gray-200 last:border-b-0 flex items-center">
+                            <span className="mr-2">👤</span> {user.username}
                         </li>
                     ))}
                 </ul>
             </div>
-
-
         </div>
-
     );
 }
 
