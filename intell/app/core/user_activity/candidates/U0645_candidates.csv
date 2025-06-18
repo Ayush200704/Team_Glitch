@@ -1,0 +1,51 @@
+movie_id,title,genre,language,release_year,duration_minutes,popularity_score,trending_now
+M0953,Movie 953,"['Comedy', 'Sci-Fi']",Kannada,2021,104.81,999.74,False
+M0739,Movie 739,"['Sci-Fi', 'Comedy', 'Romance']",Kannada,1996,126.86,989.74,False
+M0133,Movie 133,"['Romance', 'Sci-Fi', 'Thriller']",Kannada,2005,110.79,984.12,False
+M0452,Movie 452,"['Action', 'Fantasy', 'Comedy']",Kannada,2005,149.31,983.73,False
+M0497,Movie 497,"['Thriller', 'Action', 'Fantasy']",Kannada,1997,83.63,971.52,False
+M0104,Movie 104,"['Documentary', 'Romance', 'Comedy']",Kannada,2004,117.2,969.44,False
+M0235,Movie 235,['Sci-Fi'],Kannada,2007,144.98,968.11,True
+M0540,Movie 540,"['Sci-Fi', 'Romance']",Kannada,2023,100.27,961.33,False
+M0334,Movie 334,"['Sci-Fi', 'Thriller']",Kannada,2018,144.35,960.57,False
+M0518,Movie 518,"['Action', 'Sci-Fi']",Kannada,1996,134.79,959.11,False
+M0494,Movie 494,"['Documentary', 'Action']",Kannada,1999,100.7,952.67,True
+M0964,Movie 964,['Romance'],Kannada,1990,154.81,935.82,False
+M0789,Movie 789,"['Romance', 'Thriller', 'Drama']",Kannada,1998,139.67,933.95,False
+M0720,Movie 720,"['Documentary', 'Fantasy']",Kannada,1994,114.41,928.34,False
+M0613,Movie 613,"['Fantasy', 'Romance', 'Thriller']",Kannada,2023,128.96,926.28,False
+M0959,Movie 959,"['Drama', 'Fantasy']",Kannada,1990,136.48,897.9,False
+M0693,Movie 693,"['Comedy', 'Sci-Fi']",Kannada,2014,100.51,897.56,False
+M0446,Movie 446,"['Fantasy', 'Drama', 'Documentary']",Kannada,2013,112.9,892.61,False
+M0748,Movie 748,['Thriller'],Kannada,2009,71.89,889.32,False
+M0229,Movie 229,['Drama'],Kannada,1993,122.75,887.61,False
+M0628,Movie 628,['Documentary'],Kannada,2001,124.87,886.37,False
+M0503,Movie 503,"['Action', 'Comedy']",Kannada,2010,124.64,883.73,False
+M0603,Movie 603,['Romance'],Kannada,2011,139.86,880.88,False
+M0207,Movie 207,"['Thriller', 'Romance', 'Fantasy']",Kannada,2018,132.36,872.16,False
+M0870,Movie 870,"['Documentary', 'Action', 'Thriller']",Kannada,2005,138.97,871.26,False
+M0842,Movie 842,"['Comedy', 'Action']",Kannada,1991,94.44,866.43,False
+M0034,Movie 34,"['Romance', 'Action', 'Fantasy']",Kannada,1992,128.09,862.96,False
+M0548,Movie 548,"['Documentary', 'Drama']",Kannada,1991,119.98,855.59,True
+M0601,Movie 601,['Sci-Fi'],Kannada,1999,114.46,847.64,False
+M0804,Movie 804,"['Comedy', 'Fantasy']",Kannada,2007,105.52,844.4,False
+M0534,Movie 534,['Sci-Fi'],Kannada,1990,150.92,830.77,False
+M0337,Movie 337,"['Sci-Fi', 'Comedy']",Kannada,2001,201.05,829.7,False
+M0046,Movie 46,['Fantasy'],Kannada,2023,98.27,829.43,False
+M0533,Movie 533,"['Thriller', 'Drama']",Kannada,2022,119.65,826.74,False
+M0257,Movie 257,"['Documentary', 'Fantasy']",Kannada,2003,118.16,817.0,False
+M0482,Movie 482,"['Fantasy', 'Romance']",Kannada,2009,132.07,813.15,False
+M0043,Movie 43,"['Sci-Fi', 'Drama', 'Romance']",Kannada,1999,120.77,795.29,False
+M0499,Movie 499,"['Fantasy', 'Romance']",Kannada,2017,143.25,792.39,False
+M0110,Movie 110,"['Thriller', 'Fantasy']",Kannada,2015,96.6,787.68,False
+M0597,Movie 597,"['Romance', 'Comedy', 'Drama']",Kannada,2009,129.23,786.53,False
+M0307,Movie 307,"['Romance', 'Sci-Fi', 'Thriller']",Kannada,2019,126.82,770.69,False
+M0125,Movie 125,['Action'],Kannada,2015,107.16,752.34,False
+M0771,Movie 771,"['Fantasy', 'Thriller']",Kannada,1994,96.7,749.52,False
+M0321,Movie 321,"['Action', 'Drama', 'Fantasy']",Kannada,2012,126.49,742.83,False
+M0016,Movie 16,"['Action', 'Sci-Fi']",Kannada,2016,154.62,740.02,False
+M0155,Movie 155,['Romance'],Kannada,1991,108.42,737.06,False
+M0564,Movie 564,['Documentary'],Kannada,2014,124.48,733.15,False
+M0926,Movie 926,['Drama'],Kannada,2005,124.17,728.18,False
+M0521,Movie 521,"['Sci-Fi', 'Drama']",Kannada,2017,136.85,723.39,False
+M0653,Movie 653,"['Comedy', 'Romance', 'Documentary']",Kannada,2020,98.62,721.29,False

@@ -1,0 +1,51 @@
+movie_id,title,genre,language,release_year,duration_minutes,popularity_score,trending_now
+M0589,Movie 589,['Action'],Tamil,1998,114.58,997.58,False
+M0928,Movie 928,"['Action', 'Sci-Fi', 'Fantasy']",Tamil,2004,147.37,977.42,False
+M0668,Movie 668,['Documentary'],Tamil,2018,130.99,974.3,False
+M0068,Movie 68,"['Drama', 'Romance', 'Action']",Tamil,2000,137.9,972.96,True
+M0311,Movie 311,['Drama'],Tamil,1991,112.55,972.63,False
+M0752,Movie 752,"['Romance', 'Comedy', 'Documentary']",Tamil,1997,132.1,961.38,False
+M0727,Movie 727,"['Action', 'Drama', 'Thriller']",Tamil,1997,153.44,959.59,False
+M0439,Movie 439,['Fantasy'],Tamil,2011,147.57,955.64,False
+M0283,Movie 283,['Fantasy'],Tamil,2021,154.95,949.83,False
+M0485,Movie 485,['Thriller'],Tamil,1993,101.7,933.33,True
+M0254,Movie 254,"['Drama', 'Romance']",Tamil,1997,96.51,924.98,False
+M0769,Movie 769,"['Fantasy', 'Documentary', 'Sci-Fi']",Tamil,2002,103.63,923.74,False
+M0631,Movie 631,"['Drama', 'Romance']",Tamil,2011,135.23,922.05,False
+M0199,Movie 199,['Documentary'],Tamil,2000,117.55,915.08,False
+M0951,Movie 951,"['Comedy', 'Documentary', 'Drama']",Tamil,1991,112.88,913.77,True
+M0844,Movie 844,['Sci-Fi'],Tamil,2015,141.03,912.79,False
+M0481,Movie 481,"['Documentary', 'Thriller']",Tamil,2003,124.26,877.71,False
+M0730,Movie 730,"['Action', 'Drama', 'Fantasy']",Tamil,1996,145.31,874.61,False
+M0030,Movie 30,"['Action', 'Comedy']",Tamil,2023,90.79,863.43,False
+M0486,Movie 486,['Action'],Tamil,2023,135.85,858.74,False
+M0221,Movie 221,['Drama'],Tamil,2023,137.2,858.47,False
+M0281,Movie 281,['Drama'],Tamil,2007,118.91,856.61,False
+M0209,Movie 209,"['Comedy', 'Fantasy', 'Thriller']",Tamil,2006,83.41,854.26,False
+M0471,Movie 471,['Romance'],Tamil,2012,133.97,853.87,False
+M0441,Movie 441,['Comedy'],Tamil,1998,104.65,842.37,False
+M0092,Movie 92,['Thriller'],Tamil,2009,121.39,838.35,False
+M0527,Movie 527,"['Documentary', 'Thriller', 'Sci-Fi']",Tamil,1994,109.67,835.94,False
+M0240,Movie 240,"['Fantasy', 'Documentary']",Tamil,2006,133.29,825.46,False
+M0747,Movie 747,"['Documentary', 'Comedy']",Tamil,2011,112.49,815.35,False
+M0827,Movie 827,"['Thriller', 'Comedy', 'Fantasy']",Tamil,2015,110.2,813.62,False
+M0026,Movie 26,"['Action', 'Drama', 'Thriller']",Tamil,2004,106.99,808.79,False
+M0650,Movie 650,['Fantasy'],Tamil,2006,81.06,807.94,False
+M0725,Movie 725,['Sci-Fi'],Tamil,2023,171.15,806.5,False
+M0975,Movie 975,"['Fantasy', 'Romance']",Tamil,2018,94.93,804.73,False
+M0700,Movie 700,"['Comedy', 'Documentary', 'Thriller']",Tamil,2006,111.81,795.79,False
+M0042,Movie 42,['Documentary'],Tamil,1995,123.34,785.01,False
+M0210,Movie 210,"['Drama', 'Fantasy']",Tamil,2015,99.83,781.64,False
+M0377,Movie 377,['Action'],Tamil,2012,106.39,777.94,False
+M0121,Movie 121,['Drama'],Tamil,2006,139.26,765.65,False
+M0665,Movie 665,"['Fantasy', 'Comedy', 'Sci-Fi']",Tamil,1999,140.13,764.88,True
+M0876,Movie 876,['Drama'],Tamil,2016,80.46,746.67,False
+M0134,Movie 134,"['Fantasy', 'Drama']",Tamil,2005,123.04,736.25,False
+M0195,Movie 195,"['Action', 'Fantasy']",Tamil,2009,135.41,734.31,False
+M0656,Movie 656,"['Documentary', 'Fantasy', 'Thriller']",Tamil,2023,120.11,726.19,False
+M0385,Movie 385,['Thriller'],Tamil,2015,131.89,721.8,False
+M0516,Movie 516,"['Romance', 'Documentary']",Tamil,1995,133.98,721.16,False
+M0354,Movie 354,['Comedy'],Tamil,2021,133.16,705.99,False
+M0004,Movie 4,['Sci-Fi'],Tamil,1995,141.25,675.89,False
+M0736,Movie 736,"['Comedy', 'Thriller']",Tamil,2005,106.58,674.2,False
+M0906,Movie 906,"['Comedy', 'Drama', 'Documentary']",Tamil,2009,57.37,669.18,False

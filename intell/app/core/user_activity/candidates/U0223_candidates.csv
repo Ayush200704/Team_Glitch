@@ -1,0 +1,51 @@
+movie_id,title,genre,language,release_year,duration_minutes,popularity_score,trending_now
+M0032,Movie 32,"['Fantasy', 'Thriller']",Telugu,2012,157.22,996.81,False
+M0863,Movie 863,"['Documentary', 'Comedy']",Telugu,2018,105.66,984.44,False
+M0636,Movie 636,"['Comedy', 'Drama', 'Romance']",Telugu,2004,99.43,974.35,False
+M0508,Movie 508,"['Romance', 'Sci-Fi']",Telugu,2008,118.72,961.6,False
+M0483,Movie 483,['Fantasy'],Telugu,2008,122.2,957.83,True
+M0205,Movie 205,"['Fantasy', 'Documentary']",Telugu,2004,96.82,943.55,False
+M0758,Movie 758,['Drama'],Telugu,2020,156.1,936.24,False
+M0282,Movie 282,"['Sci-Fi', 'Romance']",Telugu,2017,124.29,927.67,False
+M0064,Movie 64,"['Drama', 'Documentary']",Telugu,2012,112.2,924.49,False
+M0599,Movie 599,['Documentary'],Telugu,2010,115.6,914.44,False
+M0435,Movie 435,"['Sci-Fi', 'Thriller', 'Fantasy']",Telugu,2016,132.28,911.82,True
+M0206,Movie 206,"['Thriller', 'Documentary', 'Comedy']",Telugu,1992,134.19,902.53,False
+M0459,Movie 459,"['Drama', 'Sci-Fi']",Telugu,2019,130.27,901.45,False
+M0291,Movie 291,"['Action', 'Documentary', 'Romance']",Telugu,2012,126.81,895.79,False
+M0265,Movie 265,['Sci-Fi'],Telugu,1996,131.21,895.64,True
+M0382,Movie 382,['Drama'],Telugu,2020,122.42,894.87,False
+M0635,Movie 635,"['Thriller', 'Comedy']",Telugu,1993,80.1,893.97,False
+M0424,Movie 424,"['Documentary', 'Fantasy', 'Comedy']",Telugu,2018,123.39,887.87,False
+M0051,Movie 51,"['Comedy', 'Thriller']",Telugu,1999,113.24,887.84,False
+M0688,Movie 688,"['Drama', 'Comedy', 'Sci-Fi']",Telugu,1993,161.33,882.47,True
+M0278,Movie 278,['Fantasy'],Telugu,2010,119.73,881.0,False
+M0759,Movie 759,['Romance'],Telugu,1999,117.09,866.69,False
+M0157,Movie 157,['Sci-Fi'],Telugu,2019,145.76,864.54,False
+M0411,Movie 411,['Action'],Telugu,2020,116.53,863.95,False
+M0362,Movie 362,['Fantasy'],Telugu,1996,96.54,855.64,False
+M0782,Movie 782,"['Sci-Fi', 'Romance', 'Action']",Telugu,2017,120.71,852.43,False
+M0657,Movie 657,['Thriller'],Telugu,2004,136.06,841.83,True
+M0002,Movie 2,"['Romance', 'Thriller', 'Sci-Fi']",Telugu,2008,132.74,835.89,False
+M0462,Movie 462,"['Sci-Fi', 'Action']",Telugu,2011,153.65,834.43,False
+M0320,Movie 320,"['Documentary', 'Thriller']",Telugu,2008,130.98,813.41,False
+M0391,Movie 391,['Action'],Telugu,2017,131.73,812.61,False
+M0591,Movie 591,['Documentary'],Telugu,2017,120.58,810.44,False
+M0949,Movie 949,"['Documentary', 'Sci-Fi', 'Comedy']",Telugu,2022,166.98,784.72,False
+M0331,Movie 331,"['Fantasy', 'Documentary', 'Romance']",Telugu,2019,111.95,783.58,False
+M0436,Movie 436,"['Documentary', 'Thriller', 'Action']",Telugu,2013,125.0,775.33,False
+M0116,Movie 116,"['Sci-Fi', 'Thriller', 'Romance']",Telugu,2021,119.09,772.88,False
+M0440,Movie 440,['Romance'],Telugu,1993,117.33,772.09,False
+M0273,Movie 273,"['Thriller', 'Romance']",Telugu,2013,113.4,763.6,False
+M0955,Movie 955,"['Romance', 'Sci-Fi']",Telugu,2009,115.98,763.31,False
+M0442,Movie 442,['Romance'],Telugu,1993,158.44,760.61,False
+M0898,Movie 898,"['Thriller', 'Fantasy']",Telugu,1995,116.32,759.0,True
+M0187,Movie 187,"['Documentary', 'Thriller']",Telugu,2011,149.34,757.43,False
+M0679,Movie 679,"['Thriller', 'Sci-Fi']",Telugu,1994,90.4,739.62,False
+M0995,Movie 995,"['Drama', 'Action']",Telugu,1996,133.32,735.44,True
+M0594,Movie 594,"['Sci-Fi', 'Action']",Telugu,2016,94.46,734.85,False
+M0907,Movie 907,"['Fantasy', 'Thriller', 'Action']",Telugu,2013,149.15,732.44,True
+M0837,Movie 837,"['Thriller', 'Drama']",Telugu,1992,143.19,729.99,False
+M0618,Movie 618,"['Documentary', 'Comedy']",Telugu,1997,111.6,729.52,False
+M0579,Movie 579,"['Action', 'Thriller']",Telugu,2007,119.43,705.66,True
+M0114,Movie 114,"['Sci-Fi', 'Drama']",Telugu,2017,108.67,701.01,False

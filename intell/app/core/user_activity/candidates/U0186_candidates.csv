@@ -1,0 +1,51 @@
+movie_id,title,genre,language,release_year,duration_minutes,popularity_score,trending_now
+M0455,Movie 455,"['Romance', 'Sci-Fi', 'Thriller']",Malayalam,2016,134.04,996.3,False
+M0098,Movie 98,"['Documentary', 'Drama', 'Romance']",Malayalam,2020,151.61,996.16,False
+M0274,Movie 274,"['Action', 'Fantasy', 'Sci-Fi']",Malayalam,1999,124.41,992.6,False
+M0942,Movie 942,"['Sci-Fi', 'Documentary']",Malayalam,2023,107.65,991.89,False
+M0801,Movie 801,"['Romance', 'Drama', 'Action']",Malayalam,1991,99.7,990.71,False
+M0669,Movie 669,"['Thriller', 'Action', 'Drama']",Malayalam,2006,101.83,986.33,True
+M0253,Movie 253,"['Sci-Fi', 'Fantasy', 'Romance']",Malayalam,2009,123.64,983.02,False
+M0892,Movie 892,"['Fantasy', 'Thriller']",Malayalam,2016,110.64,982.68,True
+M0252,Movie 252,"['Comedy', 'Documentary']",Malayalam,2010,113.33,982.14,False
+M0958,Movie 958,"['Action', 'Romance', 'Drama']",Malayalam,2002,126.01,981.91,False
+M0941,Movie 941,"['Romance', 'Drama', 'Action']",Malayalam,2007,163.22,968.82,False
+M0219,Movie 219,['Comedy'],Malayalam,1999,93.04,967.97,False
+M0453,Movie 453,"['Fantasy', 'Drama']",Malayalam,2002,110.44,960.71,False
+M0566,Movie 566,"['Documentary', 'Action', 'Sci-Fi']",Malayalam,2019,145.03,951.4,False
+M0883,Movie 883,"['Action', 'Documentary']",Malayalam,1997,148.29,944.97,False
+M0543,Movie 543,['Action'],Malayalam,1995,131.45,941.82,False
+M0671,Movie 671,"['Fantasy', 'Comedy']",Malayalam,2002,167.62,934.27,False
+M0039,Movie 39,"['Fantasy', 'Comedy']",Malayalam,1990,98.81,932.77,False
+M0775,Movie 775,"['Romance', 'Sci-Fi', 'Comedy']",Malayalam,2016,113.44,932.64,False
+M0519,Movie 519,"['Documentary', 'Action', 'Thriller']",Malayalam,2016,137.28,931.09,False
+M0675,Movie 675,['Drama'],Malayalam,2013,138.15,929.51,False
+M0185,Movie 185,"['Fantasy', 'Action']",Malayalam,1995,106.49,914.53,True
+M0987,Movie 987,['Sci-Fi'],Malayalam,2009,142.39,913.3,False
+M0012,Movie 12,['Comedy'],Malayalam,2016,101.91,902.54,False
+M0891,Movie 891,"['Documentary', 'Drama', 'Thriller']",Malayalam,1998,98.16,896.5,False
+M0536,Movie 536,"['Fantasy', 'Documentary', 'Comedy']",Malayalam,2010,129.56,874.9,False
+M0461,Movie 461,['Documentary'],Malayalam,2011,123.51,868.48,False
+M0792,Movie 792,['Fantasy'],Malayalam,1992,134.56,855.82,False
+M0820,Movie 820,['Thriller'],Malayalam,1999,98.9,854.74,False
+M0655,Movie 655,['Fantasy'],Malayalam,1995,108.46,849.94,False
+M0523,Movie 523,['Drama'],Malayalam,2012,84.78,845.97,False
+M0456,Movie 456,"['Thriller', 'Sci-Fi']",Malayalam,1993,126.18,845.55,False
+M0692,Movie 692,"['Action', 'Thriller']",Malayalam,2020,107.34,844.79,True
+M0430,Movie 430,['Sci-Fi'],Malayalam,2023,101.69,842.95,False
+M0840,Movie 840,"['Thriller', 'Comedy', 'Action']",Malayalam,2005,131.56,842.46,False
+M0378,Movie 378,"['Fantasy', 'Action']",Malayalam,2005,120.04,841.34,True
+M0608,Movie 608,"['Thriller', 'Documentary']",Malayalam,2007,109.94,840.6,False
+M0763,Movie 763,"['Thriller', 'Drama']",Malayalam,2022,101.74,840.4,False
+M0629,Movie 629,['Thriller'],Malayalam,1991,78.13,837.87,False
+M0444,Movie 444,"['Documentary', 'Sci-Fi', 'Romance']",Malayalam,2012,142.77,833.57,False
+M0463,Movie 463,['Drama'],Malayalam,2001,105.4,833.01,False
+M0429,Movie 429,"['Fantasy', 'Comedy', 'Thriller']",Malayalam,1994,140.03,817.57,False
+M0189,Movie 189,['Thriller'],Malayalam,2001,101.98,809.77,False
+M0070,Movie 70,"['Comedy', 'Drama']",Malayalam,2014,138.79,805.61,False
+M0520,Movie 520,"['Fantasy', 'Comedy']",Malayalam,2010,106.93,789.38,False
+M0762,Movie 762,"['Thriller', 'Action', 'Fantasy']",Malayalam,2012,89.63,787.93,True
+M0236,Movie 236,"['Thriller', 'Comedy', 'Documentary']",Malayalam,1994,124.39,779.55,False
+M0645,Movie 645,"['Comedy', 'Romance']",Malayalam,2007,110.45,779.01,False
+M0911,Movie 911,"['Drama', 'Comedy']",Malayalam,2006,119.14,768.98,False
+M0422,Movie 422,"['Sci-Fi', 'Action']",Malayalam,2003,98.74,734.23,False

@@ -1,0 +1,51 @@
+movie_id,title,genre,language,release_year,duration_minutes,popularity_score,trending_now
+M0097,Movie 97,['Comedy'],English,2018,112.0,998.23,False
+M0933,Movie 933,['Drama'],Hindi,1990,123.93,998.22,False
+M0085,Movie 85,"['Sci-Fi', 'Fantasy']",English,2010,105.65,994.59,False
+M0330,Movie 330,"['Romance', 'Thriller']",English,2015,99.02,992.77,False
+M0998,Movie 998,['Fantasy'],Hindi,1994,148.92,991.06,False
+M0349,Movie 349,"['Romance', 'Fantasy', 'Thriller']",Hindi,2013,129.93,984.91,False
+M0760,Movie 760,['Romance'],English,2004,144.93,982.58,False
+M0176,Movie 176,['Romance'],Hindi,2009,105.53,981.45,False
+M0216,Movie 216,"['Action', 'Thriller', 'Sci-Fi']",Hindi,2013,117.72,973.39,False
+M0917,Movie 917,"['Sci-Fi', 'Comedy']",Hindi,2011,128.41,971.95,False
+M0095,Movie 95,"['Comedy', 'Action', 'Romance']",Hindi,1998,116.63,967.74,False
+M0294,Movie 294,"['Action', 'Sci-Fi']",Hindi,2018,125.7,966.23,False
+M0171,Movie 171,"['Fantasy', 'Comedy', 'Sci-Fi']",English,2004,141.09,961.89,False
+M0286,Movie 286,"['Drama', 'Sci-Fi', 'Thriller']",Hindi,1999,141.96,961.86,False
+M0990,Movie 990,"['Drama', 'Thriller']",English,2007,115.76,961.12,True
+M0787,Movie 787,"['Drama', 'Fantasy']",English,2020,114.5,954.64,False
+M0816,Movie 816,"['Action', 'Thriller', 'Fantasy']",English,1998,122.52,953.24,False
+M0586,Movie 586,"['Documentary', 'Thriller']",English,1990,139.19,944.0,False
+M0572,Movie 572,"['Thriller', 'Documentary']",English,1993,91.22,932.54,False
+M0248,Movie 248,['Drama'],Hindi,1991,103.34,929.41,False
+M0744,Movie 744,"['Sci-Fi', 'Romance']",Hindi,2016,127.04,921.42,False
+M0072,Movie 72,"['Thriller', 'Action']",English,2022,126.59,921.16,False
+M0131,Movie 131,"['Documentary', 'Drama', 'Fantasy']",Hindi,2014,120.17,917.76,False
+M0970,Movie 970,"['Drama', 'Documentary', 'Romance']",English,2005,139.61,914.86,False
+M0126,Movie 126,['Comedy'],English,1997,116.43,911.59,False
+M0832,Movie 832,"['Fantasy', 'Drama']",English,1994,126.38,905.85,False
+M0165,Movie 165,"['Comedy', 'Action', 'Documentary']",Hindi,2015,119.05,904.96,False
+M0940,Movie 940,"['Action', 'Thriller', 'Fantasy']",Hindi,2000,123.25,904.38,False
+M0014,Movie 14,"['Romance', 'Documentary', 'Fantasy']",Hindi,2022,136.38,894.18,False
+M0142,Movie 142,"['Romance', 'Sci-Fi']",Hindi,1996,98.89,891.2,False
+M0647,Movie 647,"['Thriller', 'Sci-Fi']",English,1999,103.89,890.47,False
+M0934,Movie 934,"['Sci-Fi', 'Action', 'Documentary']",English,2004,160.28,888.84,False
+M0607,Movie 607,"['Action', 'Documentary']",Hindi,2017,125.29,888.21,False
+M0590,Movie 590,['Action'],Hindi,2004,130.98,886.94,True
+M0190,Movie 190,['Thriller'],English,2019,132.53,886.62,False
+M0484,Movie 484,['Action'],English,1996,130.67,883.76,False
+M0630,Movie 630,['Documentary'],English,2003,97.04,882.78,False
+M0854,Movie 854,['Romance'],English,2009,98.67,881.9,False
+M0952,Movie 952,"['Comedy', 'Sci-Fi']",English,1996,129.07,879.93,False
+M0197,Movie 197,"['Romance', 'Drama']",English,1996,121.61,874.99,False
+M0073,Movie 73,"['Comedy', 'Drama', 'Thriller']",English,2006,122.81,874.42,False
+M0493,Movie 493,['Comedy'],Hindi,1999,137.11,867.08,False
+M0432,Movie 432,"['Romance', 'Documentary', 'Action']",English,2021,98.26,860.81,False
+M0018,Movie 18,['Comedy'],Hindi,1991,115.79,858.75,False
+M0767,Movie 767,['Drama'],English,1991,128.69,857.92,False
+M0588,Movie 588,['Action'],Hindi,2021,98.3,850.17,False
+M0600,Movie 600,['Romance'],English,1990,127.07,840.63,False
+M0982,Movie 982,"['Comedy', 'Drama']",English,2020,141.06,838.97,False
+M0833,Movie 833,"['Romance', 'Thriller']",Hindi,2004,106.67,838.55,False
+M0848,Movie 848,['Drama'],Hindi,1997,134.61,836.55,False
