@@ -2,3 +2,5 @@ frontend/node_modules
 frontend/.env
 backend/node_modules
 intell/app/core/user_activity/candidates_with_embeddings
+backend/making movie json/node_modules
+backend/making movie json/.env

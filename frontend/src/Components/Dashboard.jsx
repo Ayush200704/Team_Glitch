@@ -18,6 +18,48 @@ export default function Dashboard() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const navigate = useNavigate();
+    const [showChatbot, setShowChatbot] = useState(false);
+    const [chatStep, setChatStep] = useState(0);
+    const [preferences, setPreferences] = useState({});
+    const [recommendations, setRecommendations] = useState([]);
+    const [chatLoading, setChatLoading] = useState(false);
+    const [customPrompt, setCustomPrompt] = useState("");
+    const [mode, setMode] = useState("preference"); // 'preference' or 'custom'
+
+    // Example questions
+    const questions = [
+        { key: "genre", text: "What genre do you prefer?", options: ["Action", "Comedy", "Drama", "Sci-Fi", "Romance", "Thriller"] },
+        { key: "length", text: "Preferred movie length?", options: ["Any", "< 90 min", "90-120 min", "> 120 min"] },
+        { key: "year", text: "Any preferred release year or range?", options: ["Any", "2020-2024", "2010-2019", "2000-2009", "Before 2000"] }
+    ];
+
+    const handlePreference = (key, value) => {
+        setPreferences(prev => ({ ...prev, [key]: value }));
+        setChatStep(prev => prev + 1);
+    };
+
+    const handleSubmitPreferences = async () => {
+        setChatLoading(true);
+        try {
+            let body;
+            if (mode === "preference") {
+                body = preferences;
+            } else {
+                body = { customPrompt };
+            }
+            const res = await fetch("http://localhost:3001/api/ai-recommend", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(body)
+            });
+            const data = await res.json();
+            setRecommendations(data.recommendations);
+            setCustomPrompt("");
+        } catch (e) {
+            setRecommendations([{ name: "Error fetching recommendations." }]);
+        }
+        setChatLoading(false);
+    };
 
     useEffect(() => {
         const options = {
@@ -53,7 +95,7 @@ export default function Dashboard() {
     const bannerOverview = featured && featured.overview;
 
     return (
-        <div className="bg-gray-900 h-screen text-white font-sans">
+        <div className="bg-gray-900 h-screen text-white font-sans relative">
             {/* Banner */}
             <div className="relative h-[260px] md:h-[380px] w-full flex items-end bg-cover bg-center transition-all duration-300" style={{ backgroundImage: bannerBg ? `url(${bannerBg})` : 'url(https://via.placeholder.com/1200x400?text=No+Image)' }}>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
@@ -121,6 +163,150 @@ export default function Dashboard() {
                     </button>
                 </div>
             </div>
+
+            {/* Ask AI to Find Button */}
+            <div className="px-4 md:px-8 py-2">
+                <button
+                    className="px-4 py-2 bg-purple-600 rounded-full font-bold shadow hover:bg-purple-700 transition"
+                    onClick={() => {
+                        setShowChatbot(true);
+                        setChatStep(0);
+                        setPreferences({});
+                        setRecommendations([]);
+                        setChatLoading(false);
+                    }}
+                >
+                    Ask AI to Find
+                </button>
+            </div>
+
+            {/* Chatbot Panel */}
+            {showChatbot && (
+                <div className="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-gray-800 shadow-lg z-50 flex flex-col">
+                    <div className="flex justify-between items-center p-4 border-b border-gray-700">
+                        <h2 className="text-lg font-bold">AI Movie Finder</h2>
+                        <button onClick={() => setShowChatbot(false)} className="text-2xl">&times;</button>
+                    </div>
+                    <div className="flex-1 p-4 overflow-y-auto">
+                        {/* Toggle Mode */}
+                        <div className="mb-4 flex items-center gap-4">
+                            <button
+                                className={`px-3 py-1 rounded-full font-semibold transition ${mode === "preference" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"}`}
+                                onClick={() => { setMode("preference"); setChatStep(0); setPreferences({}); setCustomPrompt(""); setRecommendations([]); }}
+                                disabled={mode === "preference"}
+                            >
+                                Preference Mode
+                            </button>
+                            <button
+                                className={`px-3 py-1 rounded-full font-semibold transition ${mode === "custom" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"}`}
+                                onClick={() => { setMode("custom"); setChatStep(questions.length); setPreferences({}); setCustomPrompt(""); setRecommendations([]); }}
+                                disabled={mode === "custom"}
+                            >
+                                Custom Prompt Mode
+                            </button>
+                        </div>
+                        {/* Preference Mode */}
+                        {mode === "preference" && chatStep < questions.length ? (
+                            <div>
+                                <div className="mb-4 font-semibold">{questions[chatStep].text}</div>
+                                <div className="flex flex-wrap gap-2">
+                                    {questions[chatStep].options.map(opt => (
+                                        <button
+                                            key={opt}
+                                            className="px-3 py-1 bg-gray-700 rounded hover:bg-purple-600"
+                                            onClick={() => handlePreference(questions[chatStep].key, opt)}
+                                        >
+                                            {opt}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        ) : mode === "preference" ? (
+                            <div>
+                                <div className="mb-4">
+                                    <span className="font-semibold">Your Preferences:</span>
+                                    <ul className="list-disc ml-5 mt-2 text-sm text-gray-300">
+                                        <li>Genre: {preferences.genre}</li>
+                                        <li>Length: {preferences.length}</li>
+                                        <li>Year: {preferences.year}</li>
+                                    </ul>
+                                </div>
+                                <button
+                                    className="px-4 py-2 bg-green-600 rounded-full font-bold shadow hover:bg-green-700 transition"
+                                    onClick={handleSubmitPreferences}
+                                    disabled={chatLoading}
+                                >
+                                    {chatLoading ? "Finding..." : "Get Recommendations"}
+                                </button>
+                                <div className="mt-4">
+                                    {recommendations.length > 0 && (
+                                        <div>
+                                            <div className="font-bold mb-2">Recommended Movies:</div>
+                                            <div className="grid gap-3">
+                                                {recommendations.map((rec, idx) => (
+                                                    <div key={idx} className="bg-gray-700 rounded-lg p-3 flex flex-col shadow-md">
+                                                        <div className="text-lg font-semibold mb-1 break-words whitespace-normal">{rec.name}</div>
+                                                        {rec.genre && rec.genre.length > 0 && (
+                                                            <div className="flex flex-wrap gap-2 mt-1">
+                                                                {rec.genre.map((g, i) => (
+                                                                    <span key={i} className="px-2 py-0.5 bg-purple-600 text-xs rounded-full text-white font-medium">{g}</span>
+                                                                ))}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        ) : (
+                            // Custom Prompt Mode
+                            <div>
+                                <div className="mb-4">
+                                    <label htmlFor="customPrompt" className="block text-sm font-medium mb-1">Type your custom prompt for the AI:</label>
+                                    <textarea
+                                        id="customPrompt"
+                                        className="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
+                                        rows={4}
+                                        placeholder="Type your custom request for the AI..."
+                                        value={customPrompt}
+                                        onChange={e => setCustomPrompt(e.target.value)}
+                                    />
+                                </div>
+                                <button
+                                    className="px-4 py-2 bg-green-600 rounded-full font-bold shadow hover:bg-green-700 transition"
+                                    onClick={handleSubmitPreferences}
+                                    disabled={chatLoading || !customPrompt.trim()}
+                                >
+                                    {chatLoading ? "Finding..." : "Get Recommendations"}
+                                </button>
+                                <div className="mt-4">
+                                    {recommendations.length > 0 && (
+                                        <div>
+                                            <div className="font-bold mb-2">Recommended Movies:</div>
+                                            <div className="grid gap-3">
+                                                {recommendations.map((rec, idx) => (
+                                                    <div key={idx} className="bg-gray-700 rounded-lg p-3 flex flex-col shadow-md">
+                                                        <div className="text-lg font-semibold mb-1 break-words whitespace-normal">{rec.name}</div>
+                                                        {rec.genre && rec.genre.length > 0 && (
+                                                            <div className="flex flex-wrap gap-2 mt-1">
+                                                                {rec.genre.map((g, i) => (
+                                                                    <span key={i} className="px-2 py-0.5 bg-purple-600 text-xs rounded-full text-white font-medium">{g}</span>
+                                                                ))}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            )}
 
             {/* Shows Grid */}
             <div className="px-4 md:px-8 py-4 md:py-6">

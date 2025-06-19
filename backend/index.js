@@ -1,10 +1,13 @@
-const express = require('express');
-const http = require('http');
-const { Server } = require('socket.io');
-const cors = require('cors');
+import express from 'express';
+import http from 'http';
+import { Server } from 'socket.io';
+import cors from 'cors';
+import fs from 'fs';
+import { groqApiCall } from './llm_utils.js'; // You need to implement this
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 const server = http.createServer(app);
 
 const io = new Server(server, {
@@ -16,8 +19,6 @@ const io = new Server(server, {
 const userMap = {};
 const roomUsers = {};
 const sessionHosts = {};
-
-
 
 io.on('connection', (socket) => {
     console.log('New user:', socket.id);
@@ -73,7 +74,6 @@ io.on('connection', (socket) => {
         io.to(roomId).emit('emoji-reaction', { emoji, username });
     });
 
-
     socket.on('leave-room', ({ roomId }) => {
         const user = userMap[socket.id];
         if (!user) return;
@@ -101,7 +101,6 @@ io.on('connection', (socket) => {
         }
     });
 
-
     socket.on('disconnect', () => {
         const user = userMap[socket.id];
         if (!user) return;
@@ -124,6 +123,43 @@ io.on('connection', (socket) => {
 
         delete userMap[socket.id];
     });
+});
+
+app.post('/api/ai-recommend', async (req, res) => {
+    const { customPrompt, ...preferences } = req.body;
+    const movies = JSON.parse(fs.readFileSync('./making movie json/movies_random_names.json', 'utf-8'));
+
+    let prompt = '';
+    // If customPrompt is provided, check if it's related to movie recommendations
+    if (customPrompt && customPrompt.trim()) {
+        const lowerPrompt = customPrompt.toLowerCase();
+        if (!lowerPrompt.includes('recommend') && !lowerPrompt.includes('suggest') && !lowerPrompt.includes('movie')) {
+            return res.json({ recommendations: [{ name: "Your prompt does not appear to be a movie recommendation request. Please ask for movie recommendations.", genre: [] }] });
+        }
+        prompt = `
+Given the following movies: ${JSON.stringify(movies).slice(0, 10000)}
+${customPrompt}
+Return ONLY a JSON array of 5 objects, each with "name" and "genre" fields. Do not include any explanation, markdown, or extra text.`;
+    } else {
+        prompt = `
+Given the following user preferences: ${JSON.stringify(preferences)}
+and the following movies: ${JSON.stringify(movies).slice(0, 10000)}
+Recommend 5 movies that best match the preferences.
+Return ONLY a JSON array of 5 objects, each with "name" and "genre" fields. Do not include any explanation, markdown, or extra text.`;
+    }
+
+    // Call your LLM API (Groq or Gemini)
+    let recommendations = [];
+    try {
+        const llmResponse = await groqApiCall(prompt);
+        console.log("LLM Response:", llmResponse);
+        recommendations = JSON.parse(llmResponse);
+    } catch (e) {
+        console.error("AI Recommendation Error:", e);
+        recommendations = [{ name: "AI failed to recommend movies.", genre: [] }];
+    }
+
+    res.json({ recommendations });
 });
 
 server.listen(3001, () => {

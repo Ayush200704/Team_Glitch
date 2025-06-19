@@ -1,0 +1,1001 @@
+movie_id,title,genre,language,release_year,duration_minutes,popularity_score,embedding_vector,trending_now
+M0000,Movie 0,"['Drama', 'Comedy']",Hindi,1990,117.7,387.18,[],False
+M0001,Movie 1,"['Action', 'Comedy', 'Drama']",Hindi,1995,101.77,346.11,[],True
+M0002,Movie 2,"['Romance', 'Thriller', 'Sci-Fi']",Telugu,2008,132.74,835.89,[],False
+M0003,Movie 3,"['Romance', 'Fantasy']",Telugu,2007,93.24,101.28,[],True
+M0004,Movie 4,['Sci-Fi'],Tamil,1995,141.25,675.89,[],False
+M0005,Movie 5,"['Sci-Fi', 'Drama', 'Comedy']",Malayalam,2022,118.53,248.73,[],True
+M0006,Movie 6,"['Romance', 'Fantasy', 'Documentary']",Tamil,2012,111.04,15.5,[],False
+M0007,Movie 7,"['Drama', 'Action', 'Sci-Fi']",Kannada,2012,99.91,166.76,[],False
+M0008,Movie 8,"['Action', 'Drama', 'Thriller']",Malayalam,2015,140.61,606.66,[],False
+M0009,Movie 9,"['Action', 'Comedy']",English,2002,106.96,709.13,[],False
+M0010,Movie 10,"['Drama', 'Thriller']",Tamil,1996,96.66,21.06,[],False
+M0011,Movie 11,['Fantasy'],Telugu,2004,141.03,36.43,[],False
+M0012,Movie 12,['Comedy'],Malayalam,2016,101.91,902.54,[],False
+M0013,Movie 13,"['Drama', 'Documentary', 'Sci-Fi']",Tamil,2015,118.11,73.31,[],False
+M0014,Movie 14,"['Romance', 'Documentary', 'Fantasy']",Hindi,2022,136.38,894.18,[],False
+M0015,Movie 15,"['Sci-Fi', 'Thriller']",English,2004,123.16,228.17,[],False
+M0016,Movie 16,"['Action', 'Sci-Fi']",Kannada,2016,154.62,740.02,[],False
+M0017,Movie 17,"['Thriller', 'Drama']",Hindi,1994,103.3,309.73,[],False
+M0018,Movie 18,['Comedy'],Hindi,1991,115.79,858.75,[],False
+M0019,Movie 19,"['Drama', 'Sci-Fi', 'Documentary']",English,2022,117.34,700.45,[],False
+M0020,Movie 20,"['Documentary', 'Sci-Fi']",Kannada,2005,132.42,401.81,[],False
+M0021,Movie 21,"['Documentary', 'Action']",Telugu,2012,145.77,76.3,[],False
+M0022,Movie 22,"['Fantasy', 'Comedy']",Malayalam,2005,121.47,732.7,[],True
+M0023,Movie 23,['Thriller'],Kannada,2003,117.25,616.88,[],False
+M0024,Movie 24,"['Fantasy', 'Drama']",Tamil,2018,90.34,2.91,[],False
+M0025,Movie 25,"['Documentary', 'Action']",Hindi,2015,122.25,9.42,[],True
+M0026,Movie 26,"['Action', 'Drama', 'Thriller']",Tamil,2004,106.99,808.79,[],False
+M0027,Movie 27,"['Drama', 'Documentary']",Telugu,1992,132.37,259.4,[],False
+M0028,Movie 28,['Action'],Tamil,2012,111.81,636.13,[],False
+M0029,Movie 29,['Comedy'],Kannada,2018,115.19,454.21,[],False
+M0030,Movie 30,"['Action', 'Comedy']",Tamil,2023,90.79,863.43,[],False
+M0031,Movie 31,['Drama'],Telugu,2022,83.77,916.96,[],False
+M0032,Movie 32,"['Fantasy', 'Thriller']",Telugu,2012,157.22,996.81,[],False
+M0033,Movie 33,['Fantasy'],Telugu,1996,122.59,153.68,[],False
+M0034,Movie 34,"['Romance', 'Action', 'Fantasy']",Kannada,1992,128.09,862.96,[],False
+M0035,Movie 35,"['Sci-Fi', 'Drama', 'Romance']",Telugu,2021,101.75,266.02,[],True
+M0036,Movie 36,"['Drama', 'Romance', 'Documentary']",Hindi,2020,137.51,590.82,[],False
+M0037,Movie 37,"['Thriller', 'Fantasy']",Telugu,2007,133.9,505.77,[],False
+M0038,Movie 38,"['Fantasy', 'Action']",Tamil,1996,103.95,17.99,[],False
+M0039,Movie 39,"['Fantasy', 'Comedy']",Malayalam,1990,98.81,932.77,[],False
+M0040,Movie 40,['Fantasy'],Tamil,2003,105.35,78.33,[],False
+M0041,Movie 41,['Sci-Fi'],Malayalam,2021,119.43,688.22,[],False
+M0042,Movie 42,['Documentary'],Tamil,1995,123.34,785.01,[],False
+M0043,Movie 43,"['Sci-Fi', 'Drama', 'Romance']",Kannada,1999,120.77,795.29,[],False
+M0044,Movie 44,['Romance'],Tamil,1996,145.97,135.49,[],False
+M0045,Movie 45,"['Fantasy', 'Action']",Kannada,2015,105.7,447.57,[],False
+M0046,Movie 46,['Fantasy'],Kannada,2023,98.27,829.43,[],False
+M0047,Movie 47,"['Sci-Fi', 'Thriller']",Telugu,2019,120.0,302.68,[],False
+M0048,Movie 48,"['Comedy', 'Drama']",Hindi,2010,86.14,467.75,[],False
+M0049,Movie 49,"['Thriller', 'Action', 'Fantasy']",Malayalam,2006,133.91,272.79,[],False
+M0050,Movie 50,['Sci-Fi'],Telugu,2022,121.96,463.55,[],False
+M0051,Movie 51,"['Comedy', 'Thriller']",Telugu,1999,113.24,887.84,[],False
+M0052,Movie 52,['Comedy'],Kannada,2001,112.13,455.12,[],False
+M0053,Movie 53,"['Romance', 'Thriller']",Kannada,2005,138.2,555.91,[],False
+M0054,Movie 54,"['Comedy', 'Fantasy', 'Sci-Fi']",Malayalam,2021,137.56,403.98,[],False
+M0055,Movie 55,['Comedy'],Tamil,2004,115.07,460.12,[],False
+M0056,Movie 56,"['Documentary', 'Romance', 'Action']",Tamil,2016,131.84,15.17,[],False
+M0057,Movie 57,"['Documentary', 'Sci-Fi', 'Action']",Telugu,2017,137.27,283.75,[],False
+M0058,Movie 58,"['Sci-Fi', 'Fantasy', 'Documentary']",English,2006,126.71,436.58,[],False
+M0059,Movie 59,"['Comedy', 'Romance']",English,1991,115.89,633.8,[],False
+M0060,Movie 60,['Documentary'],Tamil,1996,127.62,450.05,[],False
+M0061,Movie 61,"['Action', 'Fantasy']",English,2002,99.22,337.82,[],True
+M0062,Movie 62,"['Drama', 'Comedy']",Tamil,2004,121.42,388.1,[],False
+M0063,Movie 63,"['Thriller', 'Comedy', 'Romance']",Kannada,2014,115.34,242.29,[],False
+M0064,Movie 64,"['Drama', 'Documentary']",Telugu,2012,112.2,924.49,[],False
+M0065,Movie 65,"['Action', 'Drama']",Hindi,2011,85.47,521.74,[],False
+M0066,Movie 66,"['Thriller', 'Action', 'Fantasy']",Telugu,2015,99.45,13.41,[],False
+M0067,Movie 67,"['Fantasy', 'Romance', 'Action']",Tamil,2022,110.28,19.45,[],False
+M0068,Movie 68,"['Drama', 'Romance', 'Action']",Tamil,2000,137.9,972.96,[],True
+M0069,Movie 69,"['Romance', 'Comedy', 'Action']",Telugu,1999,125.72,221.45,[],False
+M0070,Movie 70,"['Comedy', 'Drama']",Malayalam,2014,138.79,805.61,[],False
+M0071,Movie 71,"['Thriller', 'Fantasy']",Tamil,2013,144.86,58.28,[],False
+M0072,Movie 72,"['Thriller', 'Action']",English,2022,126.59,921.16,[],False
+M0073,Movie 73,"['Comedy', 'Drama', 'Thriller']",English,2006,122.81,874.42,[],False
+M0074,Movie 74,"['Documentary', 'Romance', 'Action']",Tamil,2013,100.54,571.09,[],False
+M0075,Movie 75,"['Comedy', 'Documentary', 'Fantasy']",Tamil,1991,159.73,9.0,[],False
+M0076,Movie 76,"['Fantasy', 'Romance']",Malayalam,2021,91.64,257.81,[],False
+M0077,Movie 77,"['Drama', 'Fantasy']",English,2013,122.37,406.82,[],False
+M0078,Movie 78,"['Sci-Fi', 'Drama', 'Comedy']",Tamil,1998,136.66,460.06,[],False
+M0079,Movie 79,['Fantasy'],Tamil,1993,136.93,297.68,[],False
+M0080,Movie 80,"['Action', 'Sci-Fi']",Malayalam,2006,96.9,32.95,[],False
+M0081,Movie 81,"['Comedy', 'Documentary', 'Drama']",Malayalam,2006,111.6,590.13,[],False
+M0082,Movie 82,"['Comedy', 'Documentary', 'Fantasy']",Telugu,2019,104.02,524.15,[],False
+M0083,Movie 83,"['Fantasy', 'Thriller', 'Action']",Malayalam,2000,80.39,283.0,[],False
+M0084,Movie 84,"['Thriller', 'Comedy', 'Action']",Hindi,2010,122.61,37.98,[],False
+M0085,Movie 85,"['Sci-Fi', 'Fantasy']",English,2010,105.65,994.59,[],False
+M0086,Movie 86,['Thriller'],Telugu,2007,150.11,481.99,[],False
+M0087,Movie 87,"['Fantasy', 'Action', 'Comedy']",Hindi,2018,132.3,756.0,[],False
+M0088,Movie 88,['Sci-Fi'],Tamil,2013,120.83,452.31,[],False
+M0089,Movie 89,"['Comedy', 'Thriller']",Tamil,1999,110.55,43.17,[],False
+M0090,Movie 90,"['Documentary', 'Thriller']",Telugu,2006,122.3,309.6,[],False
+M0091,Movie 91,['Comedy'],Malayalam,2007,114.88,320.11,[],False
+M0092,Movie 92,['Thriller'],Tamil,2009,121.39,838.35,[],False
+M0093,Movie 93,"['Thriller', 'Action']",Kannada,2007,158.03,654.23,[],False
+M0094,Movie 94,"['Drama', 'Sci-Fi', 'Comedy']",Telugu,2006,98.7,275.43,[],False
+M0095,Movie 95,"['Comedy', 'Action', 'Romance']",Hindi,1998,116.63,967.74,[],False
+M0096,Movie 96,['Comedy'],Telugu,2003,134.13,321.54,[],False
+M0097,Movie 97,['Comedy'],English,2018,112.0,998.23,[],False
+M0098,Movie 98,"['Documentary', 'Drama', 'Romance']",Malayalam,2020,151.61,996.16,[],False
+M0099,Movie 99,"['Romance', 'Documentary']",Malayalam,1993,133.57,191.21,[],False
+M0100,Movie 100,"['Action', 'Fantasy', 'Sci-Fi']",Telugu,2007,105.62,312.74,[],False
+M0101,Movie 101,"['Romance', 'Action']",Tamil,2009,124.08,486.04,[],False
+M0102,Movie 102,['Action'],Tamil,1998,105.91,664.1,[],False
+M0103,Movie 103,"['Romance', 'Comedy']",Kannada,2002,104.07,528.05,[],False
+M0104,Movie 104,"['Documentary', 'Romance', 'Comedy']",Kannada,2004,117.2,969.44,[],False
+M0105,Movie 105,"['Fantasy', 'Thriller']",Malayalam,2016,145.28,723.99,[],False
+M0106,Movie 106,['Comedy'],Kannada,2004,134.91,212.04,[],False
+M0107,Movie 107,"['Drama', 'Sci-Fi']",Hindi,2017,119.55,105.1,[],False
+M0108,Movie 108,"['Sci-Fi', 'Action']",Kannada,2008,135.62,688.4,[],True
+M0109,Movie 109,['Thriller'],Hindi,2015,125.37,158.45,[],False
+M0110,Movie 110,"['Thriller', 'Fantasy']",Kannada,2015,96.6,787.68,[],False
+M0111,Movie 111,['Action'],Malayalam,2014,117.1,311.04,[],False
+M0112,Movie 112,"['Comedy', 'Fantasy']",Malayalam,2015,118.54,326.89,[],False
+M0113,Movie 113,"['Thriller', 'Documentary']",Hindi,2015,135.23,10.8,[],False
+M0114,Movie 114,"['Sci-Fi', 'Drama']",Telugu,2017,108.67,701.01,[],False
+M0115,Movie 115,"['Drama', 'Romance']",Malayalam,2007,101.75,113.27,[],False
+M0116,Movie 116,"['Sci-Fi', 'Thriller', 'Romance']",Telugu,2021,119.09,772.88,[],False
+M0117,Movie 117,['Sci-Fi'],Tamil,1992,107.09,491.87,[],False
+M0118,Movie 118,['Drama'],Hindi,1991,113.53,784.28,[],False
+M0119,Movie 119,"['Thriller', 'Fantasy']",Malayalam,2022,118.38,583.93,[],True
+M0120,Movie 120,"['Sci-Fi', 'Fantasy', 'Thriller']",English,2008,112.34,82.43,[],False
+M0121,Movie 121,['Drama'],Tamil,2006,139.26,765.65,[],False
+M0122,Movie 122,"['Documentary', 'Sci-Fi']",Telugu,2022,148.29,69.8,[],False
+M0123,Movie 123,['Documentary'],Malayalam,2001,137.26,478.7,[],False
+M0124,Movie 124,"['Drama', 'Documentary']",Hindi,1992,84.58,172.35,[],True
+M0125,Movie 125,['Action'],Kannada,2015,107.16,752.34,[],False
+M0126,Movie 126,['Comedy'],English,1997,116.43,911.59,[],False
+M0127,Movie 127,"['Fantasy', 'Drama', 'Comedy']",Telugu,1996,83.07,554.13,[],False
+M0128,Movie 128,['Action'],Tamil,2005,102.48,527.15,[],False
+M0129,Movie 129,['Drama'],Hindi,2013,116.17,763.96,[],False
+M0130,Movie 130,['Fantasy'],English,1990,111.02,5.08,[],False
+M0131,Movie 131,"['Documentary', 'Drama', 'Fantasy']",Hindi,2014,120.17,917.76,[],False
+M0132,Movie 132,"['Drama', 'Sci-Fi']",Malayalam,1999,92.38,197.45,[],False
+M0133,Movie 133,"['Romance', 'Sci-Fi', 'Thriller']",Kannada,2005,110.79,984.12,[],False
+M0134,Movie 134,"['Fantasy', 'Drama']",Tamil,2005,123.04,736.25,[],False
+M0135,Movie 135,"['Sci-Fi', 'Thriller', 'Action']",Hindi,1997,120.2,774.25,[],False
+M0136,Movie 136,"['Comedy', 'Sci-Fi']",Telugu,2018,128.94,656.2,[],False
+M0137,Movie 137,"['Thriller', 'Action', 'Comedy']",Malayalam,2017,127.77,471.66,[],False
+M0138,Movie 138,['Drama'],Malayalam,1995,111.86,571.63,[],True
+M0139,Movie 139,"['Documentary', 'Drama']",Tamil,2005,122.4,46.4,[],False
+M0140,Movie 140,"['Fantasy', 'Comedy', 'Documentary']",Malayalam,2009,104.0,623.96,[],False
+M0141,Movie 141,"['Drama', 'Comedy', 'Documentary']",Telugu,2005,114.6,626.1,[],False
+M0142,Movie 142,"['Romance', 'Sci-Fi']",Hindi,1996,98.89,891.2,[],False
+M0143,Movie 143,"['Thriller', 'Fantasy', 'Action']",Tamil,2003,141.31,505.66,[],False
+M0144,Movie 144,"['Sci-Fi', 'Thriller', 'Drama']",Malayalam,2015,114.53,77.14,[],False
+M0145,Movie 145,"['Sci-Fi', 'Fantasy']",Malayalam,2015,141.28,306.2,[],False
+M0146,Movie 146,"['Comedy', 'Fantasy', 'Sci-Fi']",Telugu,2003,126.23,655.63,[],False
+M0147,Movie 147,"['Documentary', 'Sci-Fi']",Kannada,1996,102.29,239.26,[],False
+M0148,Movie 148,['Comedy'],Kannada,2022,125.02,280.53,[],False
+M0149,Movie 149,['Documentary'],Malayalam,2015,136.19,820.47,[],False
+M0150,Movie 150,['Action'],Hindi,2009,118.45,584.32,[],False
+M0151,Movie 151,['Drama'],Tamil,1992,121.48,508.53,[],False
+M0152,Movie 152,['Drama'],Malayalam,1993,108.97,318.45,[],False
+M0153,Movie 153,"['Action', 'Documentary']",English,2015,120.48,730.93,[],False
+M0154,Movie 154,"['Documentary', 'Comedy']",Tamil,2000,124.76,287.72,[],False
+M0155,Movie 155,['Romance'],Kannada,1991,108.42,737.06,[],False
+M0156,Movie 156,"['Sci-Fi', 'Fantasy']",Malayalam,2003,98.41,70.1,[],False
+M0157,Movie 157,['Sci-Fi'],Telugu,2019,145.76,864.54,[],False
+M0158,Movie 158,"['Thriller', 'Fantasy']",English,2001,132.08,499.57,[],False
+M0159,Movie 159,"['Fantasy', 'Romance']",Malayalam,2015,109.05,438.51,[],False
+M0160,Movie 160,"['Documentary', 'Romance', 'Comedy']",Hindi,2022,124.39,611.02,[],True
+M0161,Movie 161,['Documentary'],English,2002,90.43,624.19,[],True
+M0162,Movie 162,"['Documentary', 'Comedy', 'Action']",Malayalam,2003,80.46,132.04,[],False
+M0163,Movie 163,"['Thriller', 'Sci-Fi']",Hindi,2013,141.68,756.23,[],False
+M0164,Movie 164,"['Thriller', 'Romance']",English,2023,124.59,275.93,[],False
+M0165,Movie 165,"['Comedy', 'Action', 'Documentary']",Hindi,2015,119.05,904.96,[],False
+M0166,Movie 166,"['Thriller', 'Drama']",Hindi,2010,124.65,817.85,[],False
+M0167,Movie 167,"['Action', 'Comedy']",English,2017,184.52,346.27,[],False
+M0168,Movie 168,"['Fantasy', 'Thriller']",English,1991,137.38,807.74,[],False
+M0169,Movie 169,"['Documentary', 'Comedy', 'Romance']",Hindi,1998,99.09,356.39,[],False
+M0170,Movie 170,['Sci-Fi'],Kannada,2012,86.39,100.95,[],False
+M0171,Movie 171,"['Fantasy', 'Comedy', 'Sci-Fi']",English,2004,141.09,961.89,[],False
+M0172,Movie 172,['Thriller'],Malayalam,2002,137.12,652.6,[],False
+M0173,Movie 173,"['Fantasy', 'Comedy', 'Action']",Tamil,2012,131.5,456.1,[],False
+M0174,Movie 174,"['Comedy', 'Drama', 'Thriller']",Telugu,2006,103.74,397.77,[],True
+M0175,Movie 175,"['Documentary', 'Drama', 'Thriller']",Hindi,1991,127.27,324.71,[],False
+M0176,Movie 176,['Romance'],Hindi,2009,105.53,981.45,[],False
+M0177,Movie 177,"['Sci-Fi', 'Comedy', 'Romance']",Telugu,2009,133.26,134.75,[],True
+M0178,Movie 178,"['Drama', 'Action', 'Thriller']",Kannada,1992,139.65,314.81,[],False
+M0179,Movie 179,"['Documentary', 'Comedy', 'Fantasy']",Telugu,2001,109.13,485.5,[],False
+M0180,Movie 180,"['Thriller', 'Action']",English,1991,142.64,478.0,[],False
+M0181,Movie 181,['Sci-Fi'],Telugu,2003,122.3,471.37,[],False
+M0182,Movie 182,"['Sci-Fi', 'Documentary']",Hindi,2005,129.84,175.78,[],False
+M0183,Movie 183,"['Romance', 'Drama']",Telugu,2008,93.81,144.93,[],False
+M0184,Movie 184,['Comedy'],Tamil,2023,124.64,254.77,[],False
+M0185,Movie 185,"['Fantasy', 'Action']",Malayalam,1995,106.49,914.53,[],True
+M0186,Movie 186,['Action'],English,2002,129.49,113.05,[],False
+M0187,Movie 187,"['Documentary', 'Thriller']",Telugu,2011,149.34,757.43,[],False
+M0188,Movie 188,"['Action', 'Sci-Fi', 'Romance']",Hindi,2007,125.79,757.55,[],False
+M0189,Movie 189,['Thriller'],Malayalam,2001,101.98,809.77,[],False
+M0190,Movie 190,['Thriller'],English,2019,132.53,886.62,[],False
+M0191,Movie 191,"['Comedy', 'Sci-Fi']",Hindi,1996,128.04,263.04,[],False
+M0192,Movie 192,"['Thriller', 'Fantasy']",Kannada,2021,161.17,224.56,[],False
+M0193,Movie 193,"['Sci-Fi', 'Documentary', 'Comedy']",Tamil,2008,125.08,465.51,[],False
+M0194,Movie 194,"['Thriller', 'Action', 'Fantasy']",Kannada,1995,108.29,265.09,[],False
+M0195,Movie 195,"['Action', 'Fantasy']",Tamil,2009,135.41,734.31,[],False
+M0196,Movie 196,['Comedy'],Telugu,2016,117.45,635.94,[],True
+M0197,Movie 197,"['Romance', 'Drama']",English,1996,121.61,874.99,[],False
+M0198,Movie 198,['Comedy'],Telugu,1994,101.43,82.74,[],False
+M0199,Movie 199,['Documentary'],Tamil,2000,117.55,915.08,[],False
+M0200,Movie 200,['Sci-Fi'],Tamil,2004,120.62,293.35,[],False
+M0201,Movie 201,"['Sci-Fi', 'Romance', 'Action']",Tamil,1992,117.43,490.69,[],False
+M0202,Movie 202,['Thriller'],Malayalam,1994,108.18,438.61,[],False
+M0203,Movie 203,['Action'],Hindi,2012,125.76,760.31,[],False
+M0204,Movie 204,"['Documentary', 'Action']",English,1998,101.53,420.33,[],False
+M0205,Movie 205,"['Fantasy', 'Documentary']",Telugu,2004,96.82,943.55,[],False
+M0206,Movie 206,"['Thriller', 'Documentary', 'Comedy']",Telugu,1992,134.19,902.53,[],False
+M0207,Movie 207,"['Thriller', 'Romance', 'Fantasy']",Kannada,2018,132.36,872.16,[],False
+M0208,Movie 208,"['Sci-Fi', 'Thriller', 'Action']",Tamil,1995,93.85,71.26,[],False
+M0209,Movie 209,"['Comedy', 'Fantasy', 'Thriller']",Tamil,2006,83.41,854.26,[],False
+M0210,Movie 210,"['Drama', 'Fantasy']",Tamil,2015,99.83,781.64,[],False
+M0211,Movie 211,['Comedy'],Telugu,2010,117.43,103.51,[],False
+M0212,Movie 212,"['Comedy', 'Thriller']",Kannada,1997,143.09,107.41,[],False
+M0213,Movie 213,"['Romance', 'Comedy']",Hindi,2010,116.95,101.16,[],False
+M0214,Movie 214,"['Action', 'Fantasy', 'Drama']",Malayalam,2000,104.61,11.33,[],False
+M0215,Movie 215,"['Romance', 'Sci-Fi']",English,1997,122.97,548.63,[],False
+M0216,Movie 216,"['Action', 'Thriller', 'Sci-Fi']",Hindi,2013,117.72,973.39,[],False
+M0217,Movie 217,"['Thriller', 'Action']",Telugu,2003,92.38,438.68,[],False
+M0218,Movie 218,"['Comedy', 'Action', 'Fantasy']",Malayalam,2003,92.5,540.76,[],False
+M0219,Movie 219,['Comedy'],Malayalam,1999,93.04,967.97,[],False
+M0220,Movie 220,"['Sci-Fi', 'Fantasy', 'Action']",Malayalam,2001,169.6,255.18,[],False
+M0221,Movie 221,['Drama'],Tamil,2023,137.2,858.47,[],False
+M0222,Movie 222,['Drama'],English,1999,108.13,546.39,[],False
+M0223,Movie 223,"['Action', 'Sci-Fi', 'Thriller']",Telugu,2006,142.17,569.48,[],False
+M0224,Movie 224,"['Fantasy', 'Action', 'Sci-Fi']",Telugu,2006,108.64,343.17,[],False
+M0225,Movie 225,['Documentary'],Malayalam,1992,141.5,561.58,[],True
+M0226,Movie 226,"['Action', 'Sci-Fi', 'Comedy']",Telugu,2020,121.61,73.14,[],False
+M0227,Movie 227,"['Romance', 'Fantasy']",English,1990,106.82,764.64,[],False
+M0228,Movie 228,"['Fantasy', 'Comedy', 'Romance']",English,2001,133.6,284.69,[],False
+M0229,Movie 229,['Drama'],Kannada,1993,122.75,887.61,[],False
+M0230,Movie 230,['Documentary'],Kannada,2002,127.97,367.85,[],False
+M0231,Movie 231,"['Documentary', 'Romance']",Hindi,2023,124.31,142.82,[],False
+M0232,Movie 232,['Sci-Fi'],English,2010,124.1,695.88,[],False
+M0233,Movie 233,"['Comedy', 'Documentary', 'Sci-Fi']",English,2011,136.01,164.58,[],False
+M0234,Movie 234,"['Sci-Fi', 'Romance']",English,1993,171.68,753.68,[],True
+M0235,Movie 235,['Sci-Fi'],Kannada,2007,144.98,968.11,[],True
+M0236,Movie 236,"['Thriller', 'Comedy', 'Documentary']",Malayalam,1994,124.39,779.55,[],False
+M0237,Movie 237,"['Thriller', 'Comedy']",Malayalam,2008,113.79,22.45,[],False
+M0238,Movie 238,"['Romance', 'Thriller']",Telugu,1991,115.99,599.89,[],False
+M0239,Movie 239,['Drama'],Malayalam,2001,94.88,695.41,[],False
+M0240,Movie 240,"['Fantasy', 'Documentary']",Tamil,2006,133.29,825.46,[],False
+M0241,Movie 241,"['Fantasy', 'Thriller', 'Documentary']",Kannada,1999,99.7,56.0,[],False
+M0242,Movie 242,"['Sci-Fi', 'Thriller']",English,2023,112.55,480.11,[],False
+M0243,Movie 243,['Documentary'],Malayalam,1995,133.41,535.37,[],True
+M0244,Movie 244,"['Documentary', 'Romance', 'Comedy']",Kannada,1997,115.25,169.12,[],False
+M0245,Movie 245,"['Drama', 'Documentary']",Malayalam,2000,110.15,322.45,[],False
+M0246,Movie 246,"['Documentary', 'Thriller']",Hindi,2001,96.05,440.22,[],False
+M0247,Movie 247,['Sci-Fi'],English,1998,144.11,833.21,[],False
+M0248,Movie 248,['Drama'],Hindi,1991,103.34,929.41,[],False
+M0249,Movie 249,"['Documentary', 'Action']",English,1997,108.28,628.42,[],False
+M0250,Movie 250,"['Documentary', 'Comedy', 'Action']",Kannada,2000,84.17,394.95,[],False
+M0251,Movie 251,['Thriller'],Telugu,1999,119.6,254.03,[],False
+M0252,Movie 252,"['Comedy', 'Documentary']",Malayalam,2010,113.33,982.14,[],False
+M0253,Movie 253,"['Sci-Fi', 'Fantasy', 'Romance']",Malayalam,2009,123.64,983.02,[],False
+M0254,Movie 254,"['Drama', 'Romance']",Tamil,1997,96.51,924.98,[],False
+M0255,Movie 255,['Romance'],Hindi,2018,134.68,785.67,[],False
+M0256,Movie 256,"['Action', 'Drama']",Malayalam,2001,83.22,325.78,[],False
+M0257,Movie 257,"['Documentary', 'Fantasy']",Kannada,2003,118.16,817.0,[],False
+M0258,Movie 258,"['Action', 'Fantasy', 'Documentary']",Telugu,2010,122.31,408.79,[],False
+M0259,Movie 259,"['Thriller', 'Documentary', 'Drama']",Kannada,2011,121.16,326.77,[],True
+M0260,Movie 260,"['Sci-Fi', 'Fantasy']",Hindi,2010,123.16,744.87,[],False
+M0261,Movie 261,"['Sci-Fi', 'Fantasy']",Tamil,2019,135.77,79.65,[],False
+M0262,Movie 262,['Romance'],Malayalam,2009,146.49,48.56,[],False
+M0263,Movie 263,"['Fantasy', 'Action', 'Drama']",Kannada,2013,116.89,447.95,[],False
+M0264,Movie 264,['Drama'],English,2012,100.64,445.64,[],False
+M0265,Movie 265,['Sci-Fi'],Telugu,1996,131.21,895.64,[],True
+M0266,Movie 266,"['Documentary', 'Thriller']",Kannada,1998,114.4,126.15,[],False
+M0267,Movie 267,"['Comedy', 'Documentary', 'Action']",Telugu,1990,145.29,123.28,[],False
+M0268,Movie 268,"['Comedy', 'Romance']",Malayalam,2015,107.96,147.45,[],False
+M0269,Movie 269,"['Action', 'Documentary', 'Comedy']",English,2011,102.84,29.74,[],False
+M0270,Movie 270,"['Documentary', 'Sci-Fi', 'Action']",Tamil,1999,122.88,71.73,[],False
+M0271,Movie 271,"['Documentary', 'Fantasy']",Tamil,1995,85.19,659.87,[],False
+M0272,Movie 272,['Sci-Fi'],English,2006,110.65,431.58,[],True
+M0273,Movie 273,"['Thriller', 'Romance']",Telugu,2013,113.4,763.6,[],False
+M0274,Movie 274,"['Action', 'Fantasy', 'Sci-Fi']",Malayalam,1999,124.41,992.6,[],False
+M0275,Movie 275,"['Drama', 'Action', 'Romance']",Kannada,1997,100.07,659.03,[],False
+M0276,Movie 276,"['Romance', 'Sci-Fi']",English,2010,102.41,50.46,[],False
+M0277,Movie 277,['Documentary'],Hindi,1995,143.14,104.56,[],True
+M0278,Movie 278,['Fantasy'],Telugu,2010,119.73,881.0,[],False
+M0279,Movie 279,['Romance'],Tamil,2013,137.29,527.5,[],False
+M0280,Movie 280,['Thriller'],English,2022,109.16,824.84,[],False
+M0281,Movie 281,['Drama'],Tamil,2007,118.91,856.61,[],False
+M0282,Movie 282,"['Sci-Fi', 'Romance']",Telugu,2017,124.29,927.67,[],False
+M0283,Movie 283,['Fantasy'],Tamil,2021,154.95,949.83,[],False
+M0284,Movie 284,"['Romance', 'Documentary', 'Action']",English,2001,115.65,554.83,[],False
+M0285,Movie 285,"['Documentary', 'Fantasy', 'Sci-Fi']",Telugu,2016,116.67,341.02,[],False
+M0286,Movie 286,"['Drama', 'Sci-Fi', 'Thriller']",Hindi,1999,141.96,961.86,[],False
+M0287,Movie 287,"['Romance', 'Action', 'Comedy']",English,2021,112.4,547.41,[],False
+M0288,Movie 288,"['Documentary', 'Action', 'Romance']",Kannada,2015,125.69,64.25,[],True
+M0289,Movie 289,"['Comedy', 'Romance']",Malayalam,2014,140.22,642.78,[],False
+M0290,Movie 290,"['Sci-Fi', 'Action', 'Comedy']",English,2000,108.48,587.68,[],False
+M0291,Movie 291,"['Action', 'Documentary', 'Romance']",Telugu,2012,126.81,895.79,[],False
+M0292,Movie 292,['Romance'],Malayalam,2023,154.91,653.19,[],False
+M0293,Movie 293,"['Action', 'Thriller']",English,2012,138.43,349.05,[],False
+M0294,Movie 294,"['Action', 'Sci-Fi']",Hindi,2018,125.7,966.23,[],False
+M0295,Movie 295,['Documentary'],Hindi,2020,115.51,801.62,[],True
+M0296,Movie 296,"['Documentary', 'Comedy']",Kannada,1996,107.91,630.42,[],False
+M0297,Movie 297,"['Action', 'Comedy', 'Drama']",Tamil,2022,100.24,292.93,[],False
+M0298,Movie 298,"['Fantasy', 'Romance', 'Comedy']",Malayalam,2010,150.19,373.54,[],False
+M0299,Movie 299,['Action'],Telugu,1991,146.31,669.97,[],False
+M0300,Movie 300,['Action'],Telugu,2007,106.86,71.98,[],False
+M0301,Movie 301,"['Thriller', 'Comedy', 'Romance']",Tamil,2022,126.75,256.68,[],False
+M0302,Movie 302,"['Action', 'Sci-Fi', 'Romance']",Hindi,2023,122.23,713.9,[],False
+M0303,Movie 303,['Romance'],Hindi,2009,143.69,480.02,[],False
+M0304,Movie 304,"['Action', 'Documentary', 'Sci-Fi']",English,2007,127.66,402.39,[],False
+M0305,Movie 305,"['Comedy', 'Drama']",Kannada,2013,119.54,151.46,[],False
+M0306,Movie 306,"['Romance', 'Thriller', 'Drama']",Malayalam,1997,109.17,441.85,[],False
+M0307,Movie 307,"['Romance', 'Sci-Fi', 'Thriller']",Kannada,2019,126.82,770.69,[],False
+M0308,Movie 308,['Thriller'],Kannada,1999,113.04,264.01,[],False
+M0309,Movie 309,"['Sci-Fi', 'Documentary']",English,2012,124.41,5.4,[],False
+M0310,Movie 310,"['Thriller', 'Sci-Fi']",Kannada,2000,118.48,668.5,[],False
+M0311,Movie 311,['Drama'],Tamil,1991,112.55,972.63,[],False
+M0312,Movie 312,"['Comedy', 'Romance', 'Sci-Fi']",English,2015,100.55,606.83,[],True
+M0313,Movie 313,"['Documentary', 'Sci-Fi']",Tamil,2022,130.28,119.92,[],False
+M0314,Movie 314,['Action'],English,2002,120.85,320.73,[],True
+M0315,Movie 315,"['Action', 'Sci-Fi']",Kannada,2014,155.75,867.64,[],False
+M0316,Movie 316,['Thriller'],Tamil,1993,99.35,232.57,[],False
+M0317,Movie 317,"['Romance', 'Action', 'Sci-Fi']",Tamil,2008,132.51,607.7,[],False
+M0318,Movie 318,"['Drama', 'Thriller', 'Romance']",Tamil,2007,118.35,402.67,[],False
+M0319,Movie 319,['Drama'],English,2019,162.0,207.84,[],False
+M0320,Movie 320,"['Documentary', 'Thriller']",Telugu,2008,130.98,813.41,[],False
+M0321,Movie 321,"['Action', 'Drama', 'Fantasy']",Kannada,2012,126.49,742.83,[],False
+M0322,Movie 322,"['Thriller', 'Comedy']",Tamil,2005,118.4,661.59,[],False
+M0323,Movie 323,"['Documentary', 'Sci-Fi']",Malayalam,1990,105.94,236.34,[],False
+M0324,Movie 324,"['Documentary', 'Thriller', 'Action']",Telugu,2001,126.23,97.86,[],False
+M0325,Movie 325,"['Action', 'Thriller']",Malayalam,2013,92.35,576.16,[],False
+M0326,Movie 326,['Sci-Fi'],Kannada,2023,93.27,553.68,[],False
+M0327,Movie 327,['Documentary'],Kannada,1997,140.25,188.39,[],False
+M0328,Movie 328,"['Action', 'Sci-Fi', 'Thriller']",Tamil,2007,84.76,56.25,[],False
+M0329,Movie 329,['Sci-Fi'],Tamil,1994,113.61,80.71,[],False
+M0330,Movie 330,"['Romance', 'Thriller']",English,2015,99.02,992.77,[],False
+M0331,Movie 331,"['Fantasy', 'Documentary', 'Romance']",Telugu,2019,111.95,783.58,[],False
+M0332,Movie 332,"['Sci-Fi', 'Drama', 'Romance']",Telugu,2002,123.69,921.99,[],False
+M0333,Movie 333,"['Thriller', 'Documentary', 'Fantasy']",Tamil,2008,139.69,195.05,[],False
+M0334,Movie 334,"['Sci-Fi', 'Thriller']",Kannada,2018,144.35,960.57,[],False
+M0335,Movie 335,['Action'],Tamil,1992,101.62,142.65,[],False
+M0336,Movie 336,"['Romance', 'Documentary']",Kannada,2015,110.68,509.08,[],False
+M0337,Movie 337,"['Sci-Fi', 'Comedy']",Kannada,2001,201.05,829.7,[],False
+M0338,Movie 338,"['Drama', 'Comedy', 'Sci-Fi']",Tamil,1991,115.0,349.8,[],True
+M0339,Movie 339,"['Romance', 'Drama']",Hindi,2000,102.36,424.83,[],True
+M0340,Movie 340,"['Thriller', 'Romance', 'Comedy']",Telugu,2017,105.68,128.19,[],False
+M0341,Movie 341,['Fantasy'],Malayalam,2007,115.12,122.92,[],True
+M0342,Movie 342,"['Action', 'Sci-Fi', 'Drama']",Kannada,2002,112.15,619.57,[],False
+M0343,Movie 343,"['Action', 'Comedy', 'Documentary']",Kannada,2011,115.31,675.53,[],False
+M0344,Movie 344,['Romance'],Hindi,2001,119.57,777.33,[],True
+M0345,Movie 345,['Documentary'],Malayalam,1991,119.43,556.68,[],False
+M0346,Movie 346,['Documentary'],English,1996,100.89,645.76,[],False
+M0347,Movie 347,"['Sci-Fi', 'Romance', 'Documentary']",Hindi,2015,127.39,13.52,[],False
+M0348,Movie 348,"['Documentary', 'Fantasy', 'Action']",Malayalam,2015,122.42,162.17,[],False
+M0349,Movie 349,"['Romance', 'Fantasy', 'Thriller']",Hindi,2013,129.93,984.91,[],False
+M0350,Movie 350,"['Thriller', 'Action', 'Romance']",Kannada,2001,85.71,75.99,[],False
+M0351,Movie 351,"['Sci-Fi', 'Drama', 'Action']",Telugu,2005,123.14,678.79,[],False
+M0352,Movie 352,['Drama'],Hindi,2012,80.29,176.08,[],False
+M0353,Movie 353,"['Romance', 'Action', 'Fantasy']",English,1998,116.49,716.72,[],False
+M0354,Movie 354,['Comedy'],Tamil,2021,133.16,705.99,[],False
+M0355,Movie 355,"['Documentary', 'Drama']",Malayalam,2004,140.92,234.2,[],False
+M0356,Movie 356,"['Romance', 'Sci-Fi', 'Action']",Hindi,2002,126.69,269.63,[],False
+M0357,Movie 357,"['Thriller', 'Action']",Hindi,1994,133.51,654.77,[],False
+M0358,Movie 358,"['Drama', 'Romance']",English,2000,114.02,390.09,[],True
+M0359,Movie 359,['Fantasy'],Telugu,1999,109.82,194.55,[],False
+M0360,Movie 360,"['Drama', 'Action']",Hindi,2002,173.86,731.68,[],False
+M0361,Movie 361,"['Action', 'Sci-Fi']",Hindi,2004,136.54,154.15,[],False
+M0362,Movie 362,['Fantasy'],Telugu,1996,96.54,855.64,[],False
+M0363,Movie 363,"['Drama', 'Sci-Fi']",English,2017,85.31,514.67,[],False
+M0364,Movie 364,['Thriller'],Malayalam,2021,110.7,105.7,[],False
+M0365,Movie 365,['Fantasy'],Malayalam,2004,143.84,694.07,[],True
+M0366,Movie 366,"['Thriller', 'Action']",Hindi,2010,120.97,519.16,[],False
+M0367,Movie 367,['Thriller'],Telugu,1995,75.52,298.06,[],False
+M0368,Movie 368,"['Drama', 'Comedy']",Hindi,1990,116.45,422.54,[],False
+M0369,Movie 369,"['Comedy', 'Fantasy']",Tamil,1993,119.95,298.34,[],False
+M0370,Movie 370,['Fantasy'],Malayalam,2000,71.69,263.03,[],False
+M0371,Movie 371,"['Fantasy', 'Romance']",Kannada,2015,120.48,163.61,[],False
+M0372,Movie 372,"['Fantasy', 'Drama']",Tamil,2012,99.73,362.77,[],False
+M0373,Movie 373,"['Comedy', 'Sci-Fi', 'Documentary']",Hindi,2018,83.29,250.99,[],False
+M0374,Movie 374,['Comedy'],English,2010,152.09,683.43,[],False
+M0375,Movie 375,"['Fantasy', 'Action', 'Thriller']",Malayalam,2016,98.85,683.88,[],False
+M0376,Movie 376,"['Romance', 'Fantasy', 'Drama']",Kannada,2002,106.65,501.84,[],False
+M0377,Movie 377,['Action'],Tamil,2012,106.39,777.94,[],False
+M0378,Movie 378,"['Fantasy', 'Action']",Malayalam,2005,120.04,841.34,[],True
+M0379,Movie 379,"['Romance', 'Thriller']",Telugu,2019,155.33,579.77,[],False
+M0380,Movie 380,"['Sci-Fi', 'Thriller']",English,1993,96.08,618.94,[],False
+M0381,Movie 381,"['Romance', 'Sci-Fi']",Tamil,2005,113.86,282.89,[],False
+M0382,Movie 382,['Drama'],Telugu,2020,122.42,894.87,[],False
+M0383,Movie 383,"['Fantasy', 'Action', 'Drama']",Hindi,2014,102.62,24.21,[],False
+M0384,Movie 384,['Romance'],Telugu,2001,113.54,348.6,[],False
+M0385,Movie 385,['Thriller'],Tamil,2015,131.89,721.8,[],False
+M0386,Movie 386,"['Drama', 'Romance', 'Action']",Tamil,2022,104.89,80.09,[],False
+M0387,Movie 387,"['Drama', 'Thriller', 'Sci-Fi']",Hindi,2017,113.23,183.17,[],False
+M0388,Movie 388,['Fantasy'],Telugu,1998,111.37,589.29,[],False
+M0389,Movie 389,"['Romance', 'Action']",Telugu,2001,117.92,559.99,[],False
+M0390,Movie 390,['Drama'],Hindi,1994,124.86,738.93,[],True
+M0391,Movie 391,['Action'],Telugu,2017,131.73,812.61,[],False
+M0392,Movie 392,['Sci-Fi'],Malayalam,1994,158.75,128.58,[],False
+M0393,Movie 393,"['Sci-Fi', 'Thriller', 'Comedy']",Hindi,2023,66.83,18.38,[],False
+M0394,Movie 394,['Romance'],English,2023,116.65,689.64,[],False
+M0395,Movie 395,"['Action', 'Comedy']",Tamil,2002,92.71,301.39,[],False
+M0396,Movie 396,['Comedy'],English,2003,112.29,625.98,[],False
+M0397,Movie 397,"['Fantasy', 'Action', 'Romance']",Malayalam,2000,137.62,150.54,[],False
+M0398,Movie 398,['Sci-Fi'],Malayalam,1993,143.96,469.04,[],False
+M0399,Movie 399,"['Fantasy', 'Documentary', 'Action']",Kannada,2022,144.89,504.42,[],False
+M0400,Movie 400,"['Fantasy', 'Romance']",Kannada,1996,144.71,585.08,[],False
+M0401,Movie 401,['Action'],Kannada,1997,116.52,513.17,[],False
+M0402,Movie 402,"['Comedy', 'Fantasy']",Hindi,1999,147.97,495.69,[],False
+M0403,Movie 403,"['Documentary', 'Thriller', 'Fantasy']",Telugu,2004,151.94,332.73,[],True
+M0404,Movie 404,"['Comedy', 'Fantasy']",Malayalam,2004,122.78,71.18,[],True
+M0405,Movie 405,"['Drama', 'Action']",English,1994,143.54,89.52,[],False
+M0406,Movie 406,"['Fantasy', 'Action']",English,2018,120.82,433.78,[],False
+M0407,Movie 407,"['Comedy', 'Romance', 'Thriller']",English,2008,148.2,355.79,[],False
+M0408,Movie 408,"['Romance', 'Comedy']",English,1999,116.77,516.13,[],False
+M0409,Movie 409,"['Thriller', 'Romance', 'Comedy']",Kannada,2001,107.81,304.84,[],False
+M0410,Movie 410,['Romance'],English,1993,97.6,687.91,[],False
+M0411,Movie 411,['Action'],Telugu,2020,116.53,863.95,[],False
+M0412,Movie 412,"['Drama', 'Fantasy']",Kannada,2007,121.69,298.86,[],False
+M0413,Movie 413,['Romance'],English,2005,101.08,192.98,[],False
+M0414,Movie 414,"['Romance', 'Documentary', 'Thriller']",Hindi,2014,115.0,116.18,[],False
+M0415,Movie 415,"['Action', 'Drama']",Tamil,2012,109.47,616.25,[],False
+M0416,Movie 416,['Romance'],Tamil,2001,98.46,443.86,[],False
+M0417,Movie 417,"['Thriller', 'Sci-Fi', 'Romance']",Tamil,2023,140.72,188.02,[],False
+M0418,Movie 418,['Romance'],Kannada,1992,144.24,653.14,[],False
+M0419,Movie 419,"['Romance', 'Action']",English,1998,140.63,148.48,[],False
+M0420,Movie 420,"['Action', 'Romance']",Malayalam,2007,118.32,554.3,[],False
+M0421,Movie 421,"['Sci-Fi', 'Comedy']",Malayalam,2023,119.55,527.15,[],False
+M0422,Movie 422,"['Sci-Fi', 'Action']",Malayalam,2003,98.74,734.23,[],False
+M0423,Movie 423,"['Documentary', 'Drama']",Kannada,1993,128.29,55.11,[],True
+M0424,Movie 424,"['Documentary', 'Fantasy', 'Comedy']",Telugu,2018,123.39,887.87,[],False
+M0425,Movie 425,['Sci-Fi'],Hindi,2004,176.88,702.99,[],True
+M0426,Movie 426,"['Fantasy', 'Drama']",Hindi,2017,141.74,216.13,[],False
+M0427,Movie 427,"['Romance', 'Sci-Fi', 'Thriller']",Tamil,2005,126.3,183.41,[],True
+M0428,Movie 428,['Action'],Tamil,2001,119.17,431.66,[],False
+M0429,Movie 429,"['Fantasy', 'Comedy', 'Thriller']",Malayalam,1994,140.03,817.57,[],False
+M0430,Movie 430,['Sci-Fi'],Malayalam,2023,101.69,842.95,[],False
+M0431,Movie 431,['Fantasy'],Tamil,1990,142.79,520.46,[],False
+M0432,Movie 432,"['Romance', 'Documentary', 'Action']",English,2021,98.26,860.81,[],False
+M0433,Movie 433,"['Sci-Fi', 'Comedy', 'Romance']",Telugu,2015,108.77,5.44,[],False
+M0434,Movie 434,"['Documentary', 'Romance', 'Thriller']",Telugu,2006,83.24,35.17,[],False
+M0435,Movie 435,"['Sci-Fi', 'Thriller', 'Fantasy']",Telugu,2016,132.28,911.82,[],True
+M0436,Movie 436,"['Documentary', 'Thriller', 'Action']",Telugu,2013,125.0,775.33,[],False
+M0437,Movie 437,"['Drama', 'Action', 'Documentary']",Tamil,2015,108.77,450.71,[],True
+M0438,Movie 438,['Drama'],Hindi,2012,101.42,753.61,[],False
+M0439,Movie 439,['Fantasy'],Tamil,2011,147.57,955.64,[],False
+M0440,Movie 440,['Romance'],Telugu,1993,117.33,772.09,[],False
+M0441,Movie 441,['Comedy'],Tamil,1998,104.65,842.37,[],False
+M0442,Movie 442,['Romance'],Telugu,1993,158.44,760.61,[],False
+M0443,Movie 443,"['Documentary', 'Comedy', 'Drama']",Kannada,1996,106.86,168.21,[],False
+M0444,Movie 444,"['Documentary', 'Sci-Fi', 'Romance']",Malayalam,2012,142.77,833.57,[],False
+M0445,Movie 445,['Drama'],Hindi,1991,96.98,195.11,[],False
+M0446,Movie 446,"['Fantasy', 'Drama', 'Documentary']",Kannada,2013,112.9,892.61,[],False
+M0447,Movie 447,"['Action', 'Documentary', 'Comedy']",English,2020,130.05,458.65,[],False
+M0448,Movie 448,['Fantasy'],Tamil,2020,118.84,676.98,[],False
+M0449,Movie 449,['Thriller'],English,2023,124.88,497.24,[],False
+M0450,Movie 450,['Comedy'],Tamil,2013,109.22,93.99,[],False
+M0451,Movie 451,['Romance'],Malayalam,2015,88.04,290.72,[],False
+M0452,Movie 452,"['Action', 'Fantasy', 'Comedy']",Kannada,2005,149.31,983.73,[],False
+M0453,Movie 453,"['Fantasy', 'Drama']",Malayalam,2002,110.44,960.71,[],False
+M0454,Movie 454,"['Fantasy', 'Romance']",Telugu,2004,125.78,320.49,[],False
+M0455,Movie 455,"['Romance', 'Sci-Fi', 'Thriller']",Malayalam,2016,134.04,996.3,[],False
+M0456,Movie 456,"['Thriller', 'Sci-Fi']",Malayalam,1993,126.18,845.55,[],False
+M0457,Movie 457,"['Drama', 'Documentary', 'Romance']",Telugu,2005,105.83,610.96,[],False
+M0458,Movie 458,"['Fantasy', 'Action']",Tamil,2019,143.2,40.12,[],False
+M0459,Movie 459,"['Drama', 'Sci-Fi']",Telugu,2019,130.27,901.45,[],False
+M0460,Movie 460,['Comedy'],Kannada,1992,123.98,557.43,[],False
+M0461,Movie 461,['Documentary'],Malayalam,2011,123.51,868.48,[],False
+M0462,Movie 462,"['Sci-Fi', 'Action']",Telugu,2011,153.65,834.43,[],False
+M0463,Movie 463,['Drama'],Malayalam,2001,105.4,833.01,[],False
+M0464,Movie 464,['Romance'],Kannada,2010,128.31,698.17,[],False
+M0465,Movie 465,"['Documentary', 'Comedy', 'Drama']",English,1993,109.43,291.42,[],True
+M0466,Movie 466,['Action'],Kannada,2020,81.27,336.16,[],True
+M0467,Movie 467,"['Drama', 'Thriller', 'Comedy']",Hindi,2020,80.75,308.47,[],True
+M0468,Movie 468,['Romance'],Hindi,2012,99.71,20.05,[],True
+M0469,Movie 469,"['Comedy', 'Fantasy', 'Sci-Fi']",Hindi,2009,106.83,582.57,[],False
+M0470,Movie 470,"['Thriller', 'Comedy']",Malayalam,2004,163.46,698.83,[],False
+M0471,Movie 471,['Romance'],Tamil,2012,133.97,853.87,[],False
+M0472,Movie 472,"['Fantasy', 'Sci-Fi', 'Action']",Tamil,2017,135.77,140.17,[],False
+M0473,Movie 473,"['Fantasy', 'Documentary']",Tamil,2005,107.26,544.18,[],False
+M0474,Movie 474,"['Comedy', 'Fantasy', 'Sci-Fi']",Malayalam,2010,121.23,8.01,[],False
+M0475,Movie 475,"['Thriller', 'Action', 'Sci-Fi']",Kannada,2004,166.12,95.09,[],False
+M0476,Movie 476,"['Drama', 'Documentary']",Tamil,2006,95.71,54.21,[],False
+M0477,Movie 477,"['Romance', 'Fantasy']",English,2002,129.12,725.48,[],False
+M0478,Movie 478,['Sci-Fi'],Hindi,2008,152.23,81.06,[],False
+M0479,Movie 479,"['Fantasy', 'Documentary', 'Comedy']",Kannada,2019,139.32,716.45,[],False
+M0480,Movie 480,['Action'],Hindi,2007,156.03,249.62,[],True
+M0481,Movie 481,"['Documentary', 'Thriller']",Tamil,2003,124.26,877.71,[],False
+M0482,Movie 482,"['Fantasy', 'Romance']",Kannada,2009,132.07,813.15,[],False
+M0483,Movie 483,['Fantasy'],Telugu,2008,122.2,957.83,[],True
+M0484,Movie 484,['Action'],English,1996,130.67,883.76,[],False
+M0485,Movie 485,['Thriller'],Tamil,1993,101.7,933.33,[],True
+M0486,Movie 486,['Action'],Tamil,2023,135.85,858.74,[],False
+M0487,Movie 487,['Fantasy'],English,1991,125.88,693.38,[],False
+M0488,Movie 488,"['Comedy', 'Sci-Fi', 'Romance']",English,1994,121.25,170.26,[],False
+M0489,Movie 489,"['Sci-Fi', 'Drama']",Telugu,1999,154.93,271.71,[],False
+M0490,Movie 490,['Drama'],Tamil,2021,114.69,212.73,[],False
+M0491,Movie 491,"['Documentary', 'Comedy']",Malayalam,2002,144.16,603.59,[],False
+M0492,Movie 492,"['Thriller', 'Documentary']",Tamil,1994,146.15,503.62,[],False
+M0493,Movie 493,['Comedy'],Hindi,1999,137.11,867.08,[],False
+M0494,Movie 494,"['Documentary', 'Action']",Kannada,1999,100.7,952.67,[],True
+M0495,Movie 495,"['Fantasy', 'Drama', 'Documentary']",Kannada,2016,127.18,404.86,[],False
+M0496,Movie 496,['Sci-Fi'],Hindi,2010,159.17,506.35,[],False
+M0497,Movie 497,"['Thriller', 'Action', 'Fantasy']",Kannada,1997,83.63,971.52,[],False
+M0498,Movie 498,"['Fantasy', 'Drama']",English,1990,116.25,276.24,[],False
+M0499,Movie 499,"['Fantasy', 'Romance']",Kannada,2017,143.25,792.39,[],False
+M0500,Movie 500,['Romance'],Kannada,2003,117.69,225.24,[],False
+M0501,Movie 501,"['Comedy', 'Sci-Fi', 'Romance']",Hindi,2010,136.2,681.46,[],False
+M0502,Movie 502,['Comedy'],Telugu,2019,148.18,253.62,[],False
+M0503,Movie 503,"['Action', 'Comedy']",Kannada,2010,124.64,883.73,[],False
+M0504,Movie 504,"['Comedy', 'Drama']",Malayalam,1998,130.18,561.48,[],False
+M0505,Movie 505,['Fantasy'],Kannada,2006,121.84,185.93,[],False
+M0506,Movie 506,"['Fantasy', 'Comedy']",Telugu,1994,125.96,224.37,[],False
+M0507,Movie 507,"['Thriller', 'Comedy']",Hindi,2020,162.05,493.85,[],False
+M0508,Movie 508,"['Romance', 'Sci-Fi']",Telugu,2008,118.72,961.6,[],False
+M0509,Movie 509,"['Documentary', 'Action', 'Fantasy']",Hindi,2022,112.94,769.64,[],True
+M0510,Movie 510,['Documentary'],English,2002,140.84,488.31,[],False
+M0511,Movie 511,['Comedy'],Hindi,2003,103.14,337.72,[],False
+M0512,Movie 512,"['Drama', 'Romance']",English,2022,107.71,549.27,[],False
+M0513,Movie 513,"['Fantasy', 'Documentary']",English,2018,107.83,748.36,[],False
+M0514,Movie 514,"['Documentary', 'Comedy']",Hindi,1999,114.88,783.93,[],False
+M0515,Movie 515,"['Comedy', 'Documentary']",Malayalam,2020,115.76,324.61,[],False
+M0516,Movie 516,"['Romance', 'Documentary']",Tamil,1995,133.98,721.16,[],False
+M0517,Movie 517,"['Comedy', 'Romance']",Hindi,1990,113.15,657.79,[],False
+M0518,Movie 518,"['Action', 'Sci-Fi']",Kannada,1996,134.79,959.11,[],False
+M0519,Movie 519,"['Documentary', 'Action', 'Thriller']",Malayalam,2016,137.28,931.09,[],False
+M0520,Movie 520,"['Fantasy', 'Comedy']",Malayalam,2010,106.93,789.38,[],False
+M0521,Movie 521,"['Sci-Fi', 'Drama']",Kannada,2017,136.85,723.39,[],False
+M0522,Movie 522,"['Romance', 'Action', 'Fantasy']",Tamil,2005,138.67,274.04,[],False
+M0523,Movie 523,['Drama'],Malayalam,2012,84.78,845.97,[],False
+M0524,Movie 524,"['Documentary', 'Sci-Fi', 'Thriller']",English,2009,125.87,427.51,[],False
+M0525,Movie 525,"['Action', 'Fantasy']",Tamil,2014,109.87,272.24,[],False
+M0526,Movie 526,"['Thriller', 'Fantasy', 'Romance']",Kannada,2017,146.06,384.16,[],True
+M0527,Movie 527,"['Documentary', 'Thriller', 'Sci-Fi']",Tamil,1994,109.67,835.94,[],False
+M0528,Movie 528,"['Romance', 'Comedy']",Hindi,2010,93.21,148.63,[],False
+M0529,Movie 529,"['Comedy', 'Sci-Fi', 'Romance']",Tamil,2007,119.4,456.16,[],False
+M0530,Movie 530,"['Thriller', 'Romance']",English,1995,102.06,492.36,[],False
+M0531,Movie 531,"['Documentary', 'Action', 'Romance']",Hindi,2018,136.99,36.63,[],False
+M0532,Movie 532,"['Fantasy', 'Action', 'Drama']",Telugu,2008,103.83,195.75,[],False
+M0533,Movie 533,"['Thriller', 'Drama']",Kannada,2022,119.65,826.74,[],False
+M0534,Movie 534,['Sci-Fi'],Kannada,1990,150.92,830.77,[],False
+M0535,Movie 535,['Drama'],Tamil,1992,141.97,292.42,[],False
+M0536,Movie 536,"['Fantasy', 'Documentary', 'Comedy']",Malayalam,2010,129.56,874.9,[],False
+M0537,Movie 537,"['Thriller', 'Drama']",Hindi,1992,117.45,771.78,[],False
+M0538,Movie 538,['Action'],Telugu,2014,127.66,417.91,[],False
+M0539,Movie 539,['Romance'],Hindi,2009,133.78,748.41,[],False
+M0540,Movie 540,"['Sci-Fi', 'Romance']",Kannada,2023,100.27,961.33,[],False
+M0541,Movie 541,"['Comedy', 'Documentary']",Hindi,2010,137.03,458.97,[],False
+M0542,Movie 542,['Documentary'],Telugu,2012,97.97,238.43,[],False
+M0543,Movie 543,['Action'],Malayalam,1995,131.45,941.82,[],False
+M0544,Movie 544,"['Thriller', 'Drama']",Tamil,2002,97.86,603.74,[],False
+M0545,Movie 545,"['Comedy', 'Documentary', 'Fantasy']",English,2012,159.26,105.27,[],False
+M0546,Movie 546,"['Documentary', 'Fantasy']",Hindi,1998,135.27,572.68,[],False
+M0547,Movie 547,['Documentary'],English,2006,88.88,500.58,[],False
+M0548,Movie 548,"['Documentary', 'Drama']",Kannada,1991,119.98,855.59,[],True
+M0549,Movie 549,"['Documentary', 'Comedy']",Tamil,2008,109.57,530.7,[],False
+M0550,Movie 550,['Action'],Tamil,2008,107.21,255.23,[],False
+M0551,Movie 551,['Thriller'],Hindi,1996,122.94,675.64,[],False
+M0552,Movie 552,['Sci-Fi'],Malayalam,2009,101.44,542.58,[],False
+M0553,Movie 553,"['Thriller', 'Sci-Fi', 'Documentary']",Tamil,1998,135.23,233.04,[],False
+M0554,Movie 554,"['Romance', 'Action', 'Thriller']",Hindi,2006,134.09,573.63,[],False
+M0555,Movie 555,"['Comedy', 'Documentary', 'Action']",Hindi,2016,127.03,821.54,[],False
+M0556,Movie 556,"['Documentary', 'Thriller']",English,1991,119.61,28.57,[],False
+M0557,Movie 557,"['Comedy', 'Thriller']",Tamil,2008,133.2,630.85,[],False
+M0558,Movie 558,"['Fantasy', 'Romance', 'Drama']",Hindi,2006,135.83,349.59,[],False
+M0559,Movie 559,"['Romance', 'Documentary', 'Action']",English,1994,129.1,292.67,[],False
+M0560,Movie 560,"['Fantasy', 'Drama']",Telugu,2007,93.76,392.59,[],False
+M0561,Movie 561,"['Romance', 'Thriller', 'Comedy']",English,1996,104.23,342.02,[],True
+M0562,Movie 562,"['Thriller', 'Action', 'Drama']",English,2006,114.64,832.24,[],False
+M0563,Movie 563,"['Comedy', 'Documentary', 'Fantasy']",Hindi,1993,90.48,274.8,[],False
+M0564,Movie 564,['Documentary'],Kannada,2014,124.48,733.15,[],False
+M0565,Movie 565,['Action'],Kannada,1994,148.22,94.06,[],False
+M0566,Movie 566,"['Documentary', 'Action', 'Sci-Fi']",Malayalam,2019,145.03,951.4,[],False
+M0567,Movie 567,"['Fantasy', 'Action']",Kannada,2001,134.79,622.32,[],False
+M0568,Movie 568,"['Thriller', 'Comedy']",English,1993,134.55,706.72,[],False
+M0569,Movie 569,"['Documentary', 'Action']",Malayalam,2013,164.31,298.04,[],False
+M0570,Movie 570,['Action'],Hindi,2018,136.88,412.1,[],False
+M0571,Movie 571,"['Thriller', 'Sci-Fi', 'Documentary']",Tamil,1998,138.51,223.78,[],False
+M0572,Movie 572,"['Thriller', 'Documentary']",English,1993,91.22,932.54,[],False
+M0573,Movie 573,"['Thriller', 'Documentary']",English,2013,146.66,488.1,[],False
+M0574,Movie 574,"['Comedy', 'Action']",Malayalam,2003,127.97,630.45,[],False
+M0575,Movie 575,"['Fantasy', 'Action']",Hindi,1994,118.4,734.27,[],False
+M0576,Movie 576,['Fantasy'],Telugu,2007,113.45,371.11,[],False
+M0577,Movie 577,"['Comedy', 'Romance']",English,2008,109.03,720.1,[],False
+M0578,Movie 578,"['Comedy', 'Action', 'Thriller']",Telugu,2001,145.14,675.99,[],False
+M0579,Movie 579,"['Action', 'Thriller']",Telugu,2007,119.43,705.66,[],True
+M0580,Movie 580,['Sci-Fi'],Kannada,2006,109.77,489.23,[],False
+M0581,Movie 581,"['Drama', 'Fantasy']",Hindi,2019,104.57,382.94,[],False
+M0582,Movie 582,"['Drama', 'Romance']",Telugu,2013,123.41,222.08,[],False
+M0583,Movie 583,['Romance'],Hindi,2000,112.81,824.63,[],False
+M0584,Movie 584,"['Documentary', 'Romance']",Kannada,2012,108.24,608.35,[],False
+M0585,Movie 585,"['Documentary', 'Romance', 'Sci-Fi']",Hindi,2006,92.36,444.35,[],False
+M0586,Movie 586,"['Documentary', 'Thriller']",English,1990,139.19,944.0,[],False
+M0587,Movie 587,['Drama'],Telugu,2004,117.24,47.84,[],False
+M0588,Movie 588,['Action'],Hindi,2021,98.3,850.17,[],False
+M0589,Movie 589,['Action'],Tamil,1998,114.58,997.58,[],False
+M0590,Movie 590,['Action'],Hindi,2004,130.98,886.94,[],True
+M0591,Movie 591,['Documentary'],Telugu,2017,120.58,810.44,[],False
+M0592,Movie 592,"['Documentary', 'Action', 'Fantasy']",Kannada,2013,123.82,374.31,[],True
+M0593,Movie 593,['Thriller'],Kannada,2011,120.85,231.31,[],False
+M0594,Movie 594,"['Sci-Fi', 'Action']",Telugu,2016,94.46,734.85,[],False
+M0595,Movie 595,['Documentary'],English,2008,138.97,304.58,[],True
+M0596,Movie 596,"['Romance', 'Documentary', 'Drama']",English,2001,85.84,176.04,[],False
+M0597,Movie 597,"['Romance', 'Comedy', 'Drama']",Kannada,2009,129.23,786.53,[],False
+M0598,Movie 598,"['Action', 'Comedy']",Kannada,1990,132.31,312.54,[],False
+M0599,Movie 599,['Documentary'],Telugu,2010,115.6,914.44,[],False
+M0600,Movie 600,['Romance'],English,1990,127.07,840.63,[],False
+M0601,Movie 601,['Sci-Fi'],Kannada,1999,114.46,847.64,[],False
+M0602,Movie 602,"['Fantasy', 'Thriller', 'Action']",English,2021,127.31,771.57,[],True
+M0603,Movie 603,['Romance'],Kannada,2011,139.86,880.88,[],False
+M0604,Movie 604,['Drama'],Hindi,2007,104.16,805.75,[],False
+M0605,Movie 605,"['Sci-Fi', 'Action', 'Comedy']",Tamil,2021,133.48,602.51,[],False
+M0606,Movie 606,"['Comedy', 'Documentary', 'Sci-Fi']",Malayalam,2016,153.85,295.82,[],False
+M0607,Movie 607,"['Action', 'Documentary']",Hindi,2017,125.29,888.21,[],False
+M0608,Movie 608,"['Thriller', 'Documentary']",Malayalam,2007,109.94,840.6,[],False
+M0609,Movie 609,"['Drama', 'Comedy']",Kannada,2018,165.26,472.88,[],False
+M0610,Movie 610,"['Comedy', 'Sci-Fi', 'Thriller']",Tamil,2007,121.77,39.08,[],False
+M0611,Movie 611,['Comedy'],Tamil,1997,124.63,638.54,[],False
+M0612,Movie 612,"['Sci-Fi', 'Fantasy', 'Thriller']",Kannada,2020,125.05,50.6,[],False
+M0613,Movie 613,"['Fantasy', 'Romance', 'Thriller']",Kannada,2023,128.96,926.28,[],False
+M0614,Movie 614,"['Action', 'Sci-Fi', 'Romance']",English,1996,113.22,961.63,[],False
+M0615,Movie 615,"['Documentary', 'Drama']",Kannada,2007,123.8,189.49,[],False
+M0616,Movie 616,"['Thriller', 'Romance', 'Action']",Telugu,1998,139.04,676.39,[],False
+M0617,Movie 617,"['Action', 'Sci-Fi', 'Comedy']",Kannada,1998,112.53,92.27,[],False
+M0618,Movie 618,"['Documentary', 'Comedy']",Telugu,1997,111.6,729.52,[],False
+M0619,Movie 619,"['Drama', 'Fantasy', 'Sci-Fi']",Kannada,2007,114.16,347.29,[],False
+M0620,Movie 620,['Documentary'],English,1994,98.04,681.05,[],False
+M0621,Movie 621,"['Sci-Fi', 'Fantasy', 'Drama']",Telugu,2003,106.34,372.88,[],False
+M0622,Movie 622,"['Fantasy', 'Thriller', 'Romance']",Hindi,2017,105.53,145.57,[],False
+M0623,Movie 623,['Documentary'],Telugu,2019,119.99,406.11,[],False
+M0624,Movie 624,"['Sci-Fi', 'Fantasy']",English,1993,136.72,112.67,[],False
+M0625,Movie 625,"['Sci-Fi', 'Action']",Malayalam,2009,149.07,576.88,[],False
+M0626,Movie 626,"['Comedy', 'Action', 'Romance']",Telugu,2014,121.14,40.95,[],False
+M0627,Movie 627,"['Drama', 'Documentary']",Kannada,2017,129.13,527.32,[],False
+M0628,Movie 628,['Documentary'],Kannada,2001,124.87,886.37,[],False
+M0629,Movie 629,['Thriller'],Malayalam,1991,78.13,837.87,[],False
+M0630,Movie 630,['Documentary'],English,2003,97.04,882.78,[],False
+M0631,Movie 631,"['Drama', 'Romance']",Tamil,2011,135.23,922.05,[],False
+M0632,Movie 632,['Comedy'],Kannada,2020,137.17,104.53,[],False
+M0633,Movie 633,"['Action', 'Thriller', 'Comedy']",Hindi,2012,136.71,128.75,[],False
+M0634,Movie 634,['Sci-Fi'],English,2009,116.44,557.01,[],False
+M0635,Movie 635,"['Thriller', 'Comedy']",Telugu,1993,80.1,893.97,[],False
+M0636,Movie 636,"['Comedy', 'Drama', 'Romance']",Telugu,2004,99.43,974.35,[],False
+M0637,Movie 637,"['Action', 'Sci-Fi', 'Fantasy']",Hindi,2013,102.49,46.26,[],False
+M0638,Movie 638,['Fantasy'],Kannada,2014,132.58,355.77,[],False
+M0639,Movie 639,"['Thriller', 'Sci-Fi', 'Drama']",English,1990,112.85,212.89,[],False
+M0640,Movie 640,['Romance'],Hindi,1996,153.81,755.97,[],False
+M0641,Movie 641,"['Thriller', 'Documentary']",Kannada,2020,149.35,640.19,[],False
+M0642,Movie 642,"['Romance', 'Action', 'Sci-Fi']",English,2001,153.47,119.89,[],False
+M0643,Movie 643,"['Drama', 'Documentary']",Telugu,1994,101.67,483.52,[],False
+M0644,Movie 644,"['Sci-Fi', 'Fantasy', 'Drama']",English,2001,129.82,685.44,[],False
+M0645,Movie 645,"['Comedy', 'Romance']",Malayalam,2007,110.45,779.01,[],False
+M0646,Movie 646,['Romance'],Tamil,1991,126.56,20.05,[],False
+M0647,Movie 647,"['Thriller', 'Sci-Fi']",English,1999,103.89,890.47,[],False
+M0648,Movie 648,['Thriller'],Tamil,2004,144.52,569.28,[],False
+M0649,Movie 649,"['Sci-Fi', 'Comedy']",English,2019,104.26,811.91,[],False
+M0650,Movie 650,['Fantasy'],Tamil,2006,81.06,807.94,[],False
+M0651,Movie 651,['Comedy'],Malayalam,1993,160.68,189.85,[],False
+M0652,Movie 652,['Drama'],Telugu,1996,128.85,110.17,[],False
+M0653,Movie 653,"['Comedy', 'Romance', 'Documentary']",Kannada,2020,98.62,721.29,[],False
+M0654,Movie 654,"['Romance', 'Sci-Fi', 'Fantasy']",Tamil,2023,116.75,156.43,[],False
+M0655,Movie 655,['Fantasy'],Malayalam,1995,108.46,849.94,[],False
+M0656,Movie 656,"['Documentary', 'Fantasy', 'Thriller']",Tamil,2023,120.11,726.19,[],False
+M0657,Movie 657,['Thriller'],Telugu,2004,136.06,841.83,[],True
+M0658,Movie 658,['Thriller'],Tamil,2003,132.92,299.01,[],False
+M0659,Movie 659,"['Fantasy', 'Comedy', 'Romance']",Malayalam,1995,125.07,316.6,[],False
+M0660,Movie 660,"['Comedy', 'Thriller']",Malayalam,2021,120.11,671.22,[],False
+M0661,Movie 661,"['Thriller', 'Documentary']",Hindi,1992,141.57,31.45,[],True
+M0662,Movie 662,"['Action', 'Fantasy', 'Sci-Fi']",Telugu,1992,81.49,726.5,[],False
+M0663,Movie 663,['Action'],Hindi,2011,105.02,835.78,[],False
+M0664,Movie 664,['Romance'],Telugu,2011,100.43,415.16,[],True
+M0665,Movie 665,"['Fantasy', 'Comedy', 'Sci-Fi']",Tamil,1999,140.13,764.88,[],True
+M0666,Movie 666,['Romance'],Malayalam,1992,105.22,174.61,[],False
+M0667,Movie 667,"['Fantasy', 'Drama']",Hindi,2001,94.28,322.26,[],False
+M0668,Movie 668,['Documentary'],Tamil,2018,130.99,974.3,[],False
+M0669,Movie 669,"['Thriller', 'Action', 'Drama']",Malayalam,2006,101.83,986.33,[],True
+M0670,Movie 670,"['Sci-Fi', 'Thriller']",Telugu,1996,112.99,512.61,[],False
+M0671,Movie 671,"['Fantasy', 'Comedy']",Malayalam,2002,167.62,934.27,[],False
+M0672,Movie 672,"['Comedy', 'Fantasy', 'Romance']",Tamil,1991,135.74,522.73,[],False
+M0673,Movie 673,['Drama'],Hindi,1993,115.78,291.59,[],False
+M0674,Movie 674,"['Thriller', 'Drama', 'Comedy']",Hindi,1999,117.58,266.9,[],False
+M0675,Movie 675,['Drama'],Malayalam,2013,138.15,929.51,[],False
+M0676,Movie 676,['Fantasy'],Tamil,2006,133.26,172.45,[],False
+M0677,Movie 677,"['Action', 'Sci-Fi', 'Fantasy']",English,1995,121.51,579.63,[],False
+M0678,Movie 678,"['Fantasy', 'Romance', 'Sci-Fi']",Telugu,2008,122.07,555.53,[],False
+M0679,Movie 679,"['Thriller', 'Sci-Fi']",Telugu,1994,90.4,739.62,[],False
+M0680,Movie 680,"['Comedy', 'Documentary', 'Drama']",Tamil,2021,86.2,499.24,[],False
+M0681,Movie 681,"['Thriller', 'Action']",English,1999,116.46,272.29,[],False
+M0682,Movie 682,['Comedy'],Hindi,1998,107.33,169.4,[],False
+M0683,Movie 683,"['Sci-Fi', 'Romance', 'Action']",Kannada,2016,131.72,620.82,[],False
+M0684,Movie 684,"['Thriller', 'Comedy', 'Sci-Fi']",Kannada,2002,123.94,718.99,[],False
+M0685,Movie 685,"['Romance', 'Drama']",Tamil,2008,104.54,569.52,[],False
+M0686,Movie 686,['Thriller'],English,2010,123.26,738.35,[],True
+M0687,Movie 687,"['Thriller', 'Romance']",English,2013,111.64,141.52,[],False
+M0688,Movie 688,"['Drama', 'Comedy', 'Sci-Fi']",Telugu,1993,161.33,882.47,[],True
+M0689,Movie 689,"['Comedy', 'Drama', 'Fantasy']",Hindi,2013,127.72,582.4,[],False
+M0690,Movie 690,"['Comedy', 'Sci-Fi', 'Drama']",Malayalam,1992,88.79,126.84,[],True
+M0691,Movie 691,['Documentary'],English,1993,156.41,461.93,[],False
+M0692,Movie 692,"['Action', 'Thriller']",Malayalam,2020,107.34,844.79,[],True
+M0693,Movie 693,"['Comedy', 'Sci-Fi']",Kannada,2014,100.51,897.56,[],False
+M0694,Movie 694,"['Thriller', 'Fantasy']",Malayalam,2002,162.87,264.65,[],False
+M0695,Movie 695,['Sci-Fi'],Hindi,1993,126.92,711.27,[],False
+M0696,Movie 696,"['Action', 'Documentary']",Hindi,2003,134.02,99.99,[],False
+M0697,Movie 697,['Action'],Malayalam,2002,134.66,33.55,[],False
+M0698,Movie 698,"['Thriller', 'Romance', 'Fantasy']",Tamil,2016,115.88,560.4,[],False
+M0699,Movie 699,"['Sci-Fi', 'Drama', 'Romance']",English,1995,108.55,694.83,[],False
+M0700,Movie 700,"['Comedy', 'Documentary', 'Thriller']",Tamil,2006,111.81,795.79,[],False
+M0701,Movie 701,"['Thriller', 'Action']",Malayalam,2006,152.18,340.22,[],False
+M0702,Movie 702,"['Thriller', 'Documentary', 'Sci-Fi']",English,1991,124.08,6.53,[],False
+M0703,Movie 703,"['Drama', 'Documentary', 'Fantasy']",Telugu,2002,146.26,479.52,[],False
+M0704,Movie 704,['Drama'],Tamil,1991,118.47,15.85,[],False
+M0705,Movie 705,"['Sci-Fi', 'Romance']",Tamil,2017,104.89,91.98,[],False
+M0706,Movie 706,['Comedy'],Malayalam,2015,91.16,326.69,[],False
+M0707,Movie 707,['Fantasy'],Kannada,2011,132.96,437.17,[],False
+M0708,Movie 708,['Sci-Fi'],Malayalam,1992,153.88,279.47,[],False
+M0709,Movie 709,['Fantasy'],Tamil,2001,102.28,581.87,[],False
+M0710,Movie 710,"['Sci-Fi', 'Comedy', 'Drama']",English,2013,130.27,55.35,[],False
+M0711,Movie 711,"['Sci-Fi', 'Drama', 'Action']",Kannada,1994,92.49,144.58,[],True
+M0712,Movie 712,"['Drama', 'Thriller', 'Fantasy']",Malayalam,2009,108.89,695.26,[],True
+M0713,Movie 713,"['Drama', 'Romance', 'Documentary']",Malayalam,2002,125.36,142.14,[],False
+M0714,Movie 714,"['Action', 'Fantasy']",Tamil,2001,85.43,639.78,[],False
+M0715,Movie 715,"['Sci-Fi', 'Drama']",Tamil,2002,119.64,54.68,[],False
+M0716,Movie 716,"['Documentary', 'Drama', 'Comedy']",Telugu,1999,103.27,407.38,[],False
+M0717,Movie 717,['Action'],Malayalam,2022,132.1,177.41,[],False
+M0718,Movie 718,"['Action', 'Sci-Fi', 'Documentary']",Tamil,2005,116.69,109.64,[],False
+M0719,Movie 719,['Documentary'],Hindi,1992,138.79,567.03,[],False
+M0720,Movie 720,"['Documentary', 'Fantasy']",Kannada,1994,114.41,928.34,[],False
+M0721,Movie 721,['Romance'],Hindi,2015,92.75,54.79,[],False
+M0722,Movie 722,['Drama'],Kannada,2000,90.26,421.55,[],False
+M0723,Movie 723,"['Drama', 'Thriller']",Malayalam,1996,81.82,707.54,[],False
+M0724,Movie 724,"['Sci-Fi', 'Documentary', 'Fantasy']",Telugu,1999,132.66,462.69,[],False
+M0725,Movie 725,['Sci-Fi'],Tamil,2023,171.15,806.5,[],False
+M0726,Movie 726,['Fantasy'],Tamil,1992,128.7,179.65,[],False
+M0727,Movie 727,"['Action', 'Drama', 'Thriller']",Tamil,1997,153.44,959.59,[],False
+M0728,Movie 728,"['Romance', 'Documentary', 'Fantasy']",Malayalam,2020,142.67,385.16,[],False
+M0729,Movie 729,['Comedy'],Kannada,2000,109.63,341.57,[],False
+M0730,Movie 730,"['Action', 'Drama', 'Fantasy']",Tamil,1996,145.31,874.61,[],False
+M0731,Movie 731,['Fantasy'],Hindi,1991,110.43,563.87,[],False
+M0732,Movie 732,"['Sci-Fi', 'Romance', 'Documentary']",Tamil,1995,110.83,516.44,[],False
+M0733,Movie 733,['Thriller'],Malayalam,2021,115.83,726.98,[],False
+M0734,Movie 734,"['Comedy', 'Sci-Fi', 'Romance']",Telugu,2009,116.78,579.83,[],False
+M0735,Movie 735,['Drama'],Hindi,2023,133.23,162.52,[],False
+M0736,Movie 736,"['Comedy', 'Thriller']",Tamil,2005,106.58,674.2,[],False
+M0737,Movie 737,"['Action', 'Fantasy']",Tamil,2014,137.78,133.47,[],False
+M0738,Movie 738,"['Fantasy', 'Sci-Fi']",English,2001,137.49,805.86,[],False
+M0739,Movie 739,"['Sci-Fi', 'Comedy', 'Romance']",Kannada,1996,126.86,989.74,[],False
+M0740,Movie 740,"['Romance', 'Drama']",Hindi,2006,158.79,377.39,[],True
+M0741,Movie 741,['Comedy'],English,2000,145.75,444.76,[],False
+M0742,Movie 742,"['Thriller', 'Documentary', 'Drama']",Telugu,1995,141.39,46.43,[],False
+M0743,Movie 743,['Documentary'],Kannada,2012,121.32,13.73,[],False
+M0744,Movie 744,"['Sci-Fi', 'Romance']",Hindi,2016,127.04,921.42,[],False
+M0745,Movie 745,['Sci-Fi'],Tamil,1995,130.48,128.62,[],False
+M0746,Movie 746,['Documentary'],Hindi,1991,120.26,445.78,[],False
+M0747,Movie 747,"['Documentary', 'Comedy']",Tamil,2011,112.49,815.35,[],False
+M0748,Movie 748,['Thriller'],Kannada,2009,71.89,889.32,[],False
+M0749,Movie 749,['Action'],Tamil,2014,134.36,519.4,[],False
+M0750,Movie 750,"['Drama', 'Thriller', 'Comedy']",Telugu,2004,140.83,565.03,[],False
+M0751,Movie 751,['Thriller'],Malayalam,2018,96.78,669.68,[],False
+M0752,Movie 752,"['Romance', 'Comedy', 'Documentary']",Tamil,1997,132.1,961.38,[],False
+M0753,Movie 753,"['Drama', 'Sci-Fi', 'Comedy']",Telugu,2022,108.17,602.67,[],False
+M0754,Movie 754,"['Comedy', 'Drama']",Malayalam,2011,112.67,559.48,[],False
+M0755,Movie 755,"['Documentary', 'Action']",Kannada,1994,146.22,14.53,[],False
+M0756,Movie 756,"['Romance', 'Drama', 'Documentary']",Kannada,2007,100.19,80.95,[],False
+M0757,Movie 757,['Comedy'],Hindi,2019,100.16,577.17,[],False
+M0758,Movie 758,['Drama'],Telugu,2020,156.1,936.24,[],False
+M0759,Movie 759,['Romance'],Telugu,1999,117.09,866.69,[],False
+M0760,Movie 760,['Romance'],English,2004,144.93,982.58,[],False
+M0761,Movie 761,"['Sci-Fi', 'Documentary']",English,2007,88.03,527.83,[],True
+M0762,Movie 762,"['Thriller', 'Action', 'Fantasy']",Malayalam,2012,89.63,787.93,[],True
+M0763,Movie 763,"['Thriller', 'Drama']",Malayalam,2022,101.74,840.4,[],False
+M0764,Movie 764,['Romance'],English,2005,110.37,648.03,[],False
+M0765,Movie 765,"['Documentary', 'Fantasy', 'Thriller']",Malayalam,2023,91.93,338.75,[],False
+M0766,Movie 766,['Sci-Fi'],Tamil,2017,127.39,469.98,[],False
+M0767,Movie 767,['Drama'],English,1991,128.69,857.92,[],False
+M0768,Movie 768,"['Drama', 'Thriller']",Telugu,2019,102.04,298.55,[],True
+M0769,Movie 769,"['Fantasy', 'Documentary', 'Sci-Fi']",Tamil,2002,103.63,923.74,[],False
+M0770,Movie 770,"['Documentary', 'Drama']",Malayalam,2005,106.26,229.81,[],False
+M0771,Movie 771,"['Fantasy', 'Thriller']",Kannada,1994,96.7,749.52,[],False
+M0772,Movie 772,"['Romance', 'Thriller']",Hindi,2017,62.09,630.56,[],False
+M0773,Movie 773,"['Action', 'Romance']",English,2009,118.3,749.6,[],False
+M0774,Movie 774,['Drama'],Kannada,2013,111.39,437.35,[],False
+M0775,Movie 775,"['Romance', 'Sci-Fi', 'Comedy']",Malayalam,2016,113.44,932.64,[],False
+M0776,Movie 776,"['Fantasy', 'Action']",Telugu,2019,99.76,632.47,[],False
+M0777,Movie 777,"['Drama', 'Documentary']",Hindi,2016,136.21,288.3,[],False
+M0778,Movie 778,"['Fantasy', 'Thriller']",Kannada,2015,168.51,638.46,[],False
+M0779,Movie 779,"['Romance', 'Sci-Fi']",Hindi,1996,103.32,286.82,[],False
+M0780,Movie 780,"['Romance', 'Sci-Fi', 'Action']",English,1994,147.99,293.63,[],False
+M0781,Movie 781,['Fantasy'],Malayalam,2012,127.33,399.6,[],True
+M0782,Movie 782,"['Sci-Fi', 'Romance', 'Action']",Telugu,2017,120.71,852.43,[],False
+M0783,Movie 783,"['Sci-Fi', 'Action']",Malayalam,2023,113.12,500.3,[],False
+M0784,Movie 784,"['Sci-Fi', 'Romance', 'Comedy']",Hindi,2004,118.34,678.9,[],False
+M0785,Movie 785,['Drama'],Kannada,2021,142.99,391.97,[],False
+M0786,Movie 786,"['Romance', 'Drama']",English,2015,97.24,263.61,[],False
+M0787,Movie 787,"['Drama', 'Fantasy']",English,2020,114.5,954.64,[],False
+M0788,Movie 788,"['Sci-Fi', 'Fantasy']",Malayalam,2008,144.98,603.58,[],False
+M0789,Movie 789,"['Romance', 'Thriller', 'Drama']",Kannada,1998,139.67,933.95,[],False
+M0790,Movie 790,['Romance'],Kannada,2018,97.55,203.41,[],False
+M0791,Movie 791,"['Drama', 'Fantasy']",Hindi,1993,116.35,146.89,[],True
+M0792,Movie 792,['Fantasy'],Malayalam,1992,134.56,855.82,[],False
+M0793,Movie 793,"['Comedy', 'Thriller']",Malayalam,2018,133.27,680.92,[],False
+M0794,Movie 794,['Sci-Fi'],Tamil,2000,139.5,186.58,[],False
+M0795,Movie 795,"['Sci-Fi', 'Action', 'Drama']",Malayalam,2022,127.69,269.36,[],False
+M0796,Movie 796,"['Sci-Fi', 'Action', 'Fantasy']",English,2000,131.04,800.66,[],False
+M0797,Movie 797,['Romance'],Hindi,2016,126.86,453.87,[],False
+M0798,Movie 798,"['Action', 'Thriller']",Kannada,2022,151.59,670.54,[],False
+M0799,Movie 799,"['Drama', 'Documentary']",Malayalam,2010,111.56,318.35,[],False
+M0800,Movie 800,['Romance'],Hindi,2020,120.96,381.23,[],False
+M0801,Movie 801,"['Romance', 'Drama', 'Action']",Malayalam,1991,99.7,990.71,[],False
+M0802,Movie 802,"['Drama', 'Comedy']",Kannada,2016,95.76,247.62,[],False
+M0803,Movie 803,"['Romance', 'Fantasy', 'Thriller']",Telugu,2000,126.5,506.46,[],False
+M0804,Movie 804,"['Comedy', 'Fantasy']",Kannada,2007,105.52,844.4,[],False
+M0805,Movie 805,"['Drama', 'Documentary']",Kannada,1990,118.85,239.22,[],False
+M0806,Movie 806,['Comedy'],Kannada,2020,152.35,415.21,[],False
+M0807,Movie 807,['Sci-Fi'],Malayalam,2017,151.2,615.09,[],True
+M0808,Movie 808,['Sci-Fi'],Tamil,1990,164.48,481.19,[],True
+M0809,Movie 809,"['Fantasy', 'Action', 'Drama']",Kannada,2014,152.75,459.5,[],False
+M0810,Movie 810,"['Action', 'Comedy']",English,2009,168.06,362.51,[],False
+M0811,Movie 811,['Comedy'],English,1992,128.73,586.65,[],True
+M0812,Movie 812,"['Fantasy', 'Documentary', 'Sci-Fi']",Hindi,1991,101.94,624.37,[],False
+M0813,Movie 813,"['Sci-Fi', 'Thriller']",Tamil,2007,99.99,653.29,[],False
+M0814,Movie 814,"['Sci-Fi', 'Thriller', 'Documentary']",Hindi,1999,147.93,70.37,[],False
+M0815,Movie 815,"['Comedy', 'Romance', 'Documentary']",English,1994,121.03,631.03,[],False
+M0816,Movie 816,"['Action', 'Thriller', 'Fantasy']",English,1998,122.52,953.24,[],False
+M0817,Movie 817,"['Drama', 'Sci-Fi', 'Action']",Telugu,1991,109.02,540.99,[],False
+M0818,Movie 818,"['Drama', 'Thriller']",Kannada,2023,111.42,715.27,[],False
+M0819,Movie 819,"['Sci-Fi', 'Fantasy', 'Action']",English,2020,127.68,556.73,[],False
+M0820,Movie 820,['Thriller'],Malayalam,1999,98.9,854.74,[],False
+M0821,Movie 821,"['Comedy', 'Documentary']",Malayalam,2001,125.14,929.58,[],False
+M0822,Movie 822,"['Thriller', 'Documentary', 'Comedy']",Hindi,2010,150.22,184.22,[],False
+M0823,Movie 823,"['Comedy', 'Sci-Fi']",Hindi,1995,77.33,436.86,[],False
+M0824,Movie 824,['Sci-Fi'],Kannada,1992,89.17,392.38,[],False
+M0825,Movie 825,"['Drama', 'Comedy']",Kannada,1999,133.51,405.22,[],False
+M0826,Movie 826,['Romance'],Telugu,1994,147.28,125.52,[],True
+M0827,Movie 827,"['Thriller', 'Comedy', 'Fantasy']",Tamil,2015,110.2,813.62,[],False
+M0828,Movie 828,['Drama'],Hindi,2010,80.04,35.77,[],True
+M0829,Movie 829,['Fantasy'],Kannada,2015,148.64,528.23,[],False
+M0830,Movie 830,"['Fantasy', 'Thriller']",Hindi,2015,103.78,661.88,[],False
+M0831,Movie 831,"['Documentary', 'Romance']",Kannada,1997,112.78,207.47,[],False
+M0832,Movie 832,"['Fantasy', 'Drama']",English,1994,126.38,905.85,[],False
+M0833,Movie 833,"['Romance', 'Thriller']",Hindi,2004,106.67,838.55,[],False
+M0834,Movie 834,"['Thriller', 'Fantasy']",English,2005,102.48,471.08,[],False
+M0835,Movie 835,['Action'],Hindi,1990,102.84,411.15,[],False
+M0836,Movie 836,['Sci-Fi'],Tamil,2005,157.16,236.57,[],False
+M0837,Movie 837,"['Thriller', 'Drama']",Telugu,1992,143.19,729.99,[],False
+M0838,Movie 838,"['Comedy', 'Romance']",Malayalam,2020,131.49,131.74,[],True
+M0839,Movie 839,['Thriller'],Malayalam,2002,76.27,680.24,[],True
+M0840,Movie 840,"['Thriller', 'Comedy', 'Action']",Malayalam,2005,131.56,842.46,[],False
+M0841,Movie 841,"['Documentary', 'Sci-Fi', 'Drama']",English,2010,130.48,228.47,[],False
+M0842,Movie 842,"['Comedy', 'Action']",Kannada,1991,94.44,866.43,[],False
+M0843,Movie 843,"['Comedy', 'Drama']",Malayalam,2016,125.17,33.32,[],False
+M0844,Movie 844,['Sci-Fi'],Tamil,2015,141.03,912.79,[],False
+M0845,Movie 845,['Romance'],Malayalam,2014,131.39,118.36,[],True
+M0846,Movie 846,"['Action', 'Sci-Fi']",Hindi,2000,106.4,645.76,[],False
+M0847,Movie 847,"['Action', 'Thriller']",English,1997,120.27,250.08,[],False
+M0848,Movie 848,['Drama'],Hindi,1997,134.61,836.55,[],False
+M0849,Movie 849,"['Documentary', 'Thriller']",Hindi,2022,121.19,512.3,[],False
+M0850,Movie 850,['Sci-Fi'],Hindi,1996,145.09,135.24,[],False
+M0851,Movie 851,['Fantasy'],Telugu,2010,127.91,570.99,[],False
+M0852,Movie 852,['Action'],Telugu,1997,135.06,407.88,[],False
+M0853,Movie 853,"['Documentary', 'Thriller', 'Drama']",Kannada,2010,136.43,661.45,[],False
+M0854,Movie 854,['Romance'],English,2009,98.67,881.9,[],False
+M0855,Movie 855,['Action'],Tamil,1997,121.0,409.39,[],False
+M0856,Movie 856,['Documentary'],Tamil,2020,113.35,289.88,[],False
+M0857,Movie 857,['Action'],Tamil,2018,140.88,14.52,[],False
+M0858,Movie 858,"['Documentary', 'Romance']",Hindi,1998,129.26,574.84,[],False
+M0859,Movie 859,"['Action', 'Drama', 'Sci-Fi']",Telugu,2004,116.24,402.27,[],False
+M0860,Movie 860,"['Fantasy', 'Thriller', 'Comedy']",English,2019,94.36,374.65,[],False
+M0861,Movie 861,"['Sci-Fi', 'Thriller']",Hindi,2015,88.06,182.94,[],False
+M0862,Movie 862,"['Drama', 'Comedy']",Telugu,1999,126.21,430.06,[],False
+M0863,Movie 863,"['Documentary', 'Comedy']",Telugu,2018,105.66,984.44,[],False
+M0864,Movie 864,['Action'],Malayalam,2005,133.32,297.75,[],False
+M0865,Movie 865,"['Drama', 'Thriller', 'Sci-Fi']",Malayalam,2009,87.14,599.7,[],False
+M0866,Movie 866,"['Thriller', 'Drama', 'Sci-Fi']",English,2011,151.86,776.49,[],False
+M0867,Movie 867,"['Fantasy', 'Documentary']",English,1996,133.28,749.16,[],False
+M0868,Movie 868,"['Romance', 'Action', 'Drama']",English,2012,121.98,328.77,[],True
+M0869,Movie 869,"['Fantasy', 'Action']",Hindi,2018,153.66,610.86,[],False
+M0870,Movie 870,"['Documentary', 'Action', 'Thriller']",Kannada,2005,138.97,871.26,[],False
+M0871,Movie 871,"['Action', 'Drama']",English,2017,110.5,15.45,[],False
+M0872,Movie 872,"['Drama', 'Action']",Malayalam,2020,121.55,435.73,[],False
+M0873,Movie 873,"['Comedy', 'Drama', 'Romance']",Kannada,2003,80.71,224.27,[],False
+M0874,Movie 874,['Comedy'],Hindi,2022,141.28,388.63,[],False
+M0875,Movie 875,['Romance'],Kannada,1998,114.08,415.99,[],False
+M0876,Movie 876,['Drama'],Tamil,2016,80.46,746.67,[],False
+M0877,Movie 877,"['Thriller', 'Sci-Fi']",Kannada,2013,96.36,93.82,[],False
+M0878,Movie 878,"['Romance', 'Fantasy']",English,2002,137.42,512.58,[],False
+M0879,Movie 879,"['Comedy', 'Fantasy', 'Action']",Hindi,2015,152.28,564.19,[],False
+M0880,Movie 880,"['Sci-Fi', 'Documentary']",English,2018,120.41,494.16,[],False
+M0881,Movie 881,['Thriller'],Malayalam,2017,100.36,731.87,[],True
+M0882,Movie 882,"['Fantasy', 'Action']",Tamil,2017,91.59,383.79,[],True
+M0883,Movie 883,"['Action', 'Documentary']",Malayalam,1997,148.29,944.97,[],False
+M0884,Movie 884,"['Drama', 'Fantasy']",English,2012,128.99,481.8,[],False
+M0885,Movie 885,"['Fantasy', 'Drama', 'Romance']",English,2018,113.4,571.21,[],False
+M0886,Movie 886,['Comedy'],English,1994,108.63,825.53,[],False
+M0887,Movie 887,"['Thriller', 'Drama', 'Action']",Telugu,1996,133.44,275.24,[],False
+M0888,Movie 888,['Action'],Tamil,2016,132.89,75.2,[],False
+M0889,Movie 889,"['Sci-Fi', 'Romance', 'Comedy']",English,1991,102.07,707.78,[],False
+M0890,Movie 890,"['Documentary', 'Action']",English,2014,97.15,483.01,[],False
+M0891,Movie 891,"['Documentary', 'Drama', 'Thriller']",Malayalam,1998,98.16,896.5,[],False
+M0892,Movie 892,"['Fantasy', 'Thriller']",Malayalam,2016,110.64,982.68,[],True
+M0893,Movie 893,"['Fantasy', 'Drama', 'Romance']",English,1990,106.2,399.11,[],False
+M0894,Movie 894,"['Romance', 'Drama']",Hindi,2012,152.36,415.44,[],False
+M0895,Movie 895,"['Documentary', 'Comedy', 'Fantasy']",Telugu,1999,109.92,407.96,[],False
+M0896,Movie 896,['Sci-Fi'],Malayalam,2014,95.01,324.55,[],False
+M0897,Movie 897,"['Action', 'Comedy']",Hindi,1992,96.13,781.69,[],False
+M0898,Movie 898,"['Thriller', 'Fantasy']",Telugu,1995,116.32,759.0,[],True
+M0899,Movie 899,['Comedy'],English,1995,83.56,478.64,[],False
+M0900,Movie 900,"['Documentary', 'Fantasy']",Tamil,1991,118.8,44.66,[],False
+M0901,Movie 901,"['Action', 'Sci-Fi']",Kannada,2007,93.28,309.56,[],False
+M0902,Movie 902,"['Thriller', 'Documentary']",Kannada,2012,143.17,292.3,[],False
+M0903,Movie 903,"['Romance', 'Fantasy']",English,1991,122.33,811.09,[],False
+M0904,Movie 904,"['Documentary', 'Fantasy']",Malayalam,2001,162.42,87.58,[],False
+M0905,Movie 905,"['Sci-Fi', 'Fantasy', 'Drama']",Hindi,2011,115.44,805.68,[],False
+M0906,Movie 906,"['Comedy', 'Drama', 'Documentary']",Tamil,2009,57.37,669.18,[],False
+M0907,Movie 907,"['Fantasy', 'Thriller', 'Action']",Telugu,2013,149.15,732.44,[],True
+M0908,Movie 908,"['Drama', 'Thriller', 'Fantasy']",English,2009,130.04,432.21,[],False
+M0909,Movie 909,['Drama'],Tamil,1990,133.14,679.73,[],True
+M0910,Movie 910,['Drama'],Tamil,1990,99.95,609.03,[],False
+M0911,Movie 911,"['Drama', 'Comedy']",Malayalam,2006,119.14,768.98,[],False
+M0912,Movie 912,"['Romance', 'Comedy', 'Fantasy']",Telugu,1990,123.73,446.77,[],False
+M0913,Movie 913,"['Fantasy', 'Sci-Fi']",Tamil,2019,115.24,472.83,[],False
+M0914,Movie 914,['Drama'],Malayalam,1992,85.31,643.58,[],False
+M0915,Movie 915,['Sci-Fi'],Hindi,2000,175.37,108.08,[],False
+M0916,Movie 916,"['Documentary', 'Thriller']",Malayalam,2013,136.72,436.24,[],False
+M0917,Movie 917,"['Sci-Fi', 'Comedy']",Hindi,2011,128.41,971.95,[],False
+M0918,Movie 918,['Action'],Hindi,2015,146.28,37.55,[],False
+M0919,Movie 919,"['Thriller', 'Comedy', 'Drama']",Tamil,2002,132.88,316.0,[],False
+M0920,Movie 920,"['Drama', 'Thriller']",Malayalam,1990,106.46,314.11,[],False
+M0921,Movie 921,"['Romance', 'Fantasy', 'Thriller']",Hindi,2013,145.0,633.46,[],True
+M0922,Movie 922,"['Romance', 'Sci-Fi', 'Thriller']",Telugu,1999,137.04,105.8,[],False
+M0923,Movie 923,"['Fantasy', 'Action']",Tamil,2013,107.21,628.54,[],False
+M0924,Movie 924,['Drama'],Malayalam,2017,135.8,95.04,[],False
+M0925,Movie 925,"['Comedy', 'Sci-Fi']",Malayalam,2005,115.19,94.95,[],False
+M0926,Movie 926,['Drama'],Kannada,2005,124.17,728.18,[],False
+M0927,Movie 927,['Action'],Malayalam,2006,131.99,324.14,[],False
+M0928,Movie 928,"['Action', 'Sci-Fi', 'Fantasy']",Tamil,2004,147.37,977.42,[],False
+M0929,Movie 929,"['Action', 'Romance', 'Fantasy']",Telugu,2005,107.08,37.35,[],False
+M0930,Movie 930,"['Documentary', 'Comedy']",Malayalam,2004,127.3,445.11,[],False
+M0931,Movie 931,['Documentary'],Kannada,2023,160.31,113.14,[],False
+M0932,Movie 932,"['Fantasy', 'Action']",Tamil,2000,116.48,351.38,[],True
+M0933,Movie 933,['Drama'],Hindi,1990,123.93,998.22,[],False
+M0934,Movie 934,"['Sci-Fi', 'Action', 'Documentary']",English,2004,160.28,888.84,[],False
+M0935,Movie 935,"['Action', 'Comedy', 'Sci-Fi']",English,2015,132.75,48.32,[],False
+M0936,Movie 936,['Documentary'],Hindi,1993,90.52,563.26,[],False
+M0937,Movie 937,['Sci-Fi'],Malayalam,1994,104.09,647.82,[],False
+M0938,Movie 938,"['Sci-Fi', 'Fantasy']",English,2002,133.79,209.53,[],False
+M0939,Movie 939,"['Action', 'Sci-Fi']",English,1999,128.46,145.11,[],False
+M0940,Movie 940,"['Action', 'Thriller', 'Fantasy']",Hindi,2000,123.25,904.38,[],False
+M0941,Movie 941,"['Romance', 'Drama', 'Action']",Malayalam,2007,163.22,968.82,[],False
+M0942,Movie 942,"['Sci-Fi', 'Documentary']",Malayalam,2023,107.65,991.89,[],False
+M0943,Movie 943,['Drama'],Hindi,2012,118.51,789.76,[],False
+M0944,Movie 944,"['Documentary', 'Comedy', 'Fantasy']",Malayalam,1996,80.74,663.5,[],False
+M0945,Movie 945,"['Fantasy', 'Romance']",Malayalam,1992,143.21,345.73,[],False
+M0946,Movie 946,"['Drama', 'Action', 'Sci-Fi']",Tamil,2001,104.02,171.4,[],False
+M0947,Movie 947,"['Romance', 'Comedy', 'Sci-Fi']",Tamil,1996,141.14,78.98,[],False
+M0948,Movie 948,"['Romance', 'Sci-Fi', 'Action']",Hindi,2015,139.04,693.3,[],False
+M0949,Movie 949,"['Documentary', 'Sci-Fi', 'Comedy']",Telugu,2022,166.98,784.72,[],False
+M0950,Movie 950,"['Action', 'Fantasy', 'Thriller']",English,2004,132.99,826.45,[],False
+M0951,Movie 951,"['Comedy', 'Documentary', 'Drama']",Tamil,1991,112.88,913.77,[],True
+M0952,Movie 952,"['Comedy', 'Sci-Fi']",English,1996,129.07,879.93,[],False
+M0953,Movie 953,"['Comedy', 'Sci-Fi']",Kannada,2021,104.81,999.74,[],False
+M0954,Movie 954,"['Thriller', 'Documentary']",Hindi,1993,126.38,244.06,[],False
+M0955,Movie 955,"['Romance', 'Sci-Fi']",Telugu,2009,115.98,763.31,[],False
+M0956,Movie 956,"['Fantasy', 'Documentary']",Kannada,2021,118.59,586.46,[],False
+M0957,Movie 957,"['Sci-Fi', 'Comedy']",Kannada,2017,102.03,261.25,[],False
+M0958,Movie 958,"['Action', 'Romance', 'Drama']",Malayalam,2002,126.01,981.91,[],False
+M0959,Movie 959,"['Drama', 'Fantasy']",Kannada,1990,136.48,897.9,[],False
+M0960,Movie 960,"['Thriller', 'Romance', 'Documentary']",Hindi,2019,86.96,128.52,[],False
+M0961,Movie 961,"['Thriller', 'Fantasy', 'Sci-Fi']",Tamil,2014,106.23,26.16,[],False
+M0962,Movie 962,"['Action', 'Romance']",Hindi,2005,123.36,688.33,[],False
+M0963,Movie 963,['Comedy'],Tamil,2008,73.05,604.13,[],False
+M0964,Movie 964,['Romance'],Kannada,1990,154.81,935.82,[],False
+M0965,Movie 965,"['Fantasy', 'Action']",Kannada,1994,105.78,234.01,[],False
+M0966,Movie 966,"['Comedy', 'Documentary']",Telugu,2011,101.24,84.39,[],False
+M0967,Movie 967,"['Comedy', 'Fantasy', 'Drama']",Tamil,2013,115.85,259.22,[],False
+M0968,Movie 968,"['Sci-Fi', 'Documentary']",Kannada,1993,122.75,18.93,[],False
+M0969,Movie 969,['Sci-Fi'],Malayalam,2007,104.87,35.89,[],False
+M0970,Movie 970,"['Drama', 'Documentary', 'Romance']",English,2005,139.61,914.86,[],False
+M0971,Movie 971,"['Romance', 'Fantasy']",Telugu,2007,127.99,352.02,[],False
+M0972,Movie 972,['Comedy'],Hindi,2011,103.26,410.81,[],False
+M0973,Movie 973,"['Thriller', 'Documentary']",Telugu,1991,109.55,18.37,[],False
+M0974,Movie 974,"['Fantasy', 'Sci-Fi', 'Romance']",English,2010,89.66,270.52,[],False
+M0975,Movie 975,"['Fantasy', 'Romance']",Tamil,2018,94.93,804.73,[],False
+M0976,Movie 976,"['Drama', 'Documentary']",Hindi,2015,127.75,615.49,[],False
+M0977,Movie 977,"['Romance', 'Sci-Fi', 'Comedy']",Hindi,2010,103.46,753.78,[],False
+M0978,Movie 978,['Sci-Fi'],Tamil,2006,156.09,447.21,[],False
+M0979,Movie 979,"['Romance', 'Drama', 'Sci-Fi']",Telugu,2005,121.42,309.73,[],False
+M0980,Movie 980,['Romance'],Kannada,2020,92.94,482.81,[],False
+M0981,Movie 981,['Sci-Fi'],Telugu,1998,97.13,323.07,[],False
+M0982,Movie 982,"['Comedy', 'Drama']",English,2020,141.06,838.97,[],False
+M0983,Movie 983,"['Action', 'Thriller']",Malayalam,2003,118.47,297.67,[],False
+M0984,Movie 984,['Drama'],Kannada,1991,139.84,659.76,[],False
+M0985,Movie 985,"['Action', 'Romance']",Telugu,2003,112.67,136.98,[],False
+M0986,Movie 986,"['Sci-Fi', 'Romance', 'Documentary']",Malayalam,2022,108.8,686.87,[],False
+M0987,Movie 987,['Sci-Fi'],Malayalam,2009,142.39,913.3,[],False
+M0988,Movie 988,"['Sci-Fi', 'Fantasy']",Tamil,1991,102.83,608.58,[],False
+M0989,Movie 989,['Comedy'],English,2008,129.78,559.86,[],False
+M0990,Movie 990,"['Drama', 'Thriller']",English,2007,115.76,961.12,[],True
+M0991,Movie 991,['Comedy'],English,2005,137.57,627.4,[],False
+M0992,Movie 992,['Drama'],Kannada,1993,156.37,259.55,[],False
+M0993,Movie 993,"['Comedy', 'Drama', 'Documentary']",Hindi,2001,112.16,292.39,[],False
+M0994,Movie 994,"['Drama', 'Romance', 'Sci-Fi']",Kannada,2018,109.06,705.31,[],False
+M0995,Movie 995,"['Drama', 'Action']",Telugu,1996,133.32,735.44,[],True
+M0996,Movie 996,['Thriller'],Malayalam,2003,98.36,303.5,[],True
+M0997,Movie 997,"['Drama', 'Documentary', 'Sci-Fi']",Malayalam,2001,152.33,345.34,[],False
+M0998,Movie 998,['Fantasy'],Hindi,1994,148.92,991.06,[],False
+M0999,Movie 999,"['Fantasy', 'Drama']",Telugu,2006,100.02,101.95,[],False
