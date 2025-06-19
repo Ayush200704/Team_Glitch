@@ -1,0 +1,10 @@
+{
+  "scene": 7,
+  "start": 28.486,
+  "end": 32.866,
+  "subtitle_text": "Let me try and we'll know for sure. Mr. Turing, do you know how many died because of it?",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

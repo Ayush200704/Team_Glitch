@@ -1,0 +1,10 @@
+{
+  "scene": 17,
+  "start": 124.415,
+  "end": 131.005,
+  "subtitle_text": "I'm just a mathematician. Sometimes, it is the people who no one imagines anything of. Who do the things that no one...",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

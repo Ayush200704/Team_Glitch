@@ -1,0 +1,10 @@
+{
+  "scene": 14,
+  "start": 98.306,
+  "end": 102.685,
+  "subtitle_text": "me why am I finding myself so attracted to this woman",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

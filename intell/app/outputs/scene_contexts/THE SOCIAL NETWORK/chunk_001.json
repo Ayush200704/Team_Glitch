@@ -1,0 +1,10 @@
+{
+  "scene": 6,
+  "start": 41.666,
+  "end": 63.605,
+  "subtitle_text": "[Music] I need to do something substantial in order to get the attention of the club's why because they're exclusive and fun and they lead to a better life [Music] people want to go on the internet and",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

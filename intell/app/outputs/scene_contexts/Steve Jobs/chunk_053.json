@@ -1,0 +1,10 @@
+{
+  "scene": 61,
+  "start": 130.004,
+  "end": 131.047,
+  "subtitle_text": "right with Lisa fix it",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

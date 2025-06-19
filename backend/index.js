@@ -137,7 +137,7 @@ app.post('/api/ai-recommend', async (req, res) => {
             return res.json({ recommendations: [{ name: "Your prompt does not appear to be a movie recommendation request. Please ask for movie recommendations.", genre: [] }] });
         }
         prompt = `
-Given the following movies: ${JSON.stringify(movies).slice(0, 10000)}
+    
 ${customPrompt}
 Return ONLY a JSON array of 5 objects, each with "name" and "genre" fields. Do not include any explanation, markdown, or extra text.`;
     } else {

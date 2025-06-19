@@ -1,0 +1,10 @@
+{
+  "scene": 20,
+  "start": 45.17,
+  "end": 46.421,
+  "subtitle_text": "fix it fix it yeah we're not a pit crew at Daytona this can't be fixed in",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

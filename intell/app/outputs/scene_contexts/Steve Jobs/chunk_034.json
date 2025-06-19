@@ -1,0 +1,10 @@
+{
+  "scene": 38,
+  "start": 86.961,
+  "end": 88.087,
+  "subtitle_text": "make people miserable even if that",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

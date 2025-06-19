@@ -1,0 +1,15 @@
+{
+  "scene": 3,
+  "start": 6.673,
+  "end": 8.8,
+  "subtitle_text": "oh we say we were going to stop they",
+  "trivia_question": "What common phrase does the scene's dialogue reference about pausing actions?",
+  "trivia_choices": [
+    "Stop and smell the roses",
+    "Stop and taste the roses",
+    "Pause and ponder life",
+    "Halt and reflect deeply"
+  ],
+  "fun_fact": "The phrase 'stop and smell the roses' originated in the 16th century as a reminder to appreciate life's simple pleasures.",
+  "poll_question": "Do you agree with taking pauses in daily routines for reflection?"
+}

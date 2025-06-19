@@ -1,0 +1,10 @@
+{
+  "scene": 22,
+  "start": 58.308,
+  "end": 60.059,
+  "subtitle_text": "I'm begging you to manage expectations out there you see how this reminds you",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

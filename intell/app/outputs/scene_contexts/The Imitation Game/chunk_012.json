@@ -1,0 +1,10 @@
+{
+  "scene": 15,
+  "start": 115.49,
+  "end": 118.618,
+  "subtitle_text": "What if I don't fancy her in that way? You can't tell anyone, Alan.",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

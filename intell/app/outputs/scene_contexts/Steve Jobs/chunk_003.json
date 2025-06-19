@@ -1,0 +1,10 @@
+{
+  "scene": 6,
+  "start": 13.012,
+  "end": 15.014,
+  "subtitle_text": "what do you do you're not an engineer you're not a designer",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

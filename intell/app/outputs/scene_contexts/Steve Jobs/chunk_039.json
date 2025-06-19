@@ -1,0 +1,10 @@
+{
+  "scene": 47,
+  "start": 99.307,
+  "end": 100.225,
+  "subtitle_text": "building manager they're gonna come in and tell everyone to leave if a fire",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

@@ -1,0 +1,15 @@
+{
+  "scene": 12,
+  "start": 70.195,
+  "end": 79.12,
+  "subtitle_text": "You know, to pull off this irascible genius routine, one actually has to be a genius. I'm designing a machine that will allow us to break every message every day. Instantly.",
+  "trivia_question": "What term describes a machine designed to break encrypted messages?",
+  "trivia_choices": [
+    "Enigma Machine",
+    "Decoder",
+    "Cipher Machine",
+    "Cryptanalysis Machine"
+  ],
+  "fun_fact": "The Enigma Machine, used by Nazi Germany during WWII, was famously decrypted by Alan Turing and his team at Bletchley Park.",
+  "poll_question": "Do you think the character's plan to break every message daily is feasible?"
+}

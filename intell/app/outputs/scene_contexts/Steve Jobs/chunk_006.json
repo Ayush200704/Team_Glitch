@@ -1,0 +1,10 @@
+{
+  "scene": 9,
+  "start": 19.018,
+  "end": 21.02,
+  "subtitle_text": "the circuit board the graphical interface was stolen",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

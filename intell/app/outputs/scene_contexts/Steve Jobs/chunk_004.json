@@ -1,0 +1,15 @@
+{
+  "scene": 7,
+  "start": 15.014,
+  "end": 17.016,
+  "subtitle_text": "you're not a designer you can't put a hammer to a nail I built",
+  "trivia_question": "What role is typically responsible for creating the visual design of a product?",
+  "trivia_choices": [
+    "Designer",
+    "Developer",
+    "Tester",
+    "Project Manager"
+  ],
+  "fun_fact": "Did you know? The term 'designer' dates back to the 16th century, originally referring to artists who created plans for architecture and art.",
+  "poll_question": "Do you agree with the statement 'you're not a designer' in this context?"
+}

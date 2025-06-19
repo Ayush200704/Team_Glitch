@@ -21,7 +21,7 @@ CLIENT_SECRETS_FILE = 'D:/glitch/Team_Glitch/intell/app/core/calendar/google_cre
 # Directory for token storage
 TOKEN_FILE = 'D:/glitch/Team_Glitch/token.json' # This token file will also be in the same directory as this script
 
-def get_calendar_events_json(days_ahead: int = 3) -> str:
+def get_calendar_events_json(days_ahead: int = 9) -> str:
     """Fetches Google Calendar events for the next 'days_ahead' and returns them as a JSON string.
     Handles OAuth 2.0 authentication for desktop applications.
     """
@@ -86,7 +86,7 @@ def get_calendar_events_json(days_ahead: int = 3) -> str:
         return json.dumps({"error": str(e)}, indent=4)
 
 if __name__ == '__main__':
-    json_output = get_calendar_events_json(days_ahead=3)
+    json_output = get_calendar_events_json(days_ahead=9)
     
     output_dir = r'D:/glitch/Team_Glitch/intell/app\outputs'
     output_file_path = os.path.join(output_dir, 'calendar_events.json')

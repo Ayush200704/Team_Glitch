@@ -1,0 +1,10 @@
+{
+  "scene": 30,
+  "start": 70.945,
+  "end": 72.655,
+  "subtitle_text": "no reason there will be no one left for it to say hello to your Apple stock was",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

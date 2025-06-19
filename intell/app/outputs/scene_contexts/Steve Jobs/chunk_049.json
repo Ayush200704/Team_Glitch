@@ -1,0 +1,10 @@
+{
+  "scene": 57,
+  "start": 119.369,
+  "end": 124.374,
+  "subtitle_text": "show of hands you're gonna anything are you you're being ridiculous I'm gonna sit center court and watch you do it yourself make you everything all",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

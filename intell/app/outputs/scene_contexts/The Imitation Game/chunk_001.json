@@ -1,0 +1,15 @@
+{
+  "scene": 4,
+  "start": 10.176,
+  "end": 12.846,
+  "subtitle_text": "This war... We're not winning it.",
+  "trivia_question": "Which historical war is often cited as having a turning point similar to the one mentioned in this scene?",
+  "trivia_choices": [
+    "World War II",
+    "Vietnam War",
+    "Korean War",
+    "Gulf War"
+  ],
+  "fun_fact": "The phrase 'We're not winning it' echoes the strategic challenges faced during the Battle of Stalingrad in WWII, where Soviet forces turned the tide against Nazi Germany.",
+  "poll_question": "Do you think the quote reflects a realistic assessment of the war's outcome? (A) Yes (B) No (C) Maybe (D) Unsure"
+}

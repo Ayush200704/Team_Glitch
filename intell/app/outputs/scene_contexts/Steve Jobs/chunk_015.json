@@ -1,0 +1,15 @@
+{
+  "scene": 18,
+  "start": 42.459,
+  "end": 43.46,
+  "subtitle_text": "that was possible it's a system error",
+  "trivia_question": "What is a common cause of system errors mentioned in this scene?",
+  "trivia_choices": [
+    "Hardware failure",
+    "Software bugs",
+    "Outdated drivers",
+    "Incorrect user input"
+  ],
+  "fun_fact": "System errors can sometimes be triggered by unexpected interactions between software and hardware components.",
+  "poll_question": "What's your go-to solution when encountering a system error?"
+}

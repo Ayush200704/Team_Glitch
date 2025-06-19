@@ -1,0 +1,15 @@
+{
+  "scene": 10,
+  "start": 60.393,
+  "end": 64.272,
+  "subtitle_text": "What is it that we're really doing? We're going to break an unbreakable Nazi code and win the war.",
+  "trivia_question": "Which historical code was famously broken by Allied forces during World War II?",
+  "trivia_choices": [
+    "Enigma",
+    "Vigenère",
+    "Caesar",
+    "One-Time Pad"
+  ],
+  "fun_fact": "The Enigma machine was used by Nazi Germany to encrypt military communications, and its breaking by Allied cryptanalysts significantly contributed to the Allied victory.",
+  "poll_question": "Do you think code-breaking was the most critical factor in winning World War II?"
+}

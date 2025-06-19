@@ -1,0 +1,10 @@
+{
+  "scene": 4,
+  "start": 8.758,
+  "end": 11.01,
+  "subtitle_text": "[Music] what do you do you're not an engineer",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

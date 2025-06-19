@@ -1,0 +1,10 @@
+{
+  "scene": 33,
+  "start": 80.83,
+  "end": 81.748,
+  "subtitle_text": "my daughter you must be able to see that she looks like you",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

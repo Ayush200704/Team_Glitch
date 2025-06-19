@@ -1,0 +1,10 @@
+{
+  "scene": 5,
+  "start": 12.846,
+  "end": 26.901,
+  "subtitle_text": "If you speak a word of what I'm about to show you, you will be executed for high treason. It's beautiful. It's the greatest encryption device in history and the Germans use it for all communications. Everyone thinks Enigma is unbreakable.",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

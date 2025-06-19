@@ -1,0 +1,10 @@
+{
+  "scene": 34,
+  "start": 81.748,
+  "end": 82.665,
+  "subtitle_text": "she looks like you you're issuing contradictory",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

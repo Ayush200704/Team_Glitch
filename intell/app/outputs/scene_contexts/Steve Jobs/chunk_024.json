@@ -1,0 +1,10 @@
+{
+  "scene": 27,
+  "start": 65.899,
+  "end": 66.941,
+  "subtitle_text": "playful and inviting and it needs to say hello if you keep alienating people for",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

@@ -22,16 +22,13 @@ def extract_mfcc_avg(filepath):
 def predict_emotion(audio_path):
     """
     Predicts emotion from a given WAV file path using the preloaded model.
+    Returns the predicted label as a string.
     """
     input_data = extract_mfcc_avg(audio_path)
-    print("Input shape:", input_data.shape)
-
     pred = model.predict(input_data)
     predicted_index = np.argmax(pred)
     predicted_label = emotion_labels[predicted_index]
-
-    print(f"\nPredicted Emotion: {predicted_label}")
-    print(f"Raw Prediction Scores: {pred}")
+    return predicted_label
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

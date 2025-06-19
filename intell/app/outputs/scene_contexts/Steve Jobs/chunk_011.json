@@ -1,0 +1,10 @@
+{
+  "scene": 14,
+  "start": 34.534,
+  "end": 35.285,
+  "subtitle_text": "the orchestra here you've been worse",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

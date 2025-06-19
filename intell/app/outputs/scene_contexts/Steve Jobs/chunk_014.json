@@ -1,0 +1,10 @@
+{
+  "scene": 17,
+  "start": 37.912,
+  "end": 42.459,
+  "subtitle_text": "the orchestra here you've been worse than usual this morning I didn't think that was possible it's a system error",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

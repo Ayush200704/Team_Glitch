@@ -1,0 +1,10 @@
+{
+  "scene": 12,
+  "start": 25.024,
+  "end": 29.028,
+  "subtitle_text": "so how come ten times in a day I read Steve Jobs as a genius what do you do",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

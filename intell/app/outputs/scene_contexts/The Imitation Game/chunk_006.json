@@ -1,0 +1,10 @@
+{
+  "scene": 9,
+  "start": 37.579,
+  "end": 60.393,
+  "subtitle_text": "Gentlemen... Meet Mr. Turing. We are to work together, then? I'm afraid these men would only slow me down. Popular at school, were you? We're short on staff. We get more staff, then. You have six minutes to complete the task. Is that even possible? No. Takes me eight. Five minutes and thirty-four seconds. You said to do it in under six.",
+  "trivia_question": "",
+  "trivia_choices": [],
+  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+  "poll_question": ""
+}

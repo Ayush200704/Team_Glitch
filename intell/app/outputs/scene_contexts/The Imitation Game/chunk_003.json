@@ -1,0 +1,15 @@
+{
+  "scene": 6,
+  "start": 26.901,
+  "end": 28.486,
+  "subtitle_text": "Let me try and we'll know for sure.",
+  "trivia_question": "What step in the scientific method involves testing a hypothesis?",
+  "trivia_choices": [
+    "Design an experiment",
+    "Conduct research",
+    "Analyze data",
+    "Formulate a theory"
+  ],
+  "fun_fact": "Did you know? The first controlled experiment was conducted by Ibn al-Haytham in 1011 to study optics.",
+  "poll_question": "Do you think the experiment will work as expected?"
+}

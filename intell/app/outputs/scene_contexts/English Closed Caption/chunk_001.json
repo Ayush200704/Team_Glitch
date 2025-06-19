@@ -1,15 +1,15 @@
 {
   "scene": 1,
   "start": 0.0,
-  "end": 10.436,
-  "subtitle_text": "thinking about a seafood meal whether dining in or out when you go native you'll get the freshest safest most wholesome Seafood around Seafood that's fresh from Florida more than 80",
-  "trivia_question": "Where do you prefer to eat seafood?",
+  "end": 3.436,
+  "subtitle_text": "thinking about a seafood meal whether",
+  "trivia_question": "Which of these dishes is primarily made with seafood?",
   "trivia_choices": [
-    "Dining in",
-    "Dining out",
-    "Both",
-    "Neither"
+    "Sushi",
+    "Ceviche",
+    "Grilled Salmon",
+    "Steak"
   ],
-  "fun_fact": "More than 80% of seafood in Florida is fresh.",
-  "poll_question": "Do you prefer dining in or out for seafood?"
+  "fun_fact": "Seafood is rich in omega-3 fatty acids, which are beneficial for heart health.",
+  "poll_question": "Do you prefer cooked or raw seafood?"
 }
