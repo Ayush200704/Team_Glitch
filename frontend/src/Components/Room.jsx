@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { io } from 'socket.io-client';
 import { useNavigate } from 'react-router-dom';
+import { FiBell } from 'react-icons/fi';
 
 const socket = io('http://localhost:3001');
 
@@ -20,6 +21,11 @@ function Room() {
     const [userList, setUserList] = useState([]);
     const [isHost] = useState(sessionStorage.getItem("isHost") === "true");
     const [copied, setCopied] = useState(false);
+    const [currentOverlay, setCurrentOverlay] = useState(null);
+    const [overlayResults, setOverlayResults] = useState(null);
+    const [hasAnswered, setHasAnswered] = useState({});
+    const [overlayHistory, setOverlayHistory] = useState([]);
+    const [notificationOpen, setNotificationOpen] = useState(false);
 
     useEffect(() => {
 
@@ -95,6 +101,23 @@ function Room() {
             navigate('/');
         });
 
+        socket.on('scene-interaction', (payload) => {
+            setCurrentOverlay(payload);
+            setOverlayResults(null);
+            setHasAnswered(prev => ({ ...prev, [payload.scene]: false }));
+            setOverlayHistory(prev => [...prev, { ...payload, timestamp: Date.now() }]);
+        });
+
+        socket.on('interaction-results', (results) => {
+            setOverlayResults(results);
+            setOverlayHistory(prev =>
+                prev.map(item =>
+                    item.scene === results.scene
+                        ? { ...item, results }
+                        : item
+                )
+            );
+        });
 
         return () => {
             socket.off('load-movie');
@@ -105,6 +128,8 @@ function Room() {
             socket.off('user-list');
             socket.off('chat-message');
             socket.off('force-leave');
+            socket.off('scene-interaction');
+            socket.off('interaction-results');
         };
 
 
@@ -160,6 +185,16 @@ function Room() {
         socket.emit('seek', { roomId, time });
     };
 
+    const handleOverlaySubmit = (answer) => {
+        if (!currentOverlay || hasAnswered[currentOverlay.scene]) return;
+        socket.emit('interaction-response', {
+            roomId,
+            scene: currentOverlay.scene,
+            answer,
+            username
+        });
+        setHasAnswered(prev => ({ ...prev, [currentOverlay.scene]: true }));
+    };
 
     return (
         <div className="p-5 md:p-8 bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen flex flex-col items-center">
@@ -255,12 +290,29 @@ function Room() {
                 ))}
             </div>
 
-            <button
-                onClick={handleLeaveRoom}
-                className="bg-red-600 hover:bg-red-700 text-white border-none px-6 py-2 rounded-lg cursor-pointer mt-4 font-semibold shadow"
-            >
-                Leave Room
-            </button>
+            {/* Notification and Leave Room Buttons Row */}
+            <div className="flex flex-row items-center gap-4 mt-4">
+                <button
+                    onClick={handleLeaveRoom}
+                    className="bg-red-600 hover:bg-red-700 text-white border-none px-6 py-2 rounded-lg cursor-pointer font-semibold shadow"
+                >
+                    Leave Room
+                </button>
+
+                <button
+                    onClick={() => setNotificationOpen(true)}
+                    className="relative bg-white hover:bg-blue-100 text-blue-700 rounded-full w-14 h-14 flex items-center justify-center shadow-xl border border-blue-200 transition-colors duration-200"
+                    title="Show notifications"
+                    style={{ outline: 'none' }}
+                >
+                    <FiBell size={32} />
+                    {overlayHistory.length > 0 && (
+                        <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full px-2 py-0.5 font-bold shadow-md border-2 border-white">
+                            {overlayHistory.length}
+                        </span>
+                    )}
+                </button>
+            </div>
 
             <div className="mt-6 w-full max-w-xs">
                 <h4 className="mb-2 font-semibold text-gray-200">Users in Room:</h4>
@@ -272,8 +324,123 @@ function Room() {
                     ))}
                 </ul>
             </div>
+
+            {notificationOpen && (
+                <div
+                    className="fixed top-24 right-10 w-96 max-h-[70vh] bg-white/95 rounded-2xl shadow-2xl z-50 overflow-y-auto border border-blue-200 animate-fadeIn"
+                    style={{ backdropFilter: 'blur(6px)' }}
+                >
+                    <div className="flex justify-between items-center px-6 py-4 border-b border-blue-100 bg-gradient-to-r from-blue-50 to-white rounded-t-2xl">
+                        <h3 className="font-bold text-xl text-blue-800 tracking-wide">Movie Interactions</h3>
+                        <button onClick={() => setNotificationOpen(false)} className="text-gray-400 hover:text-blue-600 text-3xl font-bold focus:outline-none">&times;</button>
+                    </div>
+                    <div className="p-5 space-y-5">
+                        {overlayHistory.length === 0 && <div className="text-gray-400 text-center">No interactions yet.</div>}
+                        {overlayHistory.map((item, idx) => (
+                            <div key={item.scene + '-' + idx} className="rounded-xl bg-blue-50/80 p-4 shadow-sm border border-blue-100">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <span className={`text-xs px-2 py-0.5 rounded font-semibold uppercase
+                                        ${item.type === 'trivia' ? 'bg-yellow-200 text-yellow-800' :
+                                          item.type === 'poll' ? 'bg-green-200 text-green-800' :
+                                          'bg-blue-200 text-blue-800'}`}
+                                    >
+                                        {item.type === 'trivia' ? 'TRIVIA' : item.type === 'poll' ? 'POLL' : 'FACT'}
+                                    </span>
+                                    <span className="text-xs text-gray-400 ml-auto">{new Date(item.timestamp).toLocaleTimeString()}</span>
+                                </div>
+                                {item.type === 'trivia' && (
+                                    <>
+                                        <div className="font-semibold text-blue-900 mb-1">{item.question}</div>
+                                        {item.choices && (
+                                            <ul className="list-disc ml-5 text-sm text-blue-800">
+                                                {item.choices.map(choice => <li key={choice}>{choice}</li>)}
+                                            </ul>
+                                        )}
+                                        {item.results && (
+                                            <div className="mt-2 text-xs text-green-700">
+                                                Results: {Object.entries(item.results.results || {}).map(([ans, count]) => `${ans}: ${count}`).join(', ')}
+                                            </div>
+                                        )}
+                                    </>
+                                )}
+                                {item.type === 'poll' && (
+                                    <>
+                                        <div className="font-semibold text-blue-900 mb-1">{item.question}</div>
+                                        {item.options && (
+                                            <ul className="list-disc ml-5 text-sm text-green-800">
+                                                {item.options.map(option => <li key={option}>{option}</li>)}
+                                            </ul>
+                                        )}
+                                        {item.results && (
+                                            <div className="mt-2 text-xs text-green-700">
+                                                Results: {Object.entries(item.results.results || {}).map(([ans, count]) => `${ans}: ${count}`).join(', ')}
+                                            </div>
+                                        )}
+                                    </>
+                                )}
+                                {item.type === 'fun_fact' && (
+                                    <div className="italic text-blue-700">{item.fact}</div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     );
+}
+
+function Overlay({ overlay, onSubmit, results, hasAnswered }) {
+    if (!overlay) return null;
+    if (overlay.type === 'trivia') {
+        return (
+            <div className="fixed top-10 left-1/2 -translate-x-1/2 bg-white p-6 rounded shadow-lg z-50 w-96 text-center">
+                <h3 className="font-bold mb-2">{overlay.question}</h3>
+                {overlay.choices && !hasAnswered && overlay.choices.map(choice => (
+                    <button key={choice} onClick={() => onSubmit(choice)} className="block w-full my-1 py-2 bg-blue-200 rounded hover:bg-blue-400">{choice}</button>
+                ))}
+                {hasAnswered && <div className="mt-2 text-green-700">Answer submitted!</div>}
+                {results && (
+                    <div className="mt-4">
+                        <h4 className="font-semibold">Results:</h4>
+                        {Object.entries(results.results || {}).map(([ans, count]) => (
+                            <div key={ans}>{ans}: {count}</div>
+                        ))}
+                        <div>Total responses: {results.total}</div>
+                    </div>
+                )}
+            </div>
+        );
+    }
+    if (overlay.type === 'fun_fact') {
+        return (
+            <div className="fixed top-10 left-1/2 -translate-x-1/2 bg-white p-6 rounded shadow-lg z-50 w-96 text-center">
+                <h3 className="font-bold mb-2">Fun Fact</h3>
+                <p>{overlay.fact}</p>
+            </div>
+        );
+    }
+    if (overlay.type === 'poll') {
+        return (
+            <div className="fixed top-10 left-1/2 -translate-x-1/2 bg-white p-6 rounded shadow-lg z-50 w-96 text-center">
+                <h3 className="font-bold mb-2">{overlay.question}</h3>
+                {overlay.options && !hasAnswered && overlay.options.map(option => (
+                    <button key={option} onClick={() => onSubmit(option)} className="block w-full my-1 py-2 bg-green-200 rounded hover:bg-green-400">{option}</button>
+                ))}
+                {hasAnswered && <div className="mt-2 text-green-700">Answer submitted!</div>}
+                {results && (
+                    <div className="mt-4">
+                        <h4 className="font-semibold">Results:</h4>
+                        {Object.entries(results.results || {}).map(([ans, count]) => (
+                            <div key={ans}>{ans}: {count}</div>
+                        ))}
+                        <div>Total responses: {results.total}</div>
+                    </div>
+                )}
+            </div>
+        );
+    }
+    return null;
 }
 
 export default Room;

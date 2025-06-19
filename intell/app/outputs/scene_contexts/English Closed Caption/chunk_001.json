@@ -11,5 +11,9 @@
     "Steak"
   ],
   "fun_fact": "Seafood is rich in omega-3 fatty acids, which are beneficial for heart health.",
-  "poll_question": "Do you prefer cooked or raw seafood?"
+  "poll_question": "Do you prefer cooked or raw seafood?",
+  "poll_options": [
+    "Cooked",
+    "Raw"
+  ]
 }

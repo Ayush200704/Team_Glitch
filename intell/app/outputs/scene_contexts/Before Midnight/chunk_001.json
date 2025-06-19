@@ -11,5 +11,10 @@
     "Halt and reflect deeply"
   ],
   "fun_fact": "The phrase 'stop and smell the roses' originated in the 16th century as a reminder to appreciate life's simple pleasures.",
-  "poll_question": "Do you agree with taking pauses in daily routines for reflection?"
+  "poll_question": "Do you agree with taking pauses in daily routines for reflection?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
 }

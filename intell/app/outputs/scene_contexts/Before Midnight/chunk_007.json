@@ -11,5 +11,10 @@
     "Noisy City"
   ],
   "fun_fact": "The music in this scene is a remix of a 1980s hit song.",
-  "poll_question": "Do you prefer scenes with music or without?"
-}
+  "poll_question": "Do you prefer scenes with music or without?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+} 

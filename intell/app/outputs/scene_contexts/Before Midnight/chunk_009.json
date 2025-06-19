@@ -11,5 +11,10 @@
     "Through a mutual friend"
   ],
   "fun_fact": "According to studies, 65% of people prefer having direct face-to-face conversations when ending relationships.",
-  "poll_question": "Have you ever broken up with someone by starting a direct conversation?"
-}
+  "poll_question": "Have you ever broken up with someone by starting a direct conversation?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+} 

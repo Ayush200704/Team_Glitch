@@ -11,5 +11,9 @@
     "Alaska"
   ],
   "fun_fact": "Florida is known for its fresh seafood.",
-  "poll_question": "Do you prefer seafood from Florida?"
+  "poll_question": "Do you prefer seafood from Florida?",
+  "poll_options": [
+    "Yes",
+    "No"
+  ]
 }

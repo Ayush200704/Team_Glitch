@@ -11,5 +11,10 @@
     "Hyperloop"
   ],
   "fun_fact": "The Shanghai Maglev reaches speeds up to 267 mph (431 km/h), making it the world's fastest commercial train.",
-  "poll_question": "Do you think self-awareness is the key to understanding attraction? (Yes/No/Maybe)"
+  "poll_question": "Do you think self-awareness is the key to understanding attraction?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
 }

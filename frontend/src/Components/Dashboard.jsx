@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { FaHistory, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+
 
 const streamingServices = [
     { name: "Netflix", color: "bg-red-600" },
@@ -25,6 +27,9 @@ export default function Dashboard() {
     const [chatLoading, setChatLoading] = useState(false);
     const [customPrompt, setCustomPrompt] = useState("");
     const [mode, setMode] = useState("preference"); // 'preference' or 'custom'
+    const [history, setHistory] = useState([]);
+    const [showHistory, setShowHistory] = useState(false);
+    const [historyDetailIdx, setHistoryDetailIdx] = useState(null);
 
     // Example questions
     const questions = [
@@ -41,11 +46,13 @@ export default function Dashboard() {
     const handleSubmitPreferences = async () => {
         setChatLoading(true);
         try {
-            let body;
+            let body, inputSummary;
             if (mode === "preference") {
                 body = preferences;
+                inputSummary = { ...preferences };
             } else {
                 body = { customPrompt };
+                inputSummary = customPrompt;
             }
             const res = await fetch("http://localhost:3001/api/ai-recommend", {
                 method: "POST",
@@ -55,6 +62,16 @@ export default function Dashboard() {
             const data = await res.json();
             setRecommendations(data.recommendations);
             setCustomPrompt("");
+            // Save to history
+            setHistory(prev => [
+                ...prev,
+                {
+                    mode,
+                    input: inputSummary,
+                    recommendations: data.recommendations,
+                    timestamp: new Date().toISOString()
+                }
+            ]);
         } catch (e) {
             setRecommendations([{ name: "Error fetching recommendations." }]);
         }
@@ -182,76 +199,249 @@ export default function Dashboard() {
 
             {/* Chatbot Panel */}
             {showChatbot && (
-                <div className="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-gray-800 shadow-lg z-50 flex flex-col">
-                    <div className="flex justify-between items-center p-4 border-b border-gray-700">
-                        <h2 className="text-lg font-bold">AI Movie Finder</h2>
-                        <button onClick={() => setShowChatbot(false)} className="text-2xl">&times;</button>
-                    </div>
-                    <div className="flex-1 p-4 overflow-y-auto">
-                        {/* Toggle Mode */}
-                        <div className="mb-4 flex items-center gap-4">
-                            <button
-                                className={`px-3 py-1 rounded-full font-semibold transition ${mode === "preference" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"}`}
-                                onClick={() => { setMode("preference"); setChatStep(0); setPreferences({}); setCustomPrompt(""); setRecommendations([]); }}
-                                disabled={mode === "preference"}
-                            >
-                                Preference Mode
-                            </button>
-                            <button
-                                className={`px-3 py-1 rounded-full font-semibold transition ${mode === "custom" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"}`}
-                                onClick={() => { setMode("custom"); setChatStep(questions.length); setPreferences({}); setCustomPrompt(""); setRecommendations([]); }}
-                                disabled={mode === "custom"}
-                            >
-                                Custom Prompt Mode
-                            </button>
+                <div className="fixed top-0 right-0 h-full w-full sm:w-[400px] flex flex-row z-50">
+                    {/* History Sidebar */}
+                    {showHistory && (
+                        <>
+                            {/* Overlay */}
+                            <div className="fixed inset-0 bg-black bg-opacity-50 z-50" onClick={() => setShowHistory(false)} />
+                            {/* Floating History Modal */}
+                            <div className="fixed top-1/2 left-1/2 z-50 w-full max-w-[400px] h-[90vh] -translate-x-1/2 -translate-y-1/2 bg-gray-900 border border-gray-700 shadow-2xl rounded-xl flex flex-col">
+                                {historyDetailIdx === null ? (
+                                    <div className="flex flex-col h-full">
+                                        <div className="p-6 border-b border-gray-700 bg-gray-900 flex items-center justify-between">
+                                            <h2 className="text-2xl font-bold text-white flex items-center">
+                                                <FaHistory className="mr-3 text-purple-400 text-3xl" />
+                                                Search History
+                                            </h2>
+                                            <button
+                                                className="text-gray-400 hover:text-white transition-colors text-2xl"
+                                                onClick={() => setShowHistory(false)}
+                                                title="Close history"
+                                            >
+                                                &times;
+                                            </button>
+                                        </div>
+                                        <div className="flex-1 overflow-y-auto p-6">
+                                            {history.length === 0 ? (
+                                                <div className="text-center text-gray-400 py-16">
+                                                    <FaHistory className="mx-auto mb-4 text-5xl opacity-40" />
+                                                    <p className="text-lg">No search history yet</p>
+                                                </div>
+                                            ) : (
+                                                <div className="space-y-5">
+                                                    {history.map((entry, idx) => (
+                                                        <div
+                                                            key={idx}
+                                                            className="bg-gray-800 rounded-xl p-5 hover:bg-gray-700 transition-colors cursor-pointer shadow flex items-center justify-between"
+                                                        >
+                                                            <div className="flex-1 min-w-0">
+                                                                <div className="flex items-center mb-2">
+                                                                    <span className={`px-3 py-1 rounded-full text-xs font-bold ${entry.mode === "preference" ? "bg-blue-600 text-white" : "bg-green-600 text-white"}`}>
+                                                                        {entry.mode === "preference" ? "Preferences" : "Custom"}
+                                                                    </span>
+                                                                </div>
+                                                                <div className="text-base text-gray-200 mb-1 truncate font-semibold">
+                                                                    {entry.mode === "preference" ? (
+                                                                        <span>
+                                                                            {entry.input.genre} • {entry.input.length} • {entry.input.year}
+                                                                        </span>
+                                                                    ) : (
+                                                                        <span>{entry.input}</span>
+                                                                    )}
+                                                                </div>
+                                                                <div className="text-xs text-gray-400">
+                                                                    {entry.recommendations?.length || 0} recommendations
+                                                                </div>
+                                                            </div>
+                                                            <button
+                                                                className="ml-4 p-2 rounded-full hover:bg-gray-600 text-gray-300 hover:text-white transition-colors"
+                                                                onClick={() => setHistoryDetailIdx(idx)}
+                                                                title="View details"
+                                                            >
+                                                                <FaArrowRight className="w-4 h-4" />
+                                                            </button>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <div className="flex flex-col h-full">
+                                        <div className="p-6 border-b border-gray-700 bg-gray-900 flex items-center justify-between">
+                                            <button
+                                                className="flex items-center text-gray-300 hover:text-white transition-colors mr-4"
+                                                onClick={() => setHistoryDetailIdx(null)}
+                                            >
+                                                <FaArrowLeft className="mr-2" />
+                                                Back to History
+                                            </button>
+                                            <button
+                                                className="text-gray-400 hover:text-white transition-colors text-2xl"
+                                                onClick={() => setShowHistory(false)}
+                                                title="Close history"
+                                            >
+                                                &times;
+                                            </button>
+                                        </div>
+                                        <div className="flex-1 overflow-y-auto p-6">
+                                            <div className="mb-6">
+                                                <h4 className="font-semibold text-purple-400 mb-3 text-lg">Search Query:</h4>
+                                                <div className="bg-gray-800 rounded-xl p-4">
+                                                    {history[historyDetailIdx].mode === "preference" ? (
+                                                        <div className="space-y-2 text-base">
+                                                            <div><span className="text-gray-400">Genre:</span> {history[historyDetailIdx].input.genre}</div>
+                                                            <div><span className="text-gray-400">Length:</span> {history[historyDetailIdx].input.length}</div>
+                                                            <div><span className="text-gray-400">Year:</span> {history[historyDetailIdx].input.year}</div>
+                                                        </div>
+                                                    ) : (
+                                                        <div className="text-base text-gray-200">
+                                                            {history[historyDetailIdx].input}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4 className="font-semibold text-purple-400 mb-3 text-lg">
+                                                    Recommendations ({history[historyDetailIdx].recommendations?.length || 0}):
+                                                </h4>
+                                                <div className="space-y-3">
+                                                    {history[historyDetailIdx].recommendations?.map((rec, i) => (
+                                                        <div key={i} className="bg-gray-800 rounded-lg p-4">
+                                                            <div className="font-medium text-white mb-1 text-base">{rec.name}</div>
+                                                            {Array.isArray(rec.genre) && rec.genre.length > 0 && (
+                                                                <div className="flex flex-wrap gap-1">
+                                                                    {rec.genre.map((g, j) => (
+                                                                        <span key={j} className="px-2 py-1 bg-purple-600 text-xs rounded-full text-white">
+                                                                            {g}
+                                                                        </span>
+                                                                    ))}
+                                                                </div>
+                                                            )}
+                                                            {!Array.isArray(rec.genre) && rec.genre && (
+                                                                <span className="px-2 py-1 bg-purple-600 text-xs rounded-full text-white">
+                                                                    {rec.genre}
+                                                                </span>
+                                                            )}
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </>
+                    )}
+                    
+                    {/* Main Chatbot Content */}
+                    <div className="flex-1 bg-gray-800 shadow-2xl flex flex-col">
+                        <div className="p-4 border-b border-gray-600">
+                            <div className="flex items-center justify-between mb-4">
+                                <h2 className="text-xl font-bold text-white">AI Movie Finder</h2>
+                                <button
+                                    className="text-gray-400 hover:text-white transition-colors"
+                                    onClick={() => setShowChatbot(false)}
+                                >
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <button
+                                    className="p-2 rounded-lg bg-gray-700 hover:bg-purple-600 text-gray-300 hover:text-white transition-colors"
+                                    onClick={() => setShowHistory(!showHistory)}
+                                    title="Toggle history"
+                                >
+                                    <FaHistory className="w-4 h-4" />
+                                </button>
+                                <button
+                                    className={`px-3 py-2 rounded-lg font-semibold transition-colors ${mode === "preference" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300 hover:bg-gray-600"}`}
+                                    onClick={() => { 
+                                        setMode("preference"); 
+                                        setChatStep(0); 
+                                        setPreferences({}); 
+                                        setCustomPrompt(""); 
+                                        setRecommendations([]); 
+                                    }}
+                                >
+                                    Preferences
+                                </button>
+                                <button
+                                    className={`px-3 py-2 rounded-lg font-semibold transition-colors ${mode === "custom" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300 hover:bg-gray-600"}`}
+                                    onClick={() => { 
+                                        setMode("custom"); 
+                                        setChatStep(questions.length); 
+                                        setPreferences({}); 
+                                        setCustomPrompt(""); 
+                                        setRecommendations([]); 
+                                    }}
+                                >
+                                    Custom
+                                </button>
+                            </div>
                         </div>
-                        {/* Preference Mode */}
-                        {mode === "preference" && chatStep < questions.length ? (
-                            <div>
-                                <div className="mb-4 font-semibold">{questions[chatStep].text}</div>
-                                <div className="flex flex-wrap gap-2">
-                                    {questions[chatStep].options.map(opt => (
+                        
+                        <div className="flex-1 overflow-y-auto p-4">
+                            {/* Preference Mode */}
+                            {mode === "preference" && chatStep < questions.length ? (
+                                <div>
+                                    <div className="mb-4">
+                                        <h3 className="text-lg font-semibold mb-2">{questions[chatStep].text}</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {questions[chatStep].options.map(opt => (
+                                                <button
+                                                    key={opt}
+                                                    className="px-3 py-2 bg-gray-700 rounded-lg hover:bg-purple-600 transition-colors"
+                                                    onClick={() => handlePreference(questions[chatStep].key, opt)}
+                                                >
+                                                    {opt}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : mode === "preference" ? (
+                                <div>
+                                    <div className="mb-4">
+                                        <h3 className="text-lg font-semibold mb-2">Your Preferences</h3>
+                                        <div className="bg-gray-700 rounded-lg p-3 mb-4">
+                                            <div className="space-y-1 text-sm">
+                                                <div><span className="text-gray-400">Genre:</span> {preferences.genre}</div>
+                                                <div><span className="text-gray-400">Length:</span> {preferences.length}</div>
+                                                <div><span className="text-gray-400">Year:</span> {preferences.year}</div>
+                                            </div>
+                                        </div>
                                         <button
-                                            key={opt}
-                                            className="px-3 py-1 bg-gray-700 rounded hover:bg-purple-600"
-                                            onClick={() => handlePreference(questions[chatStep].key, opt)}
+                                            className="w-full px-4 py-2 bg-green-600 rounded-lg font-bold hover:bg-green-700 transition-colors disabled:opacity-50"
+                                            onClick={handleSubmitPreferences}
+                                            disabled={chatLoading}
                                         >
-                                            {opt}
+                                            {chatLoading ? "Finding..." : "Get Recommendations"}
                                         </button>
-                                    ))}
-                                </div>
-                            </div>
-                        ) : mode === "preference" ? (
-                            <div>
-                                <div className="mb-4">
-                                    <span className="font-semibold">Your Preferences:</span>
-                                    <ul className="list-disc ml-5 mt-2 text-sm text-gray-300">
-                                        <li>Genre: {preferences.genre}</li>
-                                        <li>Length: {preferences.length}</li>
-                                        <li>Year: {preferences.year}</li>
-                                    </ul>
-                                </div>
-                                <button
-                                    className="px-4 py-2 bg-green-600 rounded-full font-bold shadow hover:bg-green-700 transition"
-                                    onClick={handleSubmitPreferences}
-                                    disabled={chatLoading}
-                                >
-                                    {chatLoading ? "Finding..." : "Get Recommendations"}
-                                </button>
-                                <div className="mt-4">
+                                    </div>
                                     {recommendations.length > 0 && (
                                         <div>
-                                            <div className="font-bold mb-2">Recommended Movies:</div>
-                                            <div className="grid gap-3">
+                                            <h3 className="text-lg font-semibold mb-3">Recommendations</h3>
+                                            <div className="space-y-3">
                                                 {recommendations.map((rec, idx) => (
-                                                    <div key={idx} className="bg-gray-700 rounded-lg p-3 flex flex-col shadow-md">
-                                                        <div className="text-lg font-semibold mb-1 break-words whitespace-normal">{rec.name}</div>
-                                                        {rec.genre && rec.genre.length > 0 && (
-                                                            <div className="flex flex-wrap gap-2 mt-1">
+                                                    <div key={idx} className="bg-gray-700 rounded-lg p-3">
+                                                        <div className="text-lg font-semibold mb-2">{rec.name}</div>
+                                                        {Array.isArray(rec.genre) && rec.genre.length > 0 && (
+                                                            <div className="flex flex-wrap gap-2">
                                                                 {rec.genre.map((g, i) => (
-                                                                    <span key={i} className="px-2 py-0.5 bg-purple-600 text-xs rounded-full text-white font-medium">{g}</span>
+                                                                    <span key={i} className="px-2 py-1 bg-purple-600 text-xs rounded-full text-white">
+                                                                        {g}
+                                                                    </span>
                                                                 ))}
                                                             </div>
+                                                        )}
+                                                        {!Array.isArray(rec.genre) && rec.genre && (
+                                                            <span className="px-2 py-1 bg-purple-600 text-xs rounded-full text-white">
+                                                                {rec.genre}
+                                                            </span>
                                                         )}
                                                     </div>
                                                 ))}
@@ -259,42 +449,46 @@ export default function Dashboard() {
                                         </div>
                                     )}
                                 </div>
-                            </div>
-                        ) : (
-                            // Custom Prompt Mode
-                            <div>
-                                <div className="mb-4">
-                                    <label htmlFor="customPrompt" className="block text-sm font-medium mb-1">Type your custom prompt for the AI:</label>
-                                    <textarea
-                                        id="customPrompt"
-                                        className="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
-                                        rows={4}
-                                        placeholder="Type your custom request for the AI..."
-                                        value={customPrompt}
-                                        onChange={e => setCustomPrompt(e.target.value)}
-                                    />
-                                </div>
-                                <button
-                                    className="px-4 py-2 bg-green-600 rounded-full font-bold shadow hover:bg-green-700 transition"
-                                    onClick={handleSubmitPreferences}
-                                    disabled={chatLoading || !customPrompt.trim()}
-                                >
-                                    {chatLoading ? "Finding..." : "Get Recommendations"}
-                                </button>
-                                <div className="mt-4">
+                            ) : (
+                                // Custom Prompt Mode
+                                <div>
+                                    <div className="mb-4">
+                                        <h3 className="text-lg font-semibold mb-2">Custom Search</h3>
+                                        <textarea
+                                            className="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
+                                            rows={4}
+                                            placeholder="Describe what kind of movies you're looking for..."
+                                            value={customPrompt}
+                                            onChange={e => setCustomPrompt(e.target.value)}
+                                        />
+                                        <button
+                                            className="w-full mt-3 px-4 py-2 bg-green-600 rounded-lg font-bold hover:bg-green-700 transition-colors disabled:opacity-50"
+                                            onClick={handleSubmitPreferences}
+                                            disabled={chatLoading || !customPrompt.trim()}
+                                        >
+                                            {chatLoading ? "Finding..." : "Get Recommendations"}
+                                        </button>
+                                    </div>
                                     {recommendations.length > 0 && (
                                         <div>
-                                            <div className="font-bold mb-2">Recommended Movies:</div>
-                                            <div className="grid gap-3">
+                                            <h3 className="text-lg font-semibold mb-3">Recommendations</h3>
+                                            <div className="space-y-3">
                                                 {recommendations.map((rec, idx) => (
-                                                    <div key={idx} className="bg-gray-700 rounded-lg p-3 flex flex-col shadow-md">
-                                                        <div className="text-lg font-semibold mb-1 break-words whitespace-normal">{rec.name}</div>
-                                                        {rec.genre && rec.genre.length > 0 && (
-                                                            <div className="flex flex-wrap gap-2 mt-1">
+                                                    <div key={idx} className="bg-gray-700 rounded-lg p-3">
+                                                        <div className="text-lg font-semibold mb-2">{rec.name}</div>
+                                                        {Array.isArray(rec.genre) && rec.genre.length > 0 && (
+                                                            <div className="flex flex-wrap gap-2">
                                                                 {rec.genre.map((g, i) => (
-                                                                    <span key={i} className="px-2 py-0.5 bg-purple-600 text-xs rounded-full text-white font-medium">{g}</span>
+                                                                    <span key={i} className="px-2 py-1 bg-purple-600 text-xs rounded-full text-white">
+                                                                        {g}
+                                                                    </span>
                                                                 ))}
                                                             </div>
+                                                        )}
+                                                        {!Array.isArray(rec.genre) && rec.genre && (
+                                                            <span className="px-2 py-1 bg-purple-600 text-xs rounded-full text-white">
+                                                                {rec.genre}
+                                                            </span>
                                                         )}
                                                     </div>
                                                 ))}
@@ -302,8 +496,8 @@ export default function Dashboard() {
                                         </div>
                                     )}
                                 </div>
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </div>
                 </div>
             )}

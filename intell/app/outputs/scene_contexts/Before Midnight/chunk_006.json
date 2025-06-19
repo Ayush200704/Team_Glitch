@@ -11,5 +11,10 @@
     "Heartbeat Town"
   ],
   "fun_fact": "Did you know? The mayor of Crazy Town is famous for organizing annual love festivals where residents express affection through poetry contests!",
-  "poll_question": "If you were mayor of a town named Crazy Town, would you date someone based on their romantic poem?"
-}
+  "poll_question": "If you were mayor of a town named Crazy Town, would you date someone based on their romantic poem?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+} 

@@ -3,8 +3,18 @@
   "start": 98.306,
   "end": 102.685,
   "subtitle_text": "me why am I finding myself so attracted to this woman",
-  "trivia_question": "",
-  "trivia_choices": [],
-  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
-  "poll_question": ""
+  "trivia_question": "What factors can contribute to sudden attraction to someone?",
+  "trivia_choices": [
+    "Physical appearance",
+    "Shared interests",
+    "Chemistry and personality",
+    "All of the above"
+  ],
+  "fun_fact": "Research shows that initial attraction can be influenced by factors like facial symmetry, voice tone, and even subtle body language cues that we process subconsciously.",
+  "poll_question": "Have you ever felt an unexpected attraction to someone?",
+  "poll_options": [
+    "Yes, definitely",
+    "No, never",
+    "Maybe once or twice"
+  ]
 }

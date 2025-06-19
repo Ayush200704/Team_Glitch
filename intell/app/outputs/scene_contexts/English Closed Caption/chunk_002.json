@@ -1,10 +1,21 @@
 {
   "scene": 2,
-  "start": 3.436,
-  "end": 30.93,
-  "subtitle_text": "thinking about a seafood meal whether dining in or out when you go native you'll get the freshest safest most wholesome Seafood around Seafood that's fresh from Florida more than 80 varieties are found right off Florida's Coast harvested by local families who take pride in their work don't take chances on where your Seafood came from look for the go native logo and enjoy Quality Seafood fresh from Florida check out the website for restaurants and seafood markets so you can go native oh yeah",
-  "trivia_question": "",
-  "trivia_choices": [],
-  "fun_fact": "API Error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
-  "poll_question": ""
+  "start": 10.436,
+  "end": 20.93,
+  "subtitle_text": "fresh from Florida more than 80 varieties are found right off Florida's Coast harvested by local families who take pride in their work don't take chances on where your Seafood came from",
+  "trivia_question": "Where are most seafood varieties found?",
+  "trivia_choices": [
+    "Florida",
+    "California",
+    "Alaska",
+    "Texas"
+  ],
+  "fun_fact": "More than 80 varieties of seafood are found off Florida's Coast.",
+  "poll_question": "Where do you think most seafood comes from?",
+  "poll_options": [
+    "Florida",
+    "California",
+    "Alaska",
+    "Texas"
+  ]
 }

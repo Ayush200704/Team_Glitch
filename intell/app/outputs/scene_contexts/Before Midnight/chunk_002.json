@@ -11,5 +11,10 @@
     "They met at the ruins"
   ],
   "fun_fact": "The couple's story mirrors a romantic trope where one person discovers another through their creative work—similar to how characters in classic literature often reconnect!",
-  "poll_question": "If you met someone on a train today, would you start a conversation with them?"
+  "poll_question": "If you met someone on a train today, would you start a conversation with them?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
 }

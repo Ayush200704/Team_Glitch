@@ -11,5 +11,10 @@
     "The Iron Horse of Atlantis"
   ],
   "fun_fact": "The 'Phantom Train of the Himalayas' myth originated in 12th-century Tibetan folklore about a spectral train carrying lost souls.",
-  "poll_question": "Do you believe ancient myths can influence real-world events?"
+  "poll_question": "Do you believe ancient myths can influence real-world events?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
 }

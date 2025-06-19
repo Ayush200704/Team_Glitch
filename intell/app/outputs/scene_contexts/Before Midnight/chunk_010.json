@@ -11,5 +11,11 @@
     "The Train"
   ],
   "fun_fact": "In Agatha Christie's 'The Murder on the Orient Express,' the train setting becomes a pivotal element of the mystery plot!",
-  "poll_question": "What's your favorite romantic meeting place? 🚂 Train 🌹 Garden 🏖️ Beach 🎬 Movie Theater"
-}
+  "poll_question": "What's your favorite romantic meeting place? 🚂 Train 🌹 Garden 🏖️ Beach 🎬 Movie Theater",
+  "poll_options": [
+    "🚂 Train",
+    "🌹 Garden",
+    "🏖️ Beach",
+    "🎬 Movie Theater"
+  ]
+} 

@@ -11,5 +11,10 @@
     "Planning future trips"
   ],
   "fun_fact": "Studies show unresolved conflicts and frequent arguments are often early warning signs of relationship breakdowns.",
-  "poll_question": "Have you ever noticed frequent arguments leading to a breakup?"
-}
+  "poll_question": "Have you ever noticed frequent arguments leading to a breakup?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+} 

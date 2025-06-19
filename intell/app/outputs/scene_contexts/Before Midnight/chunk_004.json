@@ -11,5 +11,10 @@
     "Marie Curie"
   ],
   "fun_fact": "Thomas Edison failed over 1,000 times before successfully inventing the light bulb.",
-  "poll_question": "Do you agree that persistence is key to achieving your goals?"
+  "poll_question": "Do you agree that persistence is key to achieving your goals?",
+  "poll_options": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
 }

@@ -11,5 +11,11 @@
     "Unlikely Friendship Group"
   ],
   "fun_fact": "'UGL' was a slang term popularized in 2000s teen dramas to describe close-knit female friendships.",
-  "poll_question": "Which line do you think is the most romantic? A) 'I feel close to you' or B) 'You are the mayor'"
-}
+  "poll_question": "Which line do you think is the most romantic? A) 'I feel close to you' or B) 'You are the mayor'",
+  "poll_options": [
+    "A",
+    "B",
+    "Both",
+    "Neither"
+  ]
+} 
