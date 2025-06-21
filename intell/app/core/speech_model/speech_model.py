@@ -4,7 +4,7 @@ import librosa
 from keras.models import load_model
 
 # Load the trained model
-model = load_model("D:/glitch/Team_Glitch/intell/app/core/speech_model/speech_model.keras")
+model = load_model("C:/Personal/HackOn Amazon/intell/app/core/speech_model/speech_model.keras")
 
 # Hardcoded emotion labels (in same order as training)
 emotion_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'ps', 'sad']

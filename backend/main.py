@@ -2,13 +2,17 @@ from fastapi import FastAPI
 from backend.intell_triggers import calendar_trigger
 from backend.intell_triggers.smart_watch_triggers import router as smart_watch_router
 from backend.intell_triggers.calendar_trigger import calendar_trigger
-# from backend.intell_triggers.voice_trigger import voice_router
+from backend.intell_triggers.voice_trigger import voice_router
+from backend.intell_triggers.environment import environment_router
+from backend.intell_triggers.final_trigger import final_router
 
 app = FastAPI()
 
 app.include_router(calendar_trigger)
 app.include_router(smart_watch_router)
-# app.include_router(voice_router)
+app.include_router(voice_router)
+app.include_router(environment_router)
+app.include_router(final_router)
 
 
 from fastapi.middleware.cors import CORSMiddleware

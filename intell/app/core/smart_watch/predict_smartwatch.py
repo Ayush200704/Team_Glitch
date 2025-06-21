@@ -5,7 +5,7 @@ import logging
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def predict_single_sample_mood(sample_data: dict, model_path: str = "D:/glitch/Team_Glitch/intell/app/outputs/smart_watch.pkl"):
+def predict_single_sample_mood(sample_data: dict, model_path: str = "C:/Personal/HackOn Amazon/intell/app/outputs/smart_watch.pkl"):    
     logging.info("Loading model for single sample prediction...")
     try:
         loaded_assets = joblib.load(model_path)

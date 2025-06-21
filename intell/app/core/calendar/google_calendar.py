@@ -16,10 +16,10 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
 # Path to your client secrets file (for Desktop app client ID)
-CLIENT_SECRETS_FILE = 'D:/glitch/Team_Glitch/intell/app/core/calendar/google_credentials.json' # This file MUST be in the same directory as this script
+CLIENT_SECRETS_FILE = 'C:/Personal/HackOn Amazon/intell/app/core/calendar/google_credentials.json' # This file MUST be in the same directory as this script
 
 # Directory for token storage
-TOKEN_FILE = 'D:/glitch/Team_Glitch/token.json' # This token file will also be in the same directory as this script
+TOKEN_FILE = 'C:/Personal/HackOn Amazon/token.json' # This token file will also be in the same directory as this script
 
 def get_calendar_events_json(days_ahead: int = 9) -> str:
     """Fetches Google Calendar events for the next 'days_ahead' and returns them as a JSON string.
@@ -88,7 +88,7 @@ def get_calendar_events_json(days_ahead: int = 9) -> str:
 if __name__ == '__main__':
     json_output = get_calendar_events_json(days_ahead=9)
     
-    output_dir = r'D:/glitch/Team_Glitch/intell/app\outputs'
+    output_dir = r'C:\Personal\HackOn Amazon\intell\app\outputs'
     output_file_path = os.path.join(output_dir, 'calendar_events.json')
 
     # Ensure the output directory exists

@@ -62,12 +62,12 @@ def train_and_evaluate(X_train, X_test, y_train, y_test, pipeline: Pipeline):
 
     return pipeline
 
-def save_model(model: Pipeline, X_train_cols: pd.Index, output_path: str = "D:/glitch/Team_Glitch/intell/app/outputs/smart_watch.pkl"):
+def save_model(model: Pipeline, X_train_cols: pd.Index, output_path: str = "C:/Personal/HackOn Amazon/intell/app/outputs/smart_watch.pkl"):
     joblib.dump({'model': model, 'columns': X_train_cols}, output_path)
     logging.info(f"Model and feature columns saved to {output_path}")
 
 if __name__ == "__main__":
-    DATA_PATH = "D:/glitch/Team_Glitch/intell/app/ingestion/synthetic_emotion_dataset.csv"  # Updated path
+    DATA_PATH = "C:/Personal/HackOn Amazon/intell/app/ingestion/synthetic_emotion_dataset.csv"  # Updated path
     df = load_data(DATA_PATH)
     X_train, X_test, y_train, y_test = preprocess_data(df)
     model_pipeline = build_pipeline()

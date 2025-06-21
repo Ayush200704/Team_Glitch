@@ -154,7 +154,7 @@ export default function Dashboard() {
                     </svg>
                 </div>
                 <button className="px-3 py-1 md:px-4 md:py-2 rounded-full bg-gray-700 font-semibold mr-1 md:mr-2 cursor-pointer hover:opacity-80">Home</button>
-                <button className="px-3 py-1 md:px-4 md:py-2 rounded-full bg-gray-700 font-semibold mr-1 md:mr-2 cursor-pointer hover:opacity-80">Find By My Mood</button>
+                <button className="px-3 py-1 md:px-4 md:py-2 rounded-full bg-gray-700 font-semibold mr-1 md:mr-2 cursor-pointer hover:opacity-80" onClick={() => navigate("/find-by-my-mood")}>Find By My Mood</button>
                 <button className="px-3 py-1 md:px-4 md:py-2 rounded-full bg-gray-700 font-semibold mr-2 md:mr-2 cursor-pointer hover:opacity-80">Live</button>
                 <button
                     className="px-3 py-1 md:px-4 md:py-2 rounded-full bg-green-600 font-semibold mr-2 md:mr-4 cursor-pointer hover:opacity-80"

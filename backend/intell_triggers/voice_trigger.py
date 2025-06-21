@@ -1,32 +1,36 @@
-# from fastapi import APIRouter, UploadFile, File, HTTPException
-# from fastapi.responses import JSONResponse
-# import os
-# import shutil
+from fastapi import APIRouter, HTTPException
+from fastapi.responses import JSONResponse
+import os
+import glob
+import random
 
-# from intell.app.core.speech_model.speech_model import predict_emotion
+from intell.app.core.speech_model.speech_model import predict_emotion
 
-# voice_router = APIRouter()
+voice_router = APIRouter()
 
-# UPLOAD_DIR = "intell/app/outputs/uploaded_audio"
-# os.makedirs(UPLOAD_DIR, exist_ok=True)
+VOICE_FILES_DIR = "backend/voice_files"
 
-# @voice_router.post("/trigger/voice", summary="Upload an audio file and get mood prediction")
-# async def trigger_voice(file: UploadFile = File(...)):
-#     """
-#     Accepts an audio file upload, processes it, and returns the predicted emotion.
-#     """
-#     file_location = os.path.join(UPLOAD_DIR, file.filename)
-#     try:
-#         # Save the uploaded file
-#         with open(file_location, "wb") as buffer:
-#             shutil.copyfileobj(file.file, buffer)
-
-#         # Call the emotion prediction function
-#         predicted_emotion = predict_emotion(file_location)
-#         return JSONResponse(content={"predicted_emotion": predicted_emotion})
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Processing failed: {e}")
-#     finally:
-#         # Clean up the uploaded file
-#         if os.path.exists(file_location):
-#             os.remove(file_location)
+@voice_router.get("/trigger/voice", summary="Process a random .wav file in voice_files folder and get mood prediction")
+async def trigger_voice():
+    """
+    Processes one random .wav file in the voice_files folder and returns the predicted emotion.
+    """
+    try:
+        wav_files = glob.glob(os.path.join(VOICE_FILES_DIR, '*.wav'))
+        if not wav_files:
+            return JSONResponse(content={"error": "No .wav files found in voice_files folder."}, status_code=404)
+        file_path = random.choice(wav_files)
+        try:
+            print(file_path)
+            predicted_emotion = predict_emotion(file_path)
+            return JSONResponse(content={
+                "filename": os.path.basename(file_path),
+                "predicted_emotion": predicted_emotion
+            })
+        except Exception as e:
+            return JSONResponse(content={
+                "filename": os.path.basename(file_path),
+                "error": str(e)
+            }, status_code=500)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Processing failed: {e}")
