@@ -1,0 +1,717 @@
+{
+    "slot_id": 1,
+    "start_time": "2025-06-24T07:00:00+05:30",
+    "end_time": "2025-06-24T09:00:00+05:30",
+    "free_minutes": 120,
+    "movie_count": 17,
+    "fitting_movies": [
+      {
+        "id": 1,
+        "movie_id": "M0133",
+        "title": "Azrael",
+        "duration_minutes": 110,
+        "ranking_score": 984.94
+      },
+      {
+        "id": 2,
+        "movie_id": "M0497",
+        "title": "A Man Called Otto",
+        "duration_minutes": 83,
+        "ranking_score": 972.32
+      },
+      {
+        "id": 3,
+        "movie_id": "M0104",
+        "title": "Lilo & Stitch",
+        "duration_minutes": 117,
+        "ranking_score": 970.27
+      },
+      {
+        "id": 4,
+        "movie_id": "M0494",
+        "title": "Bullet Train",
+        "duration_minutes": 100,
+        "ranking_score": 954.48
+      },
+      {
+        "id": 5,
+        "movie_id": "M0720",
+        "title": "Book of Dragons",
+        "duration_minutes": 114,
+        "ranking_score": 929.18
+      },
+      {
+        "id": 6,
+        "movie_id": "M0446",
+        "title": "Joker",
+        "duration_minutes": 112,
+        "ranking_score": 893.39
+      },
+      {
+        "id": 7,
+        "movie_id": "M0748",
+        "title": "Carry-On",
+        "duration_minutes": 71,
+        "ranking_score": 890.14
+      },
+      {
+        "id": 8,
+        "movie_id": "M0842",
+        "title": "The Little Mermaid",
+        "duration_minutes": 94,
+        "ranking_score": 867.19
+      },
+      {
+        "id": 9,
+        "movie_id": "M0548",
+        "title": "Peter Pan's Neverland Nightmare",
+        "duration_minutes": 119,
+        "ranking_score": 857.4
+      },
+      {
+        "id": 10,
+        "movie_id": "M0804",
+        "title": "Divergent",
+        "duration_minutes": 105,
+        "ranking_score": 845.17
+      },
+      {
+        "id": 11,
+        "movie_id": "M0046",
+        "title": "The Lord of the Rings: The Return of the King",
+        "duration_minutes": 98,
+        "ranking_score": 830.23
+      },
+      {
+        "id": 12,
+        "movie_id": "M0533",
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "duration_minutes": 119,
+        "ranking_score": 827.54
+      },
+      {
+        "id": 13,
+        "movie_id": "M0257",
+        "title": "WALL·E",
+        "duration_minutes": 118,
+        "ranking_score": 817.81
+      },
+      {
+        "id": 14,
+        "movie_id": "M0110",
+        "title": "Notting Hill",
+        "duration_minutes": 96,
+        "ranking_score": 788.49
+      },
+      {
+        "id": 15,
+        "movie_id": "M0125",
+        "title": "The Gardener",
+        "duration_minutes": 107,
+        "ranking_score": 753.12
+      },
+      {
+        "id": 16,
+        "movie_id": "M0771",
+        "title": "Life",
+        "duration_minutes": 96,
+        "ranking_score": 750.29
+      },
+      {
+        "id": 17,
+        "movie_id": "M0653",
+        "title": "Ford v Ferrari",
+        "duration_minutes": 98,
+        "ranking_score": 722.09
+      }
+    ]
+  },
+  {
+    "slot_id": 2,
+    "start_time": "2025-06-24T16:00:00+05:30",
+    "end_time": "2025-06-24T17:15:00+05:30",
+    "free_minutes": 75,
+    "movie_count": 1,
+    "fitting_movies": [
+      {
+        "id": 18,
+        "movie_id": "M0748",
+        "title": "Carry-On",
+        "duration_minutes": 71,
+        "ranking_score": 890.14
+      }
+    ]
+  },
+  {
+    "slot_id": 3,
+    "start_time": "2025-06-25T07:00:00+05:30",
+    "end_time": "2025-06-25T08:30:00+05:30",
+    "free_minutes": 90,
+    "movie_count": 2,
+    "fitting_movies": [
+      {
+        "id": 19,
+        "movie_id": "M0497",
+        "title": "A Man Called Otto",
+        "duration_minutes": 83,
+        "ranking_score": 972.32
+      },
+      {
+        "id": 20,
+        "movie_id": "M0748",
+        "title": "Carry-On",
+        "duration_minutes": 71,
+        "ranking_score": 890.14
+      }
+    ]
+  },
+  {
+    "slot_id": 4,
+    "start_time": "2025-06-25T18:00:00+05:30",
+    "end_time": "2025-06-25T20:30:00+05:30",
+    "free_minutes": 150,
+    "movie_count": 37,
+    "fitting_movies": [
+      {
+        "id": 21,
+        "movie_id": "M0133",
+        "title": "Azrael",
+        "duration_minutes": 110,
+        "ranking_score": 984.94
+      },
+      {
+        "id": 22,
+        "movie_id": "M0452",
+        "title": "Watchmen",
+        "duration_minutes": 149,
+        "ranking_score": 984.49
+      },
+      {
+        "id": 23,
+        "movie_id": "M0497",
+        "title": "A Man Called Otto",
+        "duration_minutes": 83,
+        "ranking_score": 972.32
+      },
+      {
+        "id": 24,
+        "movie_id": "M0104",
+        "title": "Lilo & Stitch",
+        "duration_minutes": 117,
+        "ranking_score": 970.27
+      },
+      {
+        "id": 25,
+        "movie_id": "M0334",
+        "title": "Justice League",
+        "duration_minutes": 144,
+        "ranking_score": 961.35
+      },
+      {
+        "id": 26,
+        "movie_id": "M0494",
+        "title": "Bullet Train",
+        "duration_minutes": 100,
+        "ranking_score": 954.48
+      },
+      {
+        "id": 27,
+        "movie_id": "M0789",
+        "title": "Frozen II",
+        "duration_minutes": 139,
+        "ranking_score": 934.76
+      },
+      {
+        "id": 28,
+        "movie_id": "M0720",
+        "title": "Book of Dragons",
+        "duration_minutes": 114,
+        "ranking_score": 929.18
+      },
+      {
+        "id": 29,
+        "movie_id": "M0613",
+        "title": "Kiff Lore of the Ring Light",
+        "duration_minutes": 128,
+        "ranking_score": 927.07
+      },
+      {
+        "id": 30,
+        "movie_id": "M0959",
+        "title": "Jurassic World Dominion",
+        "duration_minutes": 136,
+        "ranking_score": 898.68
+      },
+      {
+        "id": 31,
+        "movie_id": "M0446",
+        "title": "Joker",
+        "duration_minutes": 112,
+        "ranking_score": 893.39
+      },
+      {
+        "id": 32,
+        "movie_id": "M0748",
+        "title": "Carry-On",
+        "duration_minutes": 71,
+        "ranking_score": 890.14
+      },
+      {
+        "id": 33,
+        "movie_id": "M0229",
+        "title": "The Matrix",
+        "duration_minutes": 122,
+        "ranking_score": 888.43
+      },
+      {
+        "id": 34,
+        "movie_id": "M0628",
+        "title": "Star Wars: The Rise of Skywalker",
+        "duration_minutes": 124,
+        "ranking_score": 887.18
+      },
+      {
+        "id": 35,
+        "movie_id": "M0503",
+        "title": "The Dark Knight Rises",
+        "duration_minutes": 124,
+        "ranking_score": 884.45
+      },
+      {
+        "id": 36,
+        "movie_id": "M0207",
+        "title": "Wunderschöner",
+        "duration_minutes": 132,
+        "ranking_score": 872.96
+      },
+      {
+        "id": 37,
+        "movie_id": "M0870",
+        "title": "Fast & Furious Presents: Hobbs & Shaw",
+        "duration_minutes": 138,
+        "ranking_score": 872.09
+      },
+      {
+        "id": 38,
+        "movie_id": "M0842",
+        "title": "The Little Mermaid",
+        "duration_minutes": 94,
+        "ranking_score": 867.19
+      },
+      {
+        "id": 39,
+        "movie_id": "M0034",
+        "title": "Red One",
+        "duration_minutes": 128,
+        "ranking_score": 863.75
+      },
+      {
+        "id": 40,
+        "movie_id": "M0548",
+        "title": "Peter Pan's Neverland Nightmare",
+        "duration_minutes": 119,
+        "ranking_score": 857.4
+      },
+      {
+        "id": 41,
+        "movie_id": "M0804",
+        "title": "Divergent",
+        "duration_minutes": 105,
+        "ranking_score": 845.17
+      },
+      {
+        "id": 42,
+        "movie_id": "M0046",
+        "title": "The Lord of the Rings: The Return of the King",
+        "duration_minutes": 98,
+        "ranking_score": 830.23
+      },
+      {
+        "id": 43,
+        "movie_id": "M0533",
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "duration_minutes": 119,
+        "ranking_score": 827.54
+      },
+      {
+        "id": 44,
+        "movie_id": "M0257",
+        "title": "WALL·E",
+        "duration_minutes": 118,
+        "ranking_score": 817.81
+      },
+      {
+        "id": 45,
+        "movie_id": "M0482",
+        "title": "Bambi: A Life in the Woods",
+        "duration_minutes": 132,
+        "ranking_score": 813.92
+      },
+      {
+        "id": 46,
+        "movie_id": "M0043",
+        "title": "Smile 2",
+        "duration_minutes": 120,
+        "ranking_score": 796.08
+      },
+      {
+        "id": 47,
+        "movie_id": "M0499",
+        "title": "Room in Rome",
+        "duration_minutes": 143,
+        "ranking_score": 793.18
+      },
+      {
+        "id": 48,
+        "movie_id": "M0110",
+        "title": "Notting Hill",
+        "duration_minutes": 96,
+        "ranking_score": 788.49
+      },
+      {
+        "id": 49,
+        "movie_id": "M0597",
+        "title": "The Conjuring",
+        "duration_minutes": 129,
+        "ranking_score": 787.35
+      },
+      {
+        "id": 50,
+        "movie_id": "M0307",
+        "title": "Diary of a Nymphomaniac",
+        "duration_minutes": 126,
+        "ranking_score": 771.49
+      },
+      {
+        "id": 51,
+        "movie_id": "M0125",
+        "title": "The Gardener",
+        "duration_minutes": 107,
+        "ranking_score": 753.12
+      },
+      {
+        "id": 52,
+        "movie_id": "M0771",
+        "title": "Life",
+        "duration_minutes": 96,
+        "ranking_score": 750.29
+      },
+      {
+        "id": 53,
+        "movie_id": "M0321",
+        "title": "Stream",
+        "duration_minutes": 126,
+        "ranking_score": 743.66
+      },
+      {
+        "id": 54,
+        "movie_id": "M0564",
+        "title": "Hereditary",
+        "duration_minutes": 124,
+        "ranking_score": 733.95
+      },
+      {
+        "id": 55,
+        "movie_id": "M0926",
+        "title": "Pride & Prejudice",
+        "duration_minutes": 124,
+        "ranking_score": 728.98
+      },
+      {
+        "id": 56,
+        "movie_id": "M0521",
+        "title": "The Shawshank Redemption",
+        "duration_minutes": 136,
+        "ranking_score": 724.21
+      },
+      {
+        "id": 57,
+        "movie_id": "M0653",
+        "title": "Ford v Ferrari",
+        "duration_minutes": 98,
+        "ranking_score": 722.09
+      }
+    ]
+  },
+  {
+    "slot_id": 5,
+    "start_time": "2025-06-26T20:00:00+05:30",
+    "end_time": "2025-06-26T23:00:00+05:30",
+    "free_minutes": 180,
+    "movie_count": 39,
+    "fitting_movies": [
+      {
+        "id": 58,
+        "movie_id": "M0133",
+        "title": "Azrael",
+        "duration_minutes": 110,
+        "ranking_score": 984.94
+      },
+      {
+        "id": 59,
+        "movie_id": "M0452",
+        "title": "Watchmen",
+        "duration_minutes": 149,
+        "ranking_score": 984.49
+      },
+      {
+        "id": 60,
+        "movie_id": "M0497",
+        "title": "A Man Called Otto",
+        "duration_minutes": 83,
+        "ranking_score": 972.32
+      },
+      {
+        "id": 61,
+        "movie_id": "M0104",
+        "title": "Lilo & Stitch",
+        "duration_minutes": 117,
+        "ranking_score": 970.27
+      },
+      {
+        "id": 62,
+        "movie_id": "M0334",
+        "title": "Justice League",
+        "duration_minutes": 144,
+        "ranking_score": 961.35
+      },
+      {
+        "id": 63,
+        "movie_id": "M0494",
+        "title": "Bullet Train",
+        "duration_minutes": 100,
+        "ranking_score": 954.48
+      },
+      {
+        "id": 64,
+        "movie_id": "M0789",
+        "title": "Frozen II",
+        "duration_minutes": 139,
+        "ranking_score": 934.76
+      },
+      {
+        "id": 65,
+        "movie_id": "M0720",
+        "title": "Book of Dragons",
+        "duration_minutes": 114,
+        "ranking_score": 929.18
+      },
+      {
+        "id": 66,
+        "movie_id": "M0613",
+        "title": "Kiff Lore of the Ring Light",
+        "duration_minutes": 128,
+        "ranking_score": 927.07
+      },
+      {
+        "id": 67,
+        "movie_id": "M0959",
+        "title": "Jurassic World Dominion",
+        "duration_minutes": 136,
+        "ranking_score": 898.68
+      },
+      {
+        "id": 68,
+        "movie_id": "M0446",
+        "title": "Joker",
+        "duration_minutes": 112,
+        "ranking_score": 893.39
+      },
+      {
+        "id": 69,
+        "movie_id": "M0748",
+        "title": "Carry-On",
+        "duration_minutes": 71,
+        "ranking_score": 890.14
+      },
+      {
+        "id": 70,
+        "movie_id": "M0229",
+        "title": "The Matrix",
+        "duration_minutes": 122,
+        "ranking_score": 888.43
+      },
+      {
+        "id": 71,
+        "movie_id": "M0628",
+        "title": "Star Wars: The Rise of Skywalker",
+        "duration_minutes": 124,
+        "ranking_score": 887.18
+      },
+      {
+        "id": 72,
+        "movie_id": "M0503",
+        "title": "The Dark Knight Rises",
+        "duration_minutes": 124,
+        "ranking_score": 884.45
+      },
+      {
+        "id": 73,
+        "movie_id": "M0207",
+        "title": "Wunderschöner",
+        "duration_minutes": 132,
+        "ranking_score": 872.96
+      },
+      {
+        "id": 74,
+        "movie_id": "M0870",
+        "title": "Fast & Furious Presents: Hobbs & Shaw",
+        "duration_minutes": 138,
+        "ranking_score": 872.09
+      },
+      {
+        "id": 75,
+        "movie_id": "M0315",
+        "title": "Elemental",
+        "duration_minutes": 155,
+        "ranking_score": 868.44
+      },
+      {
+        "id": 76,
+        "movie_id": "M0842",
+        "title": "The Little Mermaid",
+        "duration_minutes": 94,
+        "ranking_score": 867.19
+      },
+      {
+        "id": 77,
+        "movie_id": "M0034",
+        "title": "Red One",
+        "duration_minutes": 128,
+        "ranking_score": 863.75
+      },
+      {
+        "id": 78,
+        "movie_id": "M0548",
+        "title": "Peter Pan's Neverland Nightmare",
+        "duration_minutes": 119,
+        "ranking_score": 857.4
+      },
+      {
+        "id": 79,
+        "movie_id": "M0804",
+        "title": "Divergent",
+        "duration_minutes": 105,
+        "ranking_score": 845.17
+      },
+      {
+        "id": 80,
+        "movie_id": "M0046",
+        "title": "The Lord of the Rings: The Return of the King",
+        "duration_minutes": 98,
+        "ranking_score": 830.23
+      },
+      {
+        "id": 81,
+        "movie_id": "M0533",
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "duration_minutes": 119,
+        "ranking_score": 827.54
+      },
+      {
+        "id": 82,
+        "movie_id": "M0257",
+        "title": "WALL·E",
+        "duration_minutes": 118,
+        "ranking_score": 817.81
+      },
+      {
+        "id": 83,
+        "movie_id": "M0482",
+        "title": "Bambi: A Life in the Woods",
+        "duration_minutes": 132,
+        "ranking_score": 813.92
+      },
+      {
+        "id": 84,
+        "movie_id": "M0043",
+        "title": "Smile 2",
+        "duration_minutes": 120,
+        "ranking_score": 796.08
+      },
+      {
+        "id": 85,
+        "movie_id": "M0499",
+        "title": "Room in Rome",
+        "duration_minutes": 143,
+        "ranking_score": 793.18
+      },
+      {
+        "id": 86,
+        "movie_id": "M0110",
+        "title": "Notting Hill",
+        "duration_minutes": 96,
+        "ranking_score": 788.49
+      },
+      {
+        "id": 87,
+        "movie_id": "M0597",
+        "title": "The Conjuring",
+        "duration_minutes": 129,
+        "ranking_score": 787.35
+      },
+      {
+        "id": 88,
+        "movie_id": "M0307",
+        "title": "Diary of a Nymphomaniac",
+        "duration_minutes": 126,
+        "ranking_score": 771.49
+      },
+      {
+        "id": 89,
+        "movie_id": "M0125",
+        "title": "The Gardener",
+        "duration_minutes": 107,
+        "ranking_score": 753.12
+      },
+      {
+        "id": 90,
+        "movie_id": "M0771",
+        "title": "Life",
+        "duration_minutes": 96,
+        "ranking_score": 750.29
+      },
+      {
+        "id": 91,
+        "movie_id": "M0321",
+        "title": "Stream",
+        "duration_minutes": 126,
+        "ranking_score": 743.66
+      },
+      {
+        "id": 92,
+        "movie_id": "M0016",
+        "title": "Dog Man",
+        "duration_minutes": 154,
+        "ranking_score": 740.81
+      },
+      {
+        "id": 93,
+        "movie_id": "M0564",
+        "title": "Hereditary",
+        "duration_minutes": 124,
+        "ranking_score": 733.95
+      },
+      {
+        "id": 94,
+        "movie_id": "M0926",
+        "title": "Pride & Prejudice",
+        "duration_minutes": 124,
+        "ranking_score": 728.98
+      },
+      {
+        "id": 95,
+        "movie_id": "M0521",
+        "title": "The Shawshank Redemption",
+        "duration_minutes": 136,
+        "ranking_score": 724.21
+      },
+      {
+        "id": 96,
+        "movie_id": "M0653",
+        "title": "Ford v Ferrari",
+        "duration_minutes": 98,
+        "ranking_score": 722.09
+      }
+    ]
+  }
