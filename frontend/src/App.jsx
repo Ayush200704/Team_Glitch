@@ -3,6 +3,7 @@ import Home from './Components/Home.jsx';
 import Room from './Components/Room.jsx';
 import Dashboard from './Components/Dashboard.jsx';
 import FindByMyMood from './Components/FindByMyMood.jsx';
+import Recommendations from './Components/Recommendations.jsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/watch-together" element={<Home />} />
         <Route path="/room/:roomId" element={<Room />} />
         <Route path="/find-by-my-mood" element={<FindByMyMood />} />
+        <Route path="/recommendations" element={<Recommendations />} />
       </Routes>
     </BrowserRouter>
   );

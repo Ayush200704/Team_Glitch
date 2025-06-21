@@ -1,0 +1,68 @@
+{
+    "happy": {
+        "genre": [
+            "Comedy",
+            "Romance"
+        ]
+    },
+    "relaxed": {
+        "genre": [
+            "Fantasy",
+            "Documentary"
+        ]
+    },
+    "stressed": {
+        "genre": [
+            "Comedy",
+            "Fantasy"
+        ]
+    },
+    "tired": {
+        "genre": [
+            "Documentary",
+            "Fantasy"
+        ]
+    },
+    "sad": {
+        "genre": [
+            "Romance",
+            "Drama"
+        ]
+    },
+    "energetic": {
+        "genre": [
+            "Action",
+            "Sci-Fi"
+        ]
+    },
+    "neutral": {
+        "genre": [
+            "Documentary",
+            "Drama"
+        ]
+    },
+    "disgust": {
+        "genre": [
+            "Action",
+            "Thriller"
+        ]
+    },
+    "fear": {
+        "genre": [
+            "Thriller",
+            "Action"
+        ]
+    },
+    "angry": {
+        "genre": [
+            "Action",
+            "Thriller"
+        ]
+    },
+    "pleasant_surprise": {
+        "genre": [
+            "Fantasy",
+            "Comedy"
+        ]
+    }
+}

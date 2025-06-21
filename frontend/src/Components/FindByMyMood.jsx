@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { FiSend, FiX } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 const FindByMyMood = () => {
+    const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
     const [output, setOutput] = useState(null);
     const [showOutput, setShowOutput] = useState(false);
@@ -15,8 +17,6 @@ const FindByMyMood = () => {
     const [voiceOutput, setVoiceOutput] = useState(null);
     const [showVoiceOutput, setShowVoiceOutput] = useState(false);
     const [isFinalLoading, setIsFinalLoading] = useState(false);
-    const [finalOutput, setFinalOutput] = useState(null);
-    const [showFinalOutput, setShowFinalOutput] = useState(false);
 
     const handleGetRequest = async () => {
         setIsLoading(true);
@@ -105,29 +105,7 @@ const FindByMyMood = () => {
 
     const handleFinalRequest = async () => {
         setIsFinalLoading(true);
-        setFinalOutput(null);
-        setShowFinalOutput(true);
-        try {
-            const response = await fetch('http://127.0.0.1:8000/trigger/final-recommendation', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
-
-            const data = await response.json();
-
-            if (!response.ok) {
-                throw new Error(data.detail || 'An unknown error occurred.');
-            }
-            
-            setFinalOutput(data);
-        } catch (error) {
-            console.error('Error fetching final recommendation:', error);
-            setFinalOutput({ error: error.message || 'Failed to fetch all recommendations.' });
-        } finally {
-            setIsFinalLoading(false);
-        }
+        navigate('/recommendations');
     };
 
     return (
@@ -462,87 +440,6 @@ const FindByMyMood = () => {
                             <div className="bg-gray-700 p-4 border-t border-gray-600">
                                 <button
                                     onClick={() => setShowVoiceOutput(false)}
-                                    className="w-full bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-500 transition-colors"
-                                >
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                )}
-
-                {/* Final Output Modal */}
-                {showFinalOutput && (
-                    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
-                        <div className="bg-gray-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-hidden border border-gray-700">
-                            <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6">
-                                <div className="flex items-center justify-between">
-                                    <h3 className="text-xl font-semibold">Final Recommendation</h3>
-                                    <button
-                                        onClick={() => setShowFinalOutput(false)}
-                                        className="text-white hover:text-gray-200 transition-colors"
-                                    >
-                                        <FiX size={24} />
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="p-6 overflow-y-auto max-h-[60vh]">
-                                {isFinalLoading ? (
-                                    <div className="flex justify-center items-center h-48">
-                                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
-                                    </div>
-                                ) : finalOutput?.error ? (
-                                    <div className="text-red-400 bg-red-900/20 p-4 rounded-lg border border-red-700">
-                                        <p className="font-semibold">Error:</p>
-                                        <p>{finalOutput.error}</p>
-                                    </div>
-                                ) : (
-                                    <div className="space-y-4">
-                                        <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-700">
-                                            <h4 className="font-semibold text-blue-300 mb-2">Predicted Moods</h4>
-                                            <div className="text-blue-200 space-y-1">
-                                                <p><strong>Environment:</strong> {finalOutput.environment_mood}</p>
-                                                <p><strong>Smartwatch:</strong> {finalOutput.smartwatch_mood}</p>
-                                                <p><strong>Voice:</strong> {finalOutput.voice_mood}</p>
-                                            </div>
-                                        </div>
-                                        <div className="bg-yellow-900/20 p-4 rounded-lg border border-yellow-700">
-                                            <h4 className="font-semibold text-yellow-300 mb-2">Calendar Free Time</h4>
-                                            <div className="text-yellow-200 space-y-1">
-                                                <p><strong>Total Free Time:</strong> {finalOutput.calendar_total_free}</p>
-                                                {finalOutput.calendar_free_slots && finalOutput.calendar_free_slots.length > 0 ? (
-                                                    <div>
-                                                        <p className="font-semibold mt-2 mb-1">Free Slots:</p>
-                                                        <ul className="list-disc ml-6">
-                                                            {finalOutput.calendar_free_slots.map((slot, idx) => {
-                                                                const startDate = new Date(slot.start);
-                                                                const endDate = new Date(slot.end);
-                                                                const dateStr = startDate.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
-                                                                const startTime = startDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
-                                                                const endTime = endDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
-                                                                return (
-                                                                    <li key={idx} className="mb-1">
-                                                                        {dateStr}, {startTime} - {endTime} ({slot.duration})
-                                                                    </li>
-                                                                );
-                                                            })}
-                                                        </ul>
-                                                    </div>
-                                                ) : (
-                                                    <p>No free slots found in your calendar.</p>
-                                                )}
-                                            </div>
-                                        </div>
-                                        <div className="bg-gray-900/20 p-4 rounded-lg border border-gray-700">
-                                            <h4 className="font-semibold text-gray-300 mb-2">Raw JSON Output</h4>
-                                            <pre className="text-gray-200 text-xs whitespace-pre-wrap break-all">{JSON.stringify(finalOutput, null, 2)}</pre>
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-                            <div className="bg-gray-700 p-4 border-t border-gray-600">
-                                <button
-                                    onClick={() => setShowFinalOutput(false)}
                                     className="w-full bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-500 transition-colors"
                                 >
                                     Close
